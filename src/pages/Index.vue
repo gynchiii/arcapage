@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <h1 class="texxt">home</h1>
+    <h1 class="texxt text-center">home</h1>
   </q-page>
 </template>
 
