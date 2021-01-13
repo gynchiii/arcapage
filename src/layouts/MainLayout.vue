@@ -1,46 +1,28 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="bg-blue-grey-12">
-    <q-toolbar class="bg-primary text-black texxt q-my-md bg-blue-grey-12 ">
-      <q-btn flat round dense   @click="leftDrawerOpen = !leftDrawerOpen" icon="menu" class="q-mr-sm" />
+    <q-header elevated class="bg-blue-grey-12 large-screen-only medium-screen-only">
+    <q-toolbar class="bg-primary text-black texxt q-my-xs bg-blue-grey-12 ">
+      <q-btn flat round dense   @click="leftDrawerOpen = !leftDrawerOpen" icon="menu" class="q-mr-xl" />
         <h6 class="text-center">Grupo Arca</h6> 
       <q-space />
-
-      <q-btn-dropdown stretch flat label="Produtos">
-        <q-list>
-          <q-item-label header class="texxt text-black">Elements</q-item-label>
-          <q-item v-for="n in 3" :key="`x.${n}`" clickable v-close-popup tabindex="0">
-            <q-item-section avatar>
-              <q-avatar icon="event_seat" color="purple" text-color="white" />
-            </q-item-section>
-            <q-item-section>
-              <q-item-label>Cadeiras</q-item-label>
-              <q-item-label caption>February 22, 2016</q-item-label>
-            </q-item-section>
-            <q-item-section side>
-              <q-icon name="info" />
-            </q-item-section>
-          </q-item>
-          <q-separator inset spaced />
-          <q-item-label header class="texxt text-black">3green</q-item-label>
-          <q-item v-for="n in 3" :key="`y.${n}`" clickable v-close-popup tabindex="0">
-            <q-item-section avatar>
-              <q-avatar icon="assignment" color="purple" text-color="white" />
-            </q-item-section>
-            <q-item-section>
-              <q-item-label>All-in-one</q-item-label>
-              <q-item-label caption>February 22, 2016</q-item-label>
-            </q-item-section>
-            <q-item-section side>
-              <q-icon name="info" />
-            </q-item-section>
-          </q-item>
-        </q-list>
-      </q-btn-dropdown>
-      <q-btn stretch flat label="Elements" />
+      <q-btn stretch to="/elements" flat label="Elements" />
       <q-btn stretch flat label="3Green" />
     </q-toolbar>
     </q-header>
+
+     <q-footer bordered class="bg-dark text-grey-10 small-screen-only" elevated>
+      <q-tabs
+        active-color="white"
+        v-model="tab"
+        indicator-color="transparent"
+        class="text-purple small-screen-only"
+      >
+        <q-route-tab to="/elements" name="dashboard" icon="dashboard" class="texxt" label="ELEMENTS" />
+        <q-route-tab to="/" name="home" icon="home" class="texxt" label="HOME" />
+        <q-route-tab to="/camera" name="camera" icon="camera" class="texxt" label="3GREEN" />
+      </q-tabs>
+    </q-footer>
+
 
     <q-drawer
       v-model="leftDrawerOpen"
@@ -126,7 +108,8 @@ export default {
   data () {
     return {
       leftDrawerOpen: false,
-      essentialLinks: linksData
+      essentialLinks: linksData,
+      tab: 'home'
     }
   }
 }
