@@ -37,7 +37,83 @@
   <div class="text">
     <h1 class="texxt text-white text-center">Produtos</h1>
   </div>
-   <div class="container2 flex q-pa-xl q-ma-xl q-gutter-xl">
+   <div class="q-pa-md">
+    <q-parallax :height="550">
+      <template v-slot:media>
+        <video width="720" height="1500"  autoplay loop muted>
+          <source type="video/webm" src="https://ma-portfolio.s3.amazonaws.com/preview-83626-Ap21S04im7-high.webm">
+        </video>
+      </template>
+
+    </q-parallax>
+   </div>
+   <h1 class="texxt text-center text-white">Linha. Nemesis</h1>
+   <h4 class="text-center texxt text-white">Black chairs</h4>
+         <q-carousel
+      style="width: 100vw; height: 73vh;"
+      swipeable
+      autoplay="autoplay"
+      animated
+      v-model="slide1"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide :name="1" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg" >
+      <h4 class="texxt  q-pa-none q-ma-sm fixed">Magna</h4>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51968185/454bd00ced.jpg" >
+      <h4 class="texxt  q-pa-none q-ma-sm fixed">Veda</h4>
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51967231/d75d7c9297.jpg" >
+      <h4 class="texxt  q-pa-none q-ma-xs fixed">Arcanum</h4>     
+      </q-carousel-slide>
+    </q-carousel>
+       <h1 class="texxt text-center text-green">Linha. Terra</h1>
+   <h4 class="text-center texxt text-green">Green chairs</h4>
+         <q-carousel
+      style="width: 100vw; height: 73vh;"
+      swipeable
+      animated
+      autoplay="autoplay"
+      v-model="slide2"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide :name="1" class="absolute-center" style="width: 30vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74381603/afe1082514.jpg" >
+      <h4 class="texxt  q-pa-none q-ma-sm text-green fixed">Magna</h4>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/9356c06328.jpg" >
+      <h4 class="texxt  q-pa-none q-ma-sm text-green fixed">Veda</h4>
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51466240/7481379319.jpg" >
+      <h4 class="texxt  q-pa-none q-ma-xs text-green fixed">Elemental</h4>     
+      </q-carousel-slide>
+    </q-carousel>
+    <h1 class="texxt text-center text-blue">Linha. Acqua</h1>
+   <h4 class="text-center texxt text-blue">Blue chairs</h4>
+         <q-carousel
+      style="width: 100vw; height: 73vh;"
+      swipeable
+      autoplay="autoplay"
+      animated
+      v-model="slide3"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 25vw; height: 30vw;" img-src="https://img.terabyteshop.com.br/produto/g/cadeira-gamer-elements-magna-acqua-reclinavel-black-blue_109348.jpg" >
+      <h4 class="texxt  q-pa-none q-ma-md text-blue fixed">Magna</h4>
+      </q-carousel-slide>
+      <q-carousel-slide  :name="2" class=" absolute-center" style="width: 25vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/75415bb0ba.jpg" >
+      <h4 class="texxt q-pa-md q-ma-xs text-blue fixed">Veda</h4>
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 30vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51465829/f8716dc464.jpg" >
+      <h4 class="texxt  q-pa-md q-ma-sm text-blue fixed">Elemental</h4>     
+      </q-carousel-slide>
+    </q-carousel>
+    
+    
+    
+   <div class="container2 bg-black flex q-pa-xl q-ma-xs q-gutter-xl">
              <q-card class="my-card2 bg-dark">
       <q-card-section horizontal>
         <q-img
@@ -112,7 +188,7 @@
     </q-card>
     </div>
 
-    <div class="container2 flex q-pa-xl q-ma-xl q-gutter-xl">
+    <div class="container2 flex q-pa-xl bg-blue q-ma-xs q-gutter-xl">
              <q-card class="my-card2 bg-indigo-13">
       <q-card-section horizontal>
         <q-img
@@ -187,7 +263,7 @@
     </q-card>
     </div>
     
-    <div class="container2 flex q-ma-xl q-pa-xl q-gutter-xl">
+    <div class="container2 bg-green flex q-ma-xs q-pa-xl q-gutter-xl">
        <q-card class="my-card2 bg-black">
       <q-card-section horizontal>
         <q-img
@@ -284,7 +360,7 @@
     
     </q-parallax>
       <q-parallax
-      src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffdf3a5a9dc1e0f3ecd1879/a4aea054a8b006b0199ed8a3cb6fd7b9/AS.jpg"
+      src="https://cdn.awsli.com.br/1140x1140/1329/1329500/banner/da02d2defd.jpg"
     >
       <h1 class="text-white">Só a Elements é Elements</h1>
     </q-parallax>
@@ -329,7 +405,11 @@ export default {
   name: 'PageIndex',
    data () {
     return {
-      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      slide1:1,
+      slide2:1,
+      slide3:1
+
     }
   }
 }
