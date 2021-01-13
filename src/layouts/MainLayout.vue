@@ -86,25 +86,13 @@ const linksData = [
     title: 'Sobre nós',
     caption: 'Saiba quem somos',
     icon: 'school',
-    link: 'https://quasar.dev'
+    link: 'https://elementsgaming.com.br/'
   },
   {
     title: 'Conheça a Elements',
     caption: 'Venha fazer parte desse mundo',
     icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Conheça a 3Green',
-    caption: 'Venha fazer parte desse mundo',
-    icon: 'filter_3',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord da comunidade',
-    caption: 'Discord',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
+    link: 'https://elementsgaming.com.br/'
   },
   {
     title: 'Forum',
@@ -116,19 +104,19 @@ const linksData = [
     title: 'Twitter',
     caption: '@Grupo arca',
     icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
+    link: 'https://twitter.com/Elements4Gaming'
   },
   {
     title: 'Facebook',
     caption: '@Grupo arca',
     icon: 'public',
-    link: 'https://facebook.quasar.dev'
+    link: 'https://www.facebook.com/elements4gaming'
   },
   {
     title: 'Instagram',
     caption: '<3',
     icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    link: 'https://www.instagram.com/elements.gaming/'
   }
 ];
 
