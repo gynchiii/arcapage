@@ -1,14 +1,15 @@
 <template>
-  <q-page class=" bg-black">
+  <q-page class=" bg-black" style="overflow-x: hidden ; overflow-y: hidden ">
        <div class="q-pa-none q-gutter-md">
     <div class="row justify-between">
 
     <q-parallax
      src=" https://scontent.fbnu4-1.fna.fbcdn.net/v/t1.0-9/130811889_1935168946622228_7897929910126993059_o.jpg?_nc_cat=102&ccb=2&_nc_sid=e3f864&_nc_ohc=9ievON56EKUAX_Hg86s&_nc_ht=scontent.fbnu4-1.fna&oh=45f64ae02ae53e462ce1337c398649f4&oe=6024EE26"
     >
-      <h1 class="text-white texxt">ELEMENTS</h1>
+      <h1 class="text-white large-screen-only texxt">ELEMENTS</h1>
+      <h2 class="text-white small-screen-only texxt">ELEMENTS</h2>
     </q-parallax>
-    <q-parallax>
+    <q-parallax class="large-screen-only">
       <template v-slot:media>
         <img src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffdee948477bc6fb8d4034c/cf461b1ebecb22789bede5cd2fd4d654/arcanum_wallpaper.jpg" >
       </template>
@@ -30,12 +31,35 @@
         </div>
       </template>
     </q-parallax>
+        <q-parallax class="small-screen-only">
+      <template v-slot:media>
+        <img src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffdee948477bc6fb8d4034c/cf461b1ebecb22789bede5cd2fd4d654/arcanum_wallpaper.jpg" >
+      </template>
+
+      <template v-slot:content="scope">
+        <div
+          class="absolute column items-center"
+          :style="{
+            opacity: 0.7 + (1 - scope.percentScrolled) * 0.2,
+            top: (scope.percentScrolled * 25) + '%',
+            left: 0,
+            right: 0
+          }"
+        >
+          <img class="q-pa-xs" src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffcebca024d872460cb026d/125570f79eadbe00a13f6822c70734ea/Untitled-1.jpg" style="width: 150px; height: 150px">
+          <br>
+          <div class="text-h2 text-white texxt text-white text-center">Vai muito além de ser só uma cadeira</div>
+          
+        </div>
+      </template>
+    </q-parallax>
 
 
     </div>
   </div>
   <div class="text">
-    <h1 class="texxt text-white text-center">Produtos</h1>
+    <h1 class="texxt text-white large-screen-only text-center">Produtos</h1>
+    <h2 class="texxt text-white small-screen-only text-center">Produtos</h2>
   </div>
    <div class="q-pa-md">
     <q-parallax :height="550">
@@ -47,11 +71,13 @@
 
     </q-parallax>
    </div>
-   <h1 class="texxt text-center text-white">Linha. Nemesis</h1>
+   <h1 class="texxt text-center large-screen-only text-white">Linha. Nemesis</h1>
+   <h2 class="texxt text-center small-screen-only text-white">Linha. Nemesis</h2>
    <h4 class="text-center texxt text-white">Black chairs</h4>
          <q-carousel
       style="width: 100vw; height: 74vh;"
       swipeable
+      class="large-screen-only"
       autoplay="autoplay"
       animated
       v-model="slide1"
@@ -59,20 +85,35 @@
       infinite
     >
       <q-carousel-slide :name="1" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg" >
-      <h4 class="texxt  q-pa-none q-ma-sm fixed">Magna</h4>
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51968185/454bd00ced.jpg" >
-      <h4 class="texxt  q-pa-none q-ma-sm fixed">Veda</h4>
       </q-carousel-slide>
       <q-carousel-slide :name="4" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51967231/d75d7c9297.jpg" >
-      <h4 class="texxt  q-pa-none q-ma-xs fixed">Arcanum</h4>     
       </q-carousel-slide>
     </q-carousel>
-       <h1 class="texxt text-center text-green">Linha. Terra</h1>
+         <q-carousel
+      style="width: 100vw; height: 85vh;"
+      swipeable
+      class="small-screen-only"
+      animated
+      v-model="slide1"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide :name="1" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg" >
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51968185/454bd00ced.jpg" >
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51967231/d75d7c9297.jpg" >
+      </q-carousel-slide>
+    </q-carousel>
+       <h1 class="texxt text-center large-screen-only text-green">Linha. Terra</h1>
+       <h2 class="texxt text-center small-screen-only text-green">Linha. Terra</h2>
    <h4 class="text-center texxt text-green">Green chairs</h4>
          <q-carousel
       style="width: 100vw; height: 74vh;"
       swipeable
+      class="large-screen-only"
       animated
       autoplay="autoplay"
       v-model="slide2"
@@ -80,20 +121,36 @@
       infinite
     >
       <q-carousel-slide :name="1" class="absolute-center" style="width: 30vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74381603/afe1082514.jpg" >
-      <h4 class="texxt  q-pa-none q-ma-sm text-green fixed">Magna</h4>
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/9356c06328.jpg" >
-      <h4 class="texxt  q-pa-none q-ma-sm text-green fixed">Veda</h4>
       </q-carousel-slide>
       <q-carousel-slide :name="4" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51466240/7481379319.jpg" >
-      <h4 class="texxt  q-pa-none q-ma-xs text-green fixed">Elemental</h4>     
       </q-carousel-slide>
     </q-carousel>
-    <h1 class="texxt text-center text-blue">Linha. Acqua</h1>
+     <q-carousel
+      style="width: 100vw; height: 80vh;"
+      swipeable
+      animated
+      class="small-screen-only"
+      autoplay="autoplay"
+      v-model="slide2"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide :name="1" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74381603/afe1082514.jpg" >
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/9356c06328.jpg" >
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51466240/7481379319.jpg" >
+      </q-carousel-slide>
+    </q-carousel>
+    <h1 class="texxt large-screen-only text-center text-blue">Linha. Acqua</h1>
+    <h2 class="texxt small-screen-only text-center text-blue">Linha. Acqua</h2>
    <h4 class="text-center texxt text-blue">Blue chairs</h4>
          <q-carousel
       style="width: 100vw; height: 74vh;"
       swipeable
+      class="large-screen-only"
       autoplay="autoplay"
       animated
       v-model="slide3"
@@ -101,13 +158,27 @@
       infinite
     >
       <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 25vw; height: 30vw;" img-src="https://img.terabyteshop.com.br/produto/g/cadeira-gamer-elements-magna-acqua-reclinavel-black-blue_109348.jpg" >
-      <h4 class="texxt  q-pa-none q-ma-md text-blue fixed">Magna</h4>
       </q-carousel-slide>
       <q-carousel-slide  :name="2" class=" absolute-center" style="width: 25vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/75415bb0ba.jpg" >
-      <h4 class="texxt q-pa-md q-ma-xs text-blue fixed">Veda</h4>
       </q-carousel-slide>
       <q-carousel-slide :name="4" class="absolute-center" style="width: 30vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51465829/f8716dc464.jpg" >
-      <h4 class="texxt  q-pa-md q-ma-sm text-blue fixed">Elemental</h4>     
+      </q-carousel-slide>
+    </q-carousel>
+     <q-carousel
+      style="width: 100vw; height: 80vh;"
+      swipeable
+      class="small-screen-only"
+      autoplay="autoplay"
+      animated
+      v-model="slide3"
+      thumbnails
+      infinite
+    >
+      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 80vw; height: 30vw;" img-src="https://img.terabyteshop.com.br/produto/g/cadeira-gamer-elements-magna-acqua-reclinavel-black-blue_109348.jpg" >
+      </q-carousel-slide>
+      <q-carousel-slide  :name="2" class=" absolute-center" style="width: 80vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/75415bb0ba.jpg" >
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 80vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51465829/f8716dc464.jpg" >
       </q-carousel-slide>
     </q-carousel>
     
@@ -336,6 +407,9 @@
     </div>
     <div class="aboutus texxt text-center text-blue-grey-12"> 
       <h1> Sobre nós </h1>
+      <hr>
+    <h4 class="q-pa-lg texxt2  text-center constrain">Vai além de cadeiras, storytelling, designs diferentes e coisas disruptivas</h4>
+    <hr>
     <div class="q-pa-xs q-gutter-md">
     <div class="row justify-between">
 
@@ -343,19 +417,13 @@
     style="height: 70vw;"
       src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/sadfewe.jpg"
     >
-    <h3>Vai além de cadeiras, storytelling, designs diferentes e coiss disruptivas</h3>
-    <h4>a elements é a elements e bla blablablablablablablablabla
-      blablablablablabla
-      blablablablabla
-      blablablabla
+    <h5 class="constrain texxt2">Olá, Argen aqui quem vos fala! <br> <br> O nosso propósito é entregar valor para as pessoas que de alguma forma tem acesso ao nosso universo! <br>  Tudo isso através de algo que está impregnado em nosso universo, que é o Storytelling, onde é contado através de quadrinhos e livros, que dentro delas estão incluídos valores. <br> <br> Valores esses que com certeza ajudam as pessoas que tem acesso a eles a melhorarem e progredirem em suas próprias vidas, por isso estamos crescendo muito e levando esse universo inteiro pra tanta gente diferente. <br> <br> Claro que com muita qualidade em nossos produtos juntamente com a experiência que as acompanha. <br> <br> <br>
+A Elements Gaming foi criada no dia 06/07/2016 , <br> Pelos sócios fundadores Rafael Seifert e Bruna Rodrigues. <br> <br>  Já nessa data se sabia que a empresa miraria só e somente o extraordinário.
+Desde o momento zero a ideia nunca foi ser apenas uma marca de cadeira gamer, e sim ser um conceito e levar uma mensagem a todos os jovens não apenas do Brasil, mas no mundo!
+Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gamers mais influentes da América Latina.
     
-    </h4>
-      <h4>a elements é a elements e bla blablablablablablablablabla
-      blablablablablabla
-      blablablablabla
-      blablablabla
-    
-    </h4>
+    </h5>
+   
     
     
     </q-parallax>
@@ -367,28 +435,16 @@
 
     </div>
   </div>
-    <h2>A elements é conhecida como slkdjlkasdlksajdkl
-      çlsdkfçlkçdlf
-      dfksçdlfkçsladkfçlsdf
-      dçafkçasdkfçlksadlçfs
-      asdkjalksjdlasdasdsdajsda
-      sdfkjhasjkhdfkjsadhfkjshdfd
-      fdlflksdhflkjhaskdjfhkjsdfas
-      dfsdfjlkasjdflkjlskdjflkasdjflkasdf
-      sdfklsajdflkjalskdjflkjsadlkfjlskajdf
-      sdfkljsdflkçdjfklsjdlkf
-    </h2>
-    <h2>A elements é conhecida como slkdjlkasdlksajdkl
-      çlsdkfçlkçdlf
-      dfksçdlfkçsladkfçlsdf
-      dçafkçasdkfçlksadlçfs
-      asdkjalksjdlasdasdsdajsda
-      sdfkjhasjkhdfkjsadhfkjshdfd
-      fdlflksdhflkjhaskdjfhkjsdfas
-      dfsdfjlkasjdflkjlskdjflkasdjflkasdf
-      sdfklsajdflkjalskdjflkjsadlkfjlskajdf
-      sdfkljsdflkçdjfklsjdlkf
-    </h2>
+    <h3 class="constrain text-bold">
+    </h3>
+       <q-page-scroller expand position="top" :scroll-offset="150" :offset="[0, 0]">
+            <div class="col texxt cursor-pointer q-pa-sm bg-purple text-white text-center">
+              Volte ao início
+            </div>
+          </q-page-scroller>
+          <q-page-scroller reverse :scroll-offset="5" :offset="[10, 20]">
+            <q-btn fab icon="keyboard_arrow_down" color="purple" />
+          </q-page-scroller>
   </div>
   </q-page>
 </template>
