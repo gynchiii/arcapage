@@ -364,10 +364,10 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
     >
        
         <q-card-section class="q-pt-none bg-deep-purple-7 text-white">
-             <form>
+             <form name="CONVERSION">
             <q-input
         ref="name"
-        name="name"
+        name="nome"
         class="q-pa-md"
         filled
         v-model="name"
@@ -385,7 +385,7 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
         v-model="phone"
         standout
         class="q-pa-md"
-        name="phone"
+        name="telefone"
         label="Telefone"
         mask="(##) ##### - ####"
          lazy-rules
@@ -405,7 +405,7 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
           <q-input
         filled
         v-model="cnpj"
-        name="cnpj"
+        name="empresa"
         class="q-pa-md"
         label="CNPJ"
         mask="##.###.###.####-##"
