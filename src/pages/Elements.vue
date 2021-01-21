@@ -167,7 +167,7 @@
      <q-carousel
       style="width: 100vw; height: 80vh;"
       swipeable
-      class="small-screen-only"
+      class="small-screen-only "
       autoplay="autoplay"
       animated
       v-model="slide3"
@@ -184,7 +184,7 @@
     
     
     
-   <div class="container2 bg-black flex q-pa-xl q-ma-xs q-gutter-xl">
+   <div class="container2 bg-black flex large-screen-only q-pa-xl q-ma-xs q-gutter-xl">
              <q-card class="my-card2 bg-dark">
       <q-card-section horizontal>
         <q-img
@@ -203,63 +203,32 @@
         </q-card-actions>
       </q-card-section>
     </q-card>
-            <q-card class="my-card2 bg-dark">
+
+            
+    </div>
+       <div class="container2 small-screen-only bg-black q-pa-xl q-ma-none q-gutter-none">
+             <q-card class="my-card2 bg-dark">
       <q-card-section horizontal>
         <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/8c60f5c50f.jpg"
+          class="col-10"
+          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg"
         />
         <q-card-actions vertical class="justify-around bg-dark">
           <h6 class="texxt text-white q-pa-none text-center">Magna</h6>
           <h6 class="texxt text-white"></h6>
             <br>
             <br>
-            <br>
-          <q-btn flat round color="white" icon="info" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
+         <form action="https://loja.elementsgaming.com.br/pre-venda-magna-nemesis" target="_blank">
+          <q-btn type="submit" round push color="grey-9" class="q-pa-md" icon="local_mall" />
+          </form>
         </q-card-actions>
       </q-card-section>
     </q-card>
-               <q-card class="my-card2 bg-dark">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/8ef7632fad.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-dark">
-          <h6 class="texxt text-white q-pa-none text-center">Magna</h6>
-          <h6 class="texxt text-white"></h6>
-            <br>
-            <br>
-            <br>
-          <q-btn flat round color="white" icon="info" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-               <q-card class="my-card2 bg-dark">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/c815bb2ce9.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-dark">
-          <h6 class="texxt text-white q-pa-none text-center">Magna</h6>
-          <h6 class="texxt text-white"></h6>
-            <br>
-            <br>
-            <br>
-          <q-btn flat round color="white" icon="info" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
+
+            
     </div>
 
-    <div class="container2 flex q-pa-xl bg-blue q-ma-xs q-gutter-xl">
+    <div class="container2 large-screen-only flex q-pa-xl bg-blue q-ma-xs q-gutter-xl">
              <q-card class="my-card2 bg-indigo-13">
       <q-card-section horizontal>
         <q-img
@@ -268,73 +237,41 @@
         />
         <q-card-actions vertical class="justify-around bg-indigo-13">
           <h6 class="texxt text-white q-pa-none text-center">veda</h6>
-          <h6 class="texxt text-white">Acqua</h6>
             <br>
             <br>
             <br>
-          <q-btn flat round color="white" icon="info" />
+          
+          <q-btn type="submit"  @click="fullWidth = true"  flat round color="white" icon="local_mall" />
+
           <q-btn flat round color="accent" icon="bookmark" />
           <q-btn flat round color="primary" icon="share" />
         </q-card-actions>
       </q-card-section>
     </q-card>
-            <q-card class="my-card2 bg-indigo-13">
+           
+    </div>
+     <div class="container2 small-screen-only  q-pa-xl q-ma-none q-gutter-none">
+             <q-card class="my-card2 bg-indigo-13">
       <q-card-section horizontal>
         <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/b7833583fb.jpg"
+          class="col-10"
+          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/75415bb0ba.jpg"
         />
         <q-card-actions vertical class="justify-around bg-indigo-13">
           <h6 class="texxt text-white q-pa-none text-center">veda</h6>
-          <h6 class="texxt text-white">Acqua</h6>
+          <h6 class="texxt text-white text-center">Acqua</h6>
             <br>
             <br>
-            <br>
-          <q-btn flat round color="white" icon="info" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
+        
+          <q-btn  @click="fullWidth = true"   round push color="blue" class="q-pa-md" icon="local_mall" />
+
         </q-card-actions>
       </q-card-section>
     </q-card>
-               <q-card class="my-card2 bg-indigo-13">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/4bf1f2a78b.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-indigo-13">
-          <h6 class="texxt text-white q-pa-none text-center">veda</h6>
-          <h6 class="texxt text-white">Acqua</h6>
-            <br>
-            <br>
-            <br>
-          <q-btn flat round color="white" icon="info" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-               <q-card class="my-card2 bg-indigo-13">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/1b5f786ffb.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-indigo-13">
-          <h6 class="texxt text-white q-pa-none text-center">veda</h6>
-          <h6 class="texxt text-white">Acqua</h6>
-            <br>
-            <br>
-            <br>
-          <q-btn flat round color="white" icon="info" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
+           
     </div>
     
-    <div class="container2 bg-green flex q-ma-xs q-pa-xl q-gutter-xl">
+    <div class="container2 bg-black large-screen-only flex q-ma-xs q-pa-xl q-gutter-xl">
        <q-card class="my-card2 bg-black">
       <q-card-section horizontal>
         <q-img
@@ -343,7 +280,6 @@
         />
         <q-card-actions vertical class="justify-around bg-light-green-12">
           <h6 class="texxt">magna</h6>
-          <h6 class="texxt text-center">terra</h6>
           <br>
           <br>
           <q-btn flat round color="white" icon="add_shopping_cart" />
@@ -352,57 +288,25 @@
         </q-card-actions>
       </q-card-section>
     </q-card>
+     
+       
+    </div>
+       <div class="container2 small-screen-only  q-pa-xl q-ma-none q-gutter-none">
        <q-card class="my-card2 bg-black">
       <q-card-section horizontal>
         <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/a347f8215c.jpg"
+          class="col-10"
+          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/9356c06328.jpg"
         />
         <q-card-actions vertical class="justify-around bg-light-green-12">
-          <h6 class="texxt">magna</h6>
+          <h6 class="texxt">Veda</h6>
           <h6 class="texxt text-center">terra</h6>
           <br>
-          <br>
-          <q-btn flat round color="white" icon="add_shopping_cart" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
+          <q-btn round  @click="fullWidth = true"  push color="green-6" class="q-pa-md" icon="local_mall" />
         </q-card-actions>
       </q-card-section>
     </q-card>
-       <q-card class="my-card2 bg-black">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/81175720a2.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-light-green-12">
-          <h6 class="texxt">magna</h6>
-          <h6 class="texxt text-center">terra</h6>
-          <br>
-          <br>
-          <q-btn flat round color="white" icon="add_shopping_cart" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-       <q-card class="my-card2 bg-black">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/c5ee293417.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-light-green-12">
-          <h6 class="texxt">magna</h6>
-          <h6 class="texxt text-center">terra</h6>
-          <br>
-          <br>
-          <q-btn flat round color="white" icon="add_shopping_cart" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
+     
        
     </div>
     <div class="aboutus texxt text-center text-blue-grey-12"> 
@@ -415,9 +319,10 @@
 
     <q-parallax
     style="height: 70vw;"
+    class="large-screen-only"
       src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/sadfewe.jpg"
     >
-    <h5 class="constrain texxt2">Olá, Argen aqui quem vos fala! <br> <br> O nosso propósito é entregar valor para as pessoas que de alguma forma tem acesso ao nosso universo! <br>  Tudo isso através de algo que está impregnado em nosso universo, que é o Storytelling, onde é contado através de quadrinhos e livros, que dentro delas estão incluídos valores. <br> <br> Valores esses que com certeza ajudam as pessoas que tem acesso a eles a melhorarem e progredirem em suas próprias vidas, por isso estamos crescendo muito e levando esse universo inteiro pra tanta gente diferente. <br> <br> Claro que com muita qualidade em nossos produtos juntamente com a experiência que as acompanha. <br> <br> <br>
+    <h5 class="constrain large-screen-only texxt2">Olá, Argen aqui quem vos fala! <br> <br> O nosso propósito é entregar valor para as pessoas que de alguma forma tem acesso ao nosso universo! <br>  Tudo isso através de algo que está impregnado em nosso universo, que é o Storytelling, onde é contado através de quadrinhos e livros, que dentro delas estão incluídos valores. <br> <br> Valores esses que com certeza ajudam as pessoas que tem acesso a eles a melhorarem e progredirem em suas próprias vidas, por isso estamos crescendo muito e levando esse universo inteiro pra tanta gente diferente. <br> <br> Claro que com muita qualidade em nossos produtos juntamente com a experiência que as acompanha. <br> <br> <br>
 A Elements Gaming foi criada no dia 06/07/2016 , <br> Pelos sócios fundadores Rafael Seifert e Bruna Rodrigues. <br> <br>  Já nessa data se sabia que a empresa miraria só e somente o extraordinário.
 Desde o momento zero a ideia nunca foi ser apenas uma marca de cadeira gamer, e sim ser um conceito e levar uma mensagem a todos os jovens não apenas do Brasil, mas no mundo!
 Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gamers mais influentes da América Latina.
@@ -427,10 +332,18 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
     
     
     </q-parallax>
+   
       <q-parallax
       src="https://cdn.awsli.com.br/1140x1140/1329/1329500/banner/da02d2defd.jpg"
+      class="large-screen-only"
     >
       <h1 class="text-white">Só a Elements é Elements</h1>
+    </q-parallax>
+     <q-parallax
+     class="small-screen-only col-13"
+      src="https://cdn.awsli.com.br/1140x1140/1329/1329500/banner/da02d2defd.jpg"
+    >
+      <h2 class="text-white texxt2">Elements é Elements</h2>
     </q-parallax>
 
     </div>
@@ -446,6 +359,67 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
             <q-btn fab icon="keyboard_arrow_down" color="purple" />
           </q-page-scroller>
   </div>
+  <q-dialog
+      v-model="fullWidth"
+    >
+       
+        <q-card-section class="q-pt-none bg-deep-purple-7 text-white">
+             <form>
+            <q-input
+        ref="name"
+        name="name"
+        class="q-pa-md"
+        filled
+        v-model="name"
+        label="Nome"
+        lazy-rules
+        :rules="[ val => val && val.length > 0 || 'Nome por Favor']"
+      >
+              <template v-slot:prepend>
+          <q-icon name="account_circle" />
+        </template>
+      </q-input>
+
+                <q-input
+        filled
+        v-model="phone"
+        standout
+        class="q-pa-md"
+        name="phone"
+        label="Telefone"
+        mask="(##) ##### - ####"
+         lazy-rules
+        :rules="[ val => val && val.length > 9999 || 'Telefone por favor']"
+      >
+      <template v-slot:prepend>
+          <q-icon name="phone" />
+        </template>
+      </q-input>
+        <q-input filled standout v-model="email"  lazy-rules
+        :rules="[ val => val !== null && val !== '' || 'Email por favor']"  class="q-pa-md" name="email" type="mail" prefix="Email">
+        <template v-slot:prepend>
+          <q-icon name="mail" />
+        </template>
+      </q-input>
+    
+          <q-input
+        filled
+        v-model="cnpj"
+        name="cnpj"
+        class="q-pa-md"
+        label="CNPJ"
+        mask="##.###.###.####-##"
+        lazy-rules
+        :rules="[
+          val => val !== null && val !== '' || 'CNPJ Por favor',
+          val => val > 99999  || 'CNPJ Válido por favor'
+          ]"
+      />
+
+          <q-btn flat type="submit" rounded label="Enviar" class="q-pa-md" />
+            </form>
+        </q-card-section>
+    </q-dialog>
   </q-page>
 </template>
 
@@ -464,9 +438,14 @@ export default {
       lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       slide1:1,
       slide2:1,
-      slide3:1
+      slide3:1,
+      fullWidth: false,
+      name: null,
+      phone: null,
+      email: null,
+      cnpj: null,
+    }
+    }
 
     }
-  }
-}
 </script>
