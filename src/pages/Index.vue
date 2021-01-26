@@ -37,7 +37,7 @@ Quebrar as barreiras do impossível, do inalcançável e construir pontes que li
 Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. <br> <br> Somos compostos por pessoas que trabalham de maneira colaborativa e apaixonada, focada dia após dia em realizar sonhos, desenvolver negócios e a tornar o mundo melhor.</h5>
     <br>
     <br>
-    <q-parallax style="max-width: 1423px;" :height="150" :speed="0.3">
+    <q-parallax  :height="150" :speed="0.3">
       <template v-slot:media>
         <img src="https://wallpaperaccess.com/full/759749.jpg">
       </template>
