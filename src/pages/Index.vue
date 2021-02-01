@@ -21,7 +21,16 @@
         </div>
       </template>
     </q-parallax>
-      <h4 class="texxt2 text-center constrain large-screen-only text-grey-6">O Grupo Arca nasceu com um único objetivo:
+     
+    <br>
+    <br>
+      <q-dialog v-model="inception">
+      <q-card class="bg-dark">
+        <q-card-section>
+        </q-card-section>
+
+        <q-card-section class="q-pt-none">
+             <h4 class="texxt2 text-center constrain large-screen-only text-grey-6">O Grupo Arca nasceu com um único objetivo:
         <br>
         <br>
 Quebrar as barreiras do impossível, do inalcançável e construir pontes que ligam os nossos parceiros aos seus objetivos e desejos.
@@ -35,17 +44,35 @@ Quebrar as barreiras do impossível, do inalcançável e construir pontes que li
 <br>
 
 Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. <br> <br> Somos compostos por pessoas que trabalham de maneira colaborativa e apaixonada, focada dia após dia em realizar sonhos, desenvolver negócios e a tornar o mundo melhor.</h5>
-    <br>
-    <br>
-    <q-parallax style="max-width: 1423px;" :height="150" :speed="0.3">
+        </q-card-section>
+
+        <q-card-actions align="right" class="text-primary">
+          <q-btn flat dense class="text-white texxt" label="Fechar" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+    <h5 class="texxt text-center text-grey-8"> Temos algo a falar pra voce, clique </h5>
+    <div class="flex flex-center">
+          <q-btn
+      padding="xl"
+      color="grey-8"
+      push
+      glossy
+      dense
+      @click="inception = true"
+      round
+      icon="record_voice_over"
+    />
+    </div>
+    <q-parallax :height="150" :speed="0.3">
       <template v-slot:media>
         <img src="https://wallpaperaccess.com/full/759749.jpg">
       </template>
 
       <h1 class="text-grey-7 constrain large-screen-only texxt2">AO SEU ALCANCE</h1>
+
       <h4 class="text-grey-7 constrainsmall small-screen-only texxt2">AO SEU ALCANCE</h4>
     </q-parallax>
-
     <q-parallax
       src="hhttps://31.media.tumblr.com/4e0b3c1908a49b9fc7dc3d2ce9589a23/tumblr_ntu637V4j41taknieo1_1280.gif"
     >
@@ -64,8 +91,7 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
     class="large-screen-only"
       src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/low-poly.jpg"
     >
-      <h1 class="texxt text-black text-bold">ELEMENTS</h1>
-          <q-btn to="/elements" color="purpe" class="bg-purple" style="opacity: 0.8;" push >
+          <q-btn to="/elements" color="purpe" class="bg-purple-2" style="opacity: 0.8;" push >
       <div class="row items-center text-black text-bold texxt text-h5 no-wrap">
         <q-icon left name="done" />
         <div class="text-center">
@@ -122,6 +148,11 @@ import { ParticlesBg } from "particles-bg-vue";
 
 export default {
   name: 'Elements',
+ data () {
+    return {
+      inception: false
+    }
+  },
      components: {
        ParticlesBg
      }

@@ -1,11 +1,12 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="bg-blue-grey-12 large-screen-only ">
-    <q-toolbar class="bg-primary constrain text-black texxt q-my-none bg-blue-grey-12 ">
-        <q-btn to="/" outline dense  class="text-center text-h6">Arca</q-btn> 
+    <q-header elevated class="bg-grey-10 large-screen-only ">
+    <q-toolbar class="bg-primary constrain text-black texxt q-my-none bg-grey-10 ">
+        <q-btn to="/" glossy push dense  class="text-center text-black bg-grey-8 text-bold text-h6">Arca</q-btn> 
       <q-space />
-      <q-btn stretch to="/elements" flat label="Elements" />
-      <q-btn stretch flat to="/3green" label="3Green" />
+      <q-btn glossy push class="bg-grey-8 text-black text-bold" to="/elements"  label="Elements" />
+  <hr>
+      <q-btn glossy push class="bg-grey-8 text-green text-bold" to="/3green" label="3Green" />
     </q-toolbar>
     </q-header>
 

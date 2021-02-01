@@ -4,57 +4,18 @@
     <div class="row justify-between">
 
     <q-parallax
+    style="width: 100vw; height: 85vh; "
      src=" https://scontent.fbnu4-1.fna.fbcdn.net/v/t1.0-9/130811889_1935168946622228_7897929910126993059_o.jpg?_nc_cat=102&ccb=2&_nc_sid=e3f864&_nc_ohc=9ievON56EKUAX_Hg86s&_nc_ht=scontent.fbnu4-1.fna&oh=45f64ae02ae53e462ce1337c398649f4&oe=6024EE26"
     >
-      <h1 class="text-white large-screen-only texxt">ELEMENTS</h1>
+    <subtitle class="text-h5 text-grey-5 text-white text-center texxt"> porque ter uma cadeira ? <br> quando se pode ter um trono ! </subtitle>
+      <h1 class="text-white text-bold large-screen-only texxt">ELEMENTS</h1>
       <h2 class="text-white small-screen-only texxt">ELEMENTS</h2>
     </q-parallax>
-    <q-parallax class="large-screen-only">
-      <template v-slot:media>
-        <img src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffdee948477bc6fb8d4034c/cf461b1ebecb22789bede5cd2fd4d654/arcanum_wallpaper.jpg" >
-      </template>
-
-      <template v-slot:content="scope">
-        <div
-          class="absolute column items-center"
-          :style="{
-            opacity: 0.7 + (1 - scope.percentScrolled) * 0.2,
-            top: (scope.percentScrolled * 100) + '%',
-            left: 0,
-            right: 0
-          }"
-        >
-          <img class="q-pa-xs" src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffcebca024d872460cb026d/125570f79eadbe00a13f6822c70734ea/Untitled-1.jpg" style="width: 150px; height: 150px">
-          <br>
-          <div class="text-h2 text-white texxt text-white text-center">Vai muito além de ser só uma cadeira</div>
-          
-        </div>
-      </template>
-    </q-parallax>
-        <q-parallax class="small-screen-only">
-      <template v-slot:media>
-        <img src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffdee948477bc6fb8d4034c/cf461b1ebecb22789bede5cd2fd4d654/arcanum_wallpaper.jpg" >
-      </template>
-
-      <template v-slot:content="scope">
-        <div
-          class="absolute column items-center"
-          :style="{
-            opacity: 0.7 + (1 - scope.percentScrolled) * 0.2,
-            top: (scope.percentScrolled * 25) + '%',
-            left: 0,
-            right: 0
-          }"
-        >
-          <img class="q-pa-xs" src="https://trello-attachments.s3.amazonaws.com/5ffce91b2770135b3922c9ea/5ffcebca024d872460cb026d/125570f79eadbe00a13f6822c70734ea/Untitled-1.jpg" style="width: 150px; height: 150px">
-          <br>
-          <div class="text-h2 text-white texxt text-white text-center">Vai muito além de ser só uma cadeira</div>
-          
-        </div>
-      </template>
-    </q-parallax>
-
-
+    <div class="bg1">
+      <h1 class="text-center text-white texxt ">
+            PREPARADO PRA SUA NOVA JORNADA ?
+      </h1>
+    </div>
     </div>
   </div>
   <div class="text">
@@ -181,134 +142,7 @@
       <q-carousel-slide :name="4" class="absolute-center" style="width: 80vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51465829/f8716dc464.jpg" >
       </q-carousel-slide>
     </q-carousel>
-    
-    
-    
-   <div class="container2 bg-black flex large-screen-only q-pa-xl q-ma-xs q-gutter-xl">
-             <q-card class="my-card2 bg-dark">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-dark">
-          <h6 class="texxt text-white q-pa-none text-center">Magna</h6>
-          <h6 class="texxt text-white"></h6>
-            <br>
-            <br>
-            <br>
-          <q-btn flat round color="white" icon="info" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
 
-            
-    </div>
-       <div class="container2 small-screen-only bg-black q-pa-xl q-ma-none q-gutter-none">
-             <q-card class="my-card2 bg-dark">
-      <q-card-section horizontal>
-        <q-img
-          class="col-10"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-dark">
-          <h6 class="texxt text-white q-pa-none text-center">Magna</h6>
-          <h6 class="texxt text-white"></h6>
-            <br>
-            <br>
-         <form action="https://loja.elementsgaming.com.br/pre-venda-magna-nemesis" target="_blank">
-          <q-btn type="submit" round push color="grey-9" class="q-pa-md" icon="local_mall" />
-          </form>
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-
-            
-    </div>
-
-    <div class="container2 large-screen-only flex q-pa-xl bg-blue q-ma-xs q-gutter-xl">
-             <q-card class="my-card2 bg-indigo-13">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/75415bb0ba.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-indigo-13">
-          <h6 class="texxt text-white q-pa-none text-center">veda</h6>
-            <br>
-            <br>
-            <br>
-          
-          <q-btn type="submit"  @click="fullWidth = true"  flat round color="white" icon="local_mall" />
-
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-           
-    </div>
-     <div class="container2 small-screen-only  q-pa-xl q-ma-none q-gutter-none">
-             <q-card class="my-card2 bg-indigo-13">
-      <q-card-section horizontal>
-        <q-img
-          class="col-10"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51961720/75415bb0ba.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-indigo-13">
-          <h6 class="texxt text-white q-pa-none text-center">veda</h6>
-          <h6 class="texxt text-white text-center">Acqua</h6>
-            <br>
-            <br>
-        
-          <q-btn  @click="fullWidth = true"   round push color="blue" class="q-pa-md" icon="local_mall" />
-
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-           
-    </div>
-    
-    <div class="container2 bg-black large-screen-only flex q-ma-xs q-pa-xl q-gutter-xl">
-       <q-card class="my-card2 bg-black">
-      <q-card-section horizontal>
-        <q-img
-          class="col"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/9356c06328.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-light-green-12">
-          <h6 class="texxt">magna</h6>
-          <br>
-          <br>
-          <q-btn flat round color="white" icon="add_shopping_cart" />
-          <q-btn flat round color="accent" icon="bookmark" />
-          <q-btn flat round color="primary" icon="share" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-     
-       
-    </div>
-       <div class="container2 small-screen-only  q-pa-xl q-ma-none q-gutter-none">
-       <q-card class="my-card2 bg-black">
-      <q-card-section horizontal>
-        <q-img
-          class="col-10"
-          src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51963357/9356c06328.jpg"
-        />
-        <q-card-actions vertical class="justify-around bg-light-green-12">
-          <h6 class="texxt">Veda</h6>
-          <h6 class="texxt text-center">terra</h6>
-          <br>
-          <q-btn round  @click="fullWidth = true"  push color="green-6" class="q-pa-md" icon="local_mall" />
-        </q-card-actions>
-      </q-card-section>
-    </q-card>
-     
-       
-    </div>
     <div class="aboutus texxt text-center text-blue-grey-12"> 
       <h1> Sobre nós </h1>
       <hr>
@@ -427,6 +261,9 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
 .my-card2{
   width: 100%;
   max-width: 350px;
+}
+.bg1{
+  background-image: url("https://media0.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif");
 }
 </style>
 

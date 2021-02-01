@@ -12,7 +12,7 @@
     </q-parallax>
     </div>
   </div>
-     <div style="width: 100%; center max-width: 400px">
+     <div class="constrain" style="width: 100%; center max-width: 400px">
       <q-chat-message
         name="me"
         avatar="https://cdn.quasar.dev/img/avatar4.jpg"
