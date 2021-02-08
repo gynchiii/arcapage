@@ -14,7 +14,7 @@
       <q-btn push class="bg-grey-3 texxt2 text-black text-bold" to="/Hq" label="MONITORES HQ" />
       </div>
       <div class="q-pa-xs flex flex-end">
-    <subtitle  class="texxt2 text-h6 text-blue-10 flex"> 48 99126-8286</subtitle>
+    <subtitle  class="texxt2 text-h7 text-blue-10 flex"> (48) 3374-6010</subtitle>
       </div>
     </q-toolbar>
     </q-header>
@@ -29,10 +29,10 @@
         indicator-color="transparent"
         class="text-black small-screen-only"
       >
-        <q-route-tab to="/" name="home" icon="home" class="texxt" label="HOME" />
-        <q-route-tab to="/elements" name="dashboard" icon="dashboard" class="texxt" label="ELEMENTS" />
-        <q-route-tab to="/Hq" name="camera" icon="info" class="texxt" label="HQ" />
-        <q-route-tab to="/3green" name="camera" icon="camera" class="texxt" label="3GREEN" />
+        <q-route-tab to="/" name="Home" icon="home" class="texxt" label="Arca" />
+        <q-route-tab to="/elements" name="Elements" icon="code" class="texxt" label="ELEMENTS" />
+        <q-route-tab to="/Hq" name="Hq" icon="code" class="texxt" label="HQ" />
+        <q-route-tab to="/3green" name="3green" icon="code" class="texxt" label="3GREEN" />
       
       </q-tabs>
     </q-footer>
