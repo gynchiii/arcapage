@@ -1,8 +1,8 @@
 <template>
-  <q-page class="bgb" style="overflow-x: hidden ; overflow-y: hidden " >
+  <q-page class="bg-white" style="overflow-x: hidden ; overflow-y: hidden " >
      <div class="large-screen-only">
          <div class="q-pa-none row">
-      <q-parallax style="width: 33%;" class="">
+      <q-parallax style="width: 25%;" class="">
       <template v-slot:media>
         <img src="">
       </template>
@@ -23,7 +23,7 @@
         </div>
       </template>
     </q-parallax>
-      <q-parallax style="width: 33%;" class="">
+      <q-parallax style="width: 50%;" class="">
       <template v-slot:media>
         <img src="">
       </template>
@@ -44,7 +44,7 @@
         </div>
       </template>
     </q-parallax>
-     <q-parallax style="width: 33%;" class="">
+     <q-parallax style="width: 25%;" class="">
       <template v-slot:media>
         <img src="">
       </template>
@@ -59,16 +59,16 @@
             right: 0
           }"
         >
-        <div>
+        <div class="">
 
            <div class="q-pa-md">
       <q-btn  push class="bg-blue-4 text-grey-2 text-h5 texxta text-bold" to="/elements"  label="Cadeiras Gamer" />
       </div>
-      <div class="q-pa-md">
+      <div class="q-pa-lg">
       <q-btn push class="bg-blue-4 texxta text-h5 text-grey-2 text-bold" to="/3green" label="Computadores" />
       </div>
       <div class="q-pa-md">
-      <q-btn push class="bg-blue-4 texxta text-h5 text-grey-2 text-bold" to="/3green" label="Monitores & Tvs" />
+      <q-btn push class="bg-blue-4 texxta text-h5 text-grey-2 text-bold" to="/Hq" label="Monitores & Tvs" />
       </div>          
         </div>
         </div>
@@ -171,7 +171,7 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
         <img src="https://wallpaperaccess.com/full/446984.jpg">
       </template>
 
-      <h1 class="text-blue-9 constrain large-screen-only texxta">AO SEU ALCANCE</h1>
+      <h1 class="text-grey-2 constrain large-screen-only texxta">AO SEU ALCANCE</h1>
 
       <h4 class="text-blue-9 constrainsmall small-screen-only texxta">AO SEU ALCANCE</h4>
     </q-parallax>
@@ -202,8 +202,8 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
 
     <q-parallax
     class="large-screen-only"
-    style="width: 33%;"
-      src="https://i.pinimg.com/originals/22/58/24/2258249e9b4084cda4fdc9c798818d19.jpg"
+    style="width: 33%;  height: 800px;"
+      src="https://wallpapercave.com/wp/wp7196356.jpg"
     >
     <h2 class="text-center text-bold text-purple-2 texxt "> ELEMENTS </h2>
          
@@ -242,7 +242,7 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
 
     <q-parallax
     class="large-screen-only"
-    style="width: 33%;"
+    style="width: 33%;  height: 800px;"
       src="https://jmd.im/wp-content/uploads/2017/06/blackvii_thumbnail.jpg"
     >
       <h2 class="texxt text-green">3 green</h2>
@@ -278,12 +278,12 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
     </q-parallax>
        <q-parallax
        class="large-screen-only"
-    style="width: 34%;"
-      src="https://wallpaperaccess.com/full/446984.jpg"
+    style="width: 34%; height: 800px;"
+      src="https://wallpaperaccess.com/full/358836.jpg"
     >
       <h2 class="texxt text-black">HQ</h2>
       <br>
-      <q-btn to="/3green" color="grey-8" style="opacity: 0.8;"  push>
+      <q-btn to="/Hq" color="grey-8" style="opacity: 0.8;"  push>
       <div class="row items-center text-black text-bold texxt text-h5 no-wrap">
         <q-icon left name="done" />
         <div class="text-center">
@@ -291,7 +291,7 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
         </div>
       </div>
     </q-btn>
-    <h4 class="text-white text-center texxt">Monitores & Tvs</h4>
+    <h4 class="text-black text-center texxt">Monitores & Tvs</h4>
       <br>
     </q-parallax>
     <q-parallax
@@ -301,7 +301,7 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
     >
       <h2 class="texxt text-black">Monitores</h2>
       <br>
-      <q-btn to="/3green" color="grey-8" style="opacity: 0.8;"  push>
+      <q-btn to="/Hq" color="grey-8" style="opacity: 0.8;"  push>
       <div class="row items-center text-black text-bold texxt text-h5 no-wrap">
         <q-icon left name="done" />
         <div class="text-center">
@@ -313,7 +313,15 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
       <br>
     </q-parallax>
     </div>
-    
+    <div> 
+      <hr> 
+           <h2 class="text-center text-bold texxtb ">fone</h2>
+           <h2 class="text-center texxtb ">48 99126-8286</h2>
+           <hr>
+            <h2 class="text-center text-bold texxtb ">garantia / frete / transportadora</h2>
+           <h2 class="text-center texxtb ">48 99126-8286</h2>
+<hr>
+         </div>
   </q-page>
 </template>
 

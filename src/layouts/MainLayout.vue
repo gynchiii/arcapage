@@ -11,7 +11,7 @@
       <q-btn push class="bg-grey-3 texxt2 text-black text-bold" to="/3green" label="3Green" />
       </div>
       <div class="q-pa-md">
-      <q-btn push class="bg-grey-3 texxt2 text-black text-bold" to="/3green" label="MONITORES HQ" />
+      <q-btn push class="bg-grey-3 texxt2 text-black text-bold" to="/Hq" label="MONITORES HQ" />
       </div>
       <div class="q-pa-xs flex flex-end">
     <subtitle  class="texxt2 text-h6 text-blue-10 flex"> 48 99126-8286</subtitle>
@@ -31,7 +31,7 @@
       >
         <q-route-tab to="/" name="home" icon="home" class="texxt" label="HOME" />
         <q-route-tab to="/elements" name="dashboard" icon="dashboard" class="texxt" label="ELEMENTS" />
-        <q-route-tab to="/3green" name="camera" icon="info" class="texxt" label="HQ" />
+        <q-route-tab to="/Hq" name="camera" icon="info" class="texxt" label="HQ" />
         <q-route-tab to="/3green" name="camera" icon="camera" class="texxt" label="3GREEN" />
       
       </q-tabs>
