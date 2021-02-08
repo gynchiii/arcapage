@@ -1,5 +1,5 @@
 <template>
-  <q-page class=" bg-black" style="overflow-x: hidden ; overflow-y: hidden ">
+  <q-page class=" bgel" style="overflow-x: hidden ; overflow-y: hidden ">
        <div class="q-pa-none q-gutter-md">
     <div class="row justify-between constrainbig">
     <q-parallax class="large-screen-only"  :height="650">
@@ -8,9 +8,6 @@
           <source type="video/mp4" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/CADEIRA-4.mp4?_=0">
         </video>
       </template>
-        <audio play class="texxt" style="opacity: 0.1;" controls>
-        <source src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/CADEIRA-4.mp4" type="audio/mp4">
-        </audio>
     </q-parallax>
 
     <q-parallax
@@ -2162,11 +2159,13 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
   background-size: 100%;
   opacity: 0.9;
 }
-
 .frame:hover {
   color: purple;
 }
-
+.bgel{
+  background-image: url("https://wallpapercave.com/wp/wp7196356.jpg");
+  background-size: 120%;
+}
 </style>
 
 <script>
@@ -2207,15 +2206,12 @@ export default {
       draggingFab: false
     }
   },
-
   methods: {
     onClick () {
       // console.log('Clicked on a fab action')
     },
-
     moveFab (ev) {
       this.draggingFab = ev.isFirst !== true && ev.isFinal !== true
-
       this.fabPos = [
         this.fabPos[0] - ev.delta.x,
         this.fabPos[1] - ev.delta.y
