@@ -1,10 +1,11 @@
 <template>
-  <q-page class=" bg-black" style="overflow-x: hidden; overflow-y: hidden ;">
+  <q-page class="bgwp " style="overflow-x: hidden; overflow-y: hidden ;">
        <div class="q-pa-none q-gutter-md">
-    <div class="row q-ma-xl q-pa-xl justify-between">
+    <div class=" justify-between">
 
     <q-parallax
-     src="hhttps://static.wixstatic.com/media/83cafe_788c84dbc8924a61851a38e0a2583ddc~mv2.png/v1/fill/w_409,h_395,al_c,q_85,usm_0.66_1.00_0.01/all%20in%20one%20black%20novo.webp"
+    style="width: 100%; height: 700px;"
+     src="https://www.wallpaperflare.com/static/928/232/962/multiple-display-nature-monochrome-mountains-wallpaper.jpg"
     >
       <h1 class="text-green large-screen-only text-center texxt">3 green</h1>
       <h2 class="text-green small-screen-only text-center texxt">3 green</h2>
@@ -25,7 +26,7 @@
       <q-chat-message
         name="Jane"
         avatar="https://cdn.quasar.dev/img/avatar3.jpg"
-        :text="[`Nossa, sim, mas como vou saber que aqui não é também ? `]"
+        :text="[`Nossa, sim, mas ah... Eu vendo muito pra setor corporativo e licitação. `]"
         stamp="6 minutes ago"
         class="q-pa-md"
 
@@ -33,7 +34,7 @@
           <q-chat-message
         name="me"
         avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-        :text="['Então, a 3Green tem uma consultoria totalmente costumizável, única e segura']"
+        :text="['Então você está no lugar certo, além de comprar direto da industria, com inúmeros incentivos fiscais, <br> você conta com a linha completa para este público, <br> desde AIO, pdv a Slim PC']"
         sent
         class="q-pa-md"
         stamp="4 minutes ago"
@@ -75,15 +76,25 @@
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-between items-center q-gutter-xs q-col-gutter no-wrap">
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.46.jpeg" />
+<<<<<<< HEAD
           <q-img class="rounded-borders small-screen-only col-7 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.46.jpeg" />
           <q-img class="rounded-borders small-screen-only col-7 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.38.jpeg" />
+=======
+          <q-img class="rounded-borders small-screen-only col-6 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.46.jpeg" />
+          <q-img class="rounded-borders small-screen-only col-6 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.38.jpeg" />
+>>>>>>> b7ecd09854eb41fd23a31f3466751c979805cc69
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.38.jpeg" />
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="column no-wrap">
         <div class="row fit justify-between items-center q-gutter-xs q-col-gutter no-wrap">
+<<<<<<< HEAD
           <q-img class="rounded-borders col-6 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.36.jpeg" />
           <q-img class="rounded-borders col-6 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.54.jpeg" />
+=======
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.36.jpeg" />
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.54.jpeg" />
+>>>>>>> b7ecd09854eb41fd23a31f3466751c979805cc69
         </div>
       </q-carousel-slide>
     </q-carousel>
@@ -113,8 +124,8 @@
         class="q-pa-xl"
         stamp="4 minutes ago"
       />
-  <h1 class="texxt text-white q-pa-xl large-screen-only text-center">LINHA BLACK</h1>
-  <h1 class="texxt text-white q-pa-md small-screen-only text-center">LINHA BLACK</h1>
+  <h1 class="texxt text-black q-pa-xl large-screen-only text-center">LINHA BLACK</h1>
+  <h1 class="texxt text-black q-pa-md small-screen-only text-center">LINHA BLACK</h1>
    <q-chat-message
         name="Jane"
         avatar="https://cdn.quasar.dev/img/avatar3.jpg"
@@ -140,6 +151,7 @@
     >
       <q-carousel-slide :name="1" class="column no-wrap">
         <div class="row fit justify-between items-center q-gutter-xs q-col-gutter no-wrap">
+<<<<<<< HEAD
           <q-img class="rounded-borders col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.26.jpeg" />
           <q-img class="rounded-borders col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.17.jpeg" />
         </div>
@@ -148,19 +160,97 @@
         <div class="row fit justify-between items-center q-gutter-xs q-col-gutter no-wrap">
           <q-img class="rounded-borders col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.22.jpeg" />
           <q-img class="rounded-borders col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.32.jpeg" />
+=======
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.26.jpeg" />
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.17.jpeg" />
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.22.jpeg" />
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.32.jpeg" />
+>>>>>>> b7ecd09854eb41fd23a31f3466751c979805cc69
         </div>
       </q-carousel-slide>
     </q-carousel>
     </div>
           <q-page-scroller reverse :scroll-offset="5" :offset="[10, 20]">
-            <q-btn fab icon="keyboard_arrow_down" color="green" />
+            <q-btn fab icon="keyboard_arrow_down" class="text-black" color="white" />
           </q-page-scroller>
        <q-page-scroller expand position="top" :scroll-offset="150" :offset="[0, 0]">
-            <div class="col texxt cursor-pointer q-pa-sm bg-green text-white text-center">
+            <div class="col texxt cursor-pointer q-pa-sm bg-white text-black text-center">
               Volte ao início
             </div>
           </q-page-scroller>
   </div>
+  
+     <h1 class="texxt text-red-6 q-pa-xl large-screen-only text-center">LINHA GAMER</h1>
+    <h1 class="texxt text-red-6 q-pa-md small-screen-only text-center">LINHA GAMER</h1>
+  
+    <div class="produts bg-white center">
+    <div class="q-pa-xl" >
+    <q-carousel
+      v-model="slide"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      swipeable
+      animated
+      control-color="purple"
+      navigation
+      padding
+      arrows
+      height="650px"
+      class="bg-transparent "
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-between items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.26.jpeg" />
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.17.jpeg" />
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.22.jpeg" />
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.32.jpeg" />
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+    </div>
+    </div>
+
+     <h1 class="texxt text-black q-pa-xl large-screen-only text-center">LINHA GAMEER</h1>
+    <h1 class="texxt text-white q-pa-md small-screen-only text-center">LINHA GAMER</h1>
+  
+    <div class="produts bg-white center">
+    <div class="q-pa-xl" >
+    <q-carousel
+      v-model="slide"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      swipeable
+      animated
+      control-color="purple"
+      navigation
+      padding
+      arrows
+      height="650px"
+      class="bg-transparent "
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <div class="row fit justify-between items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.26.jpeg" />
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.17.jpeg" />
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="column no-wrap">
+        <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.22.jpeg" />
+          <q-img class="rounded-borders col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.32.jpeg" />
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+    </div>
+    </div>
   </q-page>
 </template>
 
@@ -168,6 +258,10 @@
 .my-card2{
   width: 100%;
   max-width: 350px;
+}
+.bgwp{
+  background-image: url("https://i.pinimg.com/originals/f5/21/c9/f521c988a4bda5e9adec12744c21f365.jpg");
+  background-size: 200%;
 }
 </style>
 
