@@ -6,7 +6,7 @@
 
     <q-parallax
     style="width: 100%; height: 700px;"
-     src="https://i.pinimg.com/originals/93/3b/c7/933bc7abd85928b279999556e8e45940.jpg"
+     src="https://jmd.im/wp-content/uploads/2017/06/blackvii_thumbnail.jpg"
     >
        <template v-slot:content="scope">
         <div
@@ -18,7 +18,7 @@
             right: 0
           }"
         >
-          <img src="https://static.wixstatic.com/media/83cafe_4b99a26cdc9943d7b38fcf27daf239cb~mv2.png/v1/fill/w_204,h_110,al_c,q_85,usm_0.66_1.00_0.01/logo-atacado-3-green.webp" style="width: 400px; height: 270px">
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png" style="width: 600px; height: 150px">
           <div class="text-h6 text-grey-3 text-center">
           </div>
         </div>
@@ -103,24 +103,19 @@
          </div>
           <q-img class="rounded-borders small-screen-only col-9 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.46.jpeg" />
           <q-img class="rounded-borders small-screen-only col-9 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.38.jpeg" />
-                <q-btn
+            <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
        @click="aio = true"
-      color="white"
+      color="black"
       icon="info"
     />
-      <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-      type="submit"
-      color="white"
-      icon="phone"
-    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.38.jpeg" />
         </div>
       </q-carousel-slide>
@@ -152,24 +147,19 @@
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.36.jpeg" />
       
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.36.jpeg" />
-                  <q-btn
+       <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
        @click="aio = true"
-      color="white"
+      color="black"
       icon="info"
     />
-      <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-      type="submit"
-      color="white"
-      icon="phone"
-    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.54.jpeg" />
   
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.29.54.jpeg" />
@@ -251,24 +241,19 @@
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.26.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.26.jpeg" />
                 <div class="q-pa-md q-gutter-md">
-         <q-btn
+        <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
        @click="aiob = true"
-      color="white"
+      color="black"
       icon="info"
     />
-      <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-      type="submit"
-      color="white"
-      icon="phone"
-    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
          </div>
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.17.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.17.jpeg" />
@@ -301,24 +286,19 @@
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.22.jpeg" />
           <q-img class="rounded-borders small-screen-only col-7 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.22.jpeg" />
               <div class="q-pa-md q-gutter-md">
-         <q-btn
+          <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
        @click="aiob = true"
-      color="white"
+      color="black"
       icon="info"
     />
-      <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-      type="submit"
-      color="white"
-      icon="phone"
-    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
          </div>
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.32.jpeg" />
           <q-img class="rounded-borders small-screen-only col-7 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-20-at-11.30.32.jpeg" />
@@ -401,24 +381,19 @@
         <div class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap">
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.35.12.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.35.12.jpeg" />
-          <q-btn 
-          size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-       @click="gamerpc = true"
-      color="white"
-      icon="info"
-    />
-      <q-btn
+           <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
-      type="submit"
-      color="white"
-      icon="phone"
+       @click="gamerpc = true"
+      color="black"
+      icon="info"
     />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.35.30.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.35.30.jpeg" />
         </div>
@@ -449,24 +424,19 @@
         <div class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap">
           <q-img class="rounded-borders large-screen-only col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.35.46.jpeg" />
           <q-img class="rounded-borders small-screen-only col-7 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.35.46.jpeg" />
-         <q-btn
+       <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
        @click="gamerpc = true"
-      color="white"
+      color="black"
       icon="info"
     />
-      <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-      type="submit"
-      color="white"
-      icon="phone"
-    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           <q-img class="rounded-borders large-screen-only col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.12.09.jpeg" />
           <q-img class="rounded-borders small-screen-only col-7 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.12.09.jpeg" />
         </div>
@@ -526,24 +496,19 @@
         <div class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap">
           <q-img class="rounded-borders large-screen-only col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.32.03.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.32.03.jpeg" />
-       <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-       @click="pdvs = true"
-      color="white"
-      icon="info"
-    />
       <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
-      type="submit"
-      color="white"
-      icon="phone"
+       @click="pdvs = true"
+      color="black"
+      icon="info"
     />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           <q-img class="rounded-borders large-screen-only col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.34.19.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-20-at-11.34.19.jpeg" />
         </div>
@@ -577,21 +542,16 @@
       <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
        @click="pdvs = true"
-      color="white"
+      color="black"
       icon="info"
     />
-      <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-      type="submit"
-      color="white"
-      icon="phone"
-    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           <q-img class="rounded-borders large-screen-only col-5 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.09.34.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.09.34.jpeg" />
         </div>
@@ -626,21 +586,16 @@
    <q-btn
       size="25px"
       push
-      class="large-screen-only text-black"
+      fab
+      class="large-screen-only text-white"
       glossy
        @click="pdvs = true"
-      color="white"
+      color="black"
       icon="info"
     />
-      <q-btn
-      size="25px"
-      push
-      class="large-screen-only text-black"
-      glossy
-      type="submit"
-      color="white"
-      icon="phone"
-    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           <q-img class="rounded-borders large-screen-only col-4 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.08.13.jpeg" />
           <q-img class="rounded-borders small-screen-only col-8 " src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.08.13.jpeg" />
         
@@ -797,6 +752,9 @@ ALL IN ONE UNIQUE 3GREEN
 </style>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon'
+
+import { mdiWhatsapp } from '@mdi/js'
 export default {
   name: '3green',
    data () {
@@ -808,8 +766,12 @@ export default {
       aio: false,
       aiob: false,
       gamerpc: false,
-      pdvs: false
+      pdvs: false,
+      path: mdiWhatsapp
     }
+  },
+  components: {
+    SvgIcon
   }
 }
 </script>

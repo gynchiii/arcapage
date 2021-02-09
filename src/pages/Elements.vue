@@ -2,9 +2,9 @@
   <q-page class=" bgel" style="overflow-x: hidden ; overflow-y: hidden ">
        <div class="q-pa-none q-gutter-md">
     <div class="row justify-between constrainbig">
-    <q-parallax class="large-screen-only"  :height="650">
+    <q-parallax class="large-screen-only"  :height="950">
       <template v-slot:media>
-        <video width="720"   autoplay muted >
+        <video width="1080"   autoplay muted >
           <source type="video/mp4" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/CADEIRA-4.mp4?_=0">
         </video>
       </template>
@@ -21,19 +21,14 @@
     </q-parallax>
     </div>
   </div>
-    <q-parallax class="small-screen-only q-pa-none"  :height="250">
+    <q-parallax class="small-screen-only q-pa-none"  :height="550">
       <template v-slot:media>
         <video width="720"   autoplay loop muted>
           <source type="video/mp4" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/CADEIRA-4.mp4">
         </video>
       </template>
     </q-parallax>
-         <q-parallax
-         class="large-screen-only bgg2"
-    style="width: 100vw; height: 85vh; ;"
-     src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/concept-2-feed-scaled.jpg"
-    >
-    </q-parallax>
+      
   <div class="flex">
       <q-parallax
          class="large-screen-only"
@@ -55,19 +50,6 @@
     />
     </form>
       </div>
-    <div class="q-pa-sm">
-    <q-btn
-      size="60px"
-      round
-      push
-      @click="lux = true"
-      class="text-grey-10"
-      type="submit"
-      color="blue-9"
-      icon="info"
-    />
-    <subtitle class="texxt2 text-grey-1 q-pa-sm text-h6  text-bold"> especificações  </subtitle>
-    </div>
   </div>
     </q-parallax>
      <q-parallax
@@ -118,7 +100,7 @@
    <h2 class="texxt2 bg-white text-center small-screen-only text-black">Linha. Nemesis</h2>
      <div class="flex flex-center">
      <q-dialog v-model="lux">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -143,7 +125,7 @@
       </q-card>
     </q-dialog>
     <q-dialog v-model="magnanemesis">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -208,7 +190,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
      <q-dialog v-model="magnaignis">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -273,7 +255,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
       <q-dialog v-model="magnaaqua">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -338,7 +320,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
       <q-dialog v-model="magnaterra">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -403,7 +385,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
       <q-dialog v-model="magnaaer">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -468,7 +450,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
     <q-dialog v-model="vedanemesis">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -534,7 +516,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
      <q-dialog v-model="vedaaer">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -600,7 +582,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
      <q-dialog v-model="vedaaqua">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -665,7 +647,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
      <q-dialog v-model="vedaterra">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -730,7 +712,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
      <q-dialog v-model="vedaignis">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -795,7 +777,7 @@ Peso máximo suportado:
       </q-card>
     </q-dialog>
      <q-dialog v-model="arcanumnemesis">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -870,7 +852,7 @@ Profundidade do Assento:
       </q-card>
     </q-dialog>
          <q-dialog v-model="elementalignis">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -926,7 +908,7 @@ Bordado no assento
       </q-card>
     </q-dialog>
      <q-dialog v-model="elementalaer">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -982,7 +964,7 @@ Bordado no assento
       </q-card>
     </q-dialog>
      <q-dialog v-model="elementalterra">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -1038,7 +1020,7 @@ Bordado no assento
       </q-card>
     </q-dialog>
      <q-dialog v-model="elementalaqua">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -1105,9 +1087,30 @@ Bordado no assento
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg" >
-     
-       <div class="q-pa-none q-gutter-md">
+       <q-carousel-slide :name="1" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg" >
+      <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black text-h7 texxt"
+      glossy
+       @click="magnanemesis = true"
+      color="white"
+      icon="info"
+    >
+    sobre
+         </q-btn>
+      <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black texxt"
+      glossy
+      type="submit"
+      color="white"
+      icon="phone"
+    >
+    consultor
+      </q-btn>
+       <div class="q-pa-none large-screen-only q-gutter-md">
            <q-btn
       size="25px"
       rounded
@@ -1117,7 +1120,6 @@ Bordado no assento
       glossy
        @click="magnanemesis = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1132,12 +1134,34 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-md texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-md texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51968185/454bd00ced.jpg" >
-    <div class="q-pa-none q-gutter-md">
+    <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black text-h7 texxt"
+      glossy
+       @click="arcanumnemesis = true"
+      color="white"
+      icon="info"
+    >
+    sobre
+         </q-btn>
+      <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black texxt"
+      glossy
+      type="submit"
+      color="white"
+      icon="phone"
+    >
+    consultor
+      </q-btn>
+    <div class="q-pa-none large-screen-only q-gutter-md">
            <q-btn
       size="25px"
       rounded
@@ -1147,7 +1171,6 @@ Bordado no assento
       glossy
        @click="arcanumnemesis = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1162,12 +1185,12 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-md texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-md texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51967231/d75d7c9297.jpg" >
-        <div class="q-pa-none q-gutter-md">
+      <q-carousel-slide :name="3" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51967231/d75d7c9297.jpg" >
+        <div class="q-pa-none large-screen-only q-gutter-md">
            <q-btn
       size="25px"
       rounded
@@ -1177,7 +1200,6 @@ Bordado no assento
       glossy
       @click="vedanemesis = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1192,7 +1214,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-md texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-md texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -1208,32 +1230,11 @@ Bordado no assento
     >
       <q-carousel-slide :name="1" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg" >
          <div class="q-pa-md q-gutter-md">
-         <q-btn
-      size="25px"
-      rounded
-      push
-      class="text-white"
-      style="opacity: 0.8; top: 05%; left: -5%;"
-      glossy
-       @click="magnanemesis = true"
-      color="black"
-      icon="info"
-    />
-      <q-btn
-      size="25px"
-      rounded
-      style="opacity: 0.8; top: 05%; right: -100%;"
-      push
-      class="text-white"
-      glossy
-      type="submit"
-      color="black"
-      icon="phone"
-    />
+
          </div>
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51968185/454bd00ced.jpg" >
-     <div class="q-pa-md q-gutter-md">
+     <div class="q-pa-md large-screen-only q-gutter-md">
       <q-btn
       size="25px"
       rounded
@@ -1261,7 +1262,7 @@ Bordado no assento
      </div>
       </q-carousel-slide>
       <q-carousel-slide :name="4" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51967231/d75d7c9297.jpg" >
-           <div class="q-pa-md q-gutter-md">
+           <div class="q-pa-md large-screen-only q-gutter-md">
            <q-btn
       size="25px"
       rounded
@@ -1304,7 +1305,7 @@ Bordado no assento
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" class="absolute-center" style="width: 30vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74381603/afe1082514.jpg" >
+      <q-carousel-slide :name="1" class="absolute-center" style="width: 25vw; top: 50%;  height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74381603/afe1082514.jpg" >
         <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1315,7 +1316,6 @@ Bordado no assento
       glossy
        @click="magnaterra = true"
      color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1330,11 +1330,11 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-md texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-md texxt2 text-white ">consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="2" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A0107-scaled.jpg" >
+      <q-carousel-slide :name="2" class="absolute-center" style="width: 25vw; top: 48%; height: 50vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A0107-scaled.jpg" >
         <div class="q-pa-none flex q-gutter-md">
           <q-btn
       size="25px"
@@ -1345,7 +1345,6 @@ Bordado no assento
       glossy
        @click="vedaterra = true"
       color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1360,11 +1359,11 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-md texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-md texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" class="absolute-center" style="width: 28vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51466240/7481379319.jpg" >
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 20vw; height: 20vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/verde-frente.png" >
         <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1375,7 +1374,6 @@ Bordado no assento
       glossy
        @click="elementalterra = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1390,7 +1388,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-md texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-md texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -1406,76 +1404,10 @@ Bordado no assento
       infinite
     >
       <q-carousel-slide :name="1" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74381603/afe1082514.jpg" >
-        <q-btn
-      size="25px"
-      style="opacity: 0.8; top: 05%; right: -100%;"
-      rounded
-      push
-      class="text-white"
-      glossy
-       @click="magnaterra = true"
-      color="black"
-      icon="info"
-    />
-       <q-btn
-      size="25px"
-      rounded
-      style="opacity: 0.8; top: 05%; right: -100%;"
-      push
-      class="text-white"
-      glossy
-      type="submit"
-      color="black"
-      icon="phone"
-    />
       </q-carousel-slide>
       <q-carousel-slide :name="2" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A0107-scaled.jpg" >
-       <q-btn
-      size="25px"
-      style="opacity: 0.8; top: 05%; left: -5%;"
-      rounded
-      push
-      class="text-white"
-      glossy
-       @click="vedaterra = true"
-      color="black"
-      icon="info"
-    />
-       <q-btn
-      size="25px"
-      rounded
-      style="opacity: 0.8; top: 05%; right: -100%;"
-      push
-      class="text-white"
-      glossy
-      type="submit"
-      color="black"
-      icon="phone"
-    />
       </q-carousel-slide>
       <q-carousel-slide :name="4" class="absolute-center" style="width: 80vw; height: 50vh;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51466240/7481379319.jpg" >
-        <q-btn
-      size="25px"
-      style="opacity: 0.8; top: 05%; left: -10%;"
-      rounded
-      push
-      class="text-white"
-      glossy
-       @click="elementalterra = true"
-      color="black"
-      icon="info"
-    />
-       <q-btn
-      size="25px"
-      rounded
-      style="opacity: 0.8; top: 05%; right: -100%;"
-      push
-      class="text-white"
-      glossy
-      type="submit"
-      color="black"
-      icon="phone"
-    />
       </q-carousel-slide>
     </q-carousel>
       </form>
@@ -1492,7 +1424,7 @@ Bordado no assento
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 25vw; height: 30vw;" img-src="https://img.terabyteshop.com.br/produto/g/cadeira-gamer-elements-magna-acqua-reclinavel-black-blue_109348.jpg" >
+      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 19vw; height: 30vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/ACQUA-FRENTE-ALMOFADA-PNG.png" >
            <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1503,7 +1435,6 @@ Bordado no assento
       glossy
        @click="magnaaqua = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1518,7 +1449,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-sm texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-sm texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -1533,9 +1464,8 @@ Bordado no assento
       glossy
        @click="vedaaqua = true"
     color="black"
-      icon="info"
     >
-    <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
+    <subtitle class="q-pa-md texxta text-white "> especificações </subtitle>
           </q-btn>
       <q-btn
       size="25px"
@@ -1548,11 +1478,11 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-sm texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-sm texxta text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" class="absolute-center" style="width: 30vw; height: 30vw;" img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51465829/f8716dc464.jpg" >
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 20%; height: 20vw;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/azul-frente.png" >
            <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1563,7 +1493,6 @@ Bordado no assento
       glossy
        @click="elementalaqua = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1578,7 +1507,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-sm texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-sm texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -1649,7 +1578,7 @@ Bordado no assento
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 26%; height: 20vh; top: 45%;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/1-2-1-2.png" >
+      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 25%; height: 20vh; top: 45%;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/1-2-1-2.png" >
             <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1660,7 +1589,6 @@ Bordado no assento
       glossy
        @click="magnaignis = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-sm texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1675,7 +1603,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-xs texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-xs texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -1690,7 +1618,6 @@ Bordado no assento
       glossy
        @click="vedaignis = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-sm texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1705,11 +1632,11 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-xs texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-xs texxt2 text-white ">consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" class="absolute-center" style="width: 24%; top: 50%; height: 15vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/vermelho-frente.png" >
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 21%; top: 50%; height: 15vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/vermelho-frente.png" >
           <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1720,7 +1647,6 @@ Bordado no assento
       glossy
        @click="elementalignis = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-none texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1735,7 +1661,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-none texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-none texxt2 text-white ">consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -1804,7 +1730,7 @@ Bordado no assento
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 27vw; top: 45%; height: 30vw;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A4484-scaled.jpg" >
+      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 27vw; top: 45%; height: 30vw;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/MAGNA.png" >
            <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1815,7 +1741,6 @@ Bordado no assento
       glossy
        @click="magnaaer = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1830,7 +1755,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-sm texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-sm texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -1845,7 +1770,6 @@ Bordado no assento
       glossy
        @click="vedaaer = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1860,11 +1784,11 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-sm texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-sm texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" class="absolute-center" style="width: 23vw; height: 30vw;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/branca-frente.png" >
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 20vw; height: 30vw;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/branca-frente.png" >
             <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1875,7 +1799,6 @@ Bordado no assento
       glossy
        @click="elementalaer = true"
     color="black"
-      icon="info"
     >
     <subtitle class="q-pa-md texxt2 text-white "> especificações </subtitle>
           </q-btn>
@@ -1890,7 +1813,7 @@ Bordado no assento
       color="black"
       icon="phone"
     >
-    <subtitle class="q-pa-sm texxt2 text-white "> falar com consultor </subtitle>
+    <subtitle class="q-pa-sm texxt2 text-white "> consultor </subtitle>
        </q-btn>
         </div>
       </q-carousel-slide>
@@ -2003,7 +1926,7 @@ Bordado no assento
     <h6 class="q-pa-lg texxt2 small-screen-only text-bold  text-center constrain">Junto da melhor marca de cadeiras da américa latina, <br> você se sente preparado para promover essa incrível experiência ao consumidor. <br> E ainda, se posicionar no mercado como referencia? <br> <br> <hr> TA ESPERANDO O QUE?</h6>
     <hr>
     <q-dialog v-model="inception">
-      <q-card class="bgg">
+      <q-card class="bg-black">
         <q-card-section>
         </q-card-section>
 
@@ -2062,7 +1985,9 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
           </q-page-scroller>
            <q-page-sticky position="bottom-right" :offset="[18, 18]">
           <form action="https://wa.me/554833746010" target="_black">
-            <q-btn type="submit" fab icon="sms" class="text-black" color="white" />
+            <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
           </form> 
           </q-page-sticky>
            <q-page-scroller reverse position="bottom-right" :scroll-offset="20" :offset="[95, 18]">
@@ -2071,67 +1996,6 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
          
        
   </div>
-  <q-dialog
-      v-model="fullWidth"
-    >
-       
-        <q-card-section class="q-pt-none bg-deep-purple-7 text-white">
-             <form name="CONVERSION">
-            <q-input
-        ref="name"
-        name="nome"
-        class="q-pa-md"
-        filled
-        v-model="name"
-        label="Nome"
-        lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Nome por Favor']"
-      >
-              <template v-slot:prepend>
-          <q-icon name="account_circle" />
-        </template>
-      </q-input>
-
-                <q-input
-        filled
-        v-model="phone"
-        standout
-        class="q-pa-md"
-        name="telefone"
-        label="Telefone"
-        mask="(##) ##### - ####"
-         lazy-rules
-        :rules="[ val => val && val.length > 9999 || 'Telefone por favor']"
-      >
-      <template v-slot:prepend>
-          <q-icon name="phone" />
-        </template>
-      </q-input>
-        <q-input filled standout v-model="email"  lazy-rules
-        :rules="[ val => val !== null && val !== '' || 'Email por favor']"  class="q-pa-md" name="email" type="mail" prefix="Email">
-        <template v-slot:prepend>
-          <q-icon name="mail" />
-        </template>
-      </q-input>
-    
-          <q-input
-        filled
-        v-model="cnpj"
-        name="empresa"
-        class="q-pa-md"
-        label="CNPJ"
-        mask="##.###.###.####-##"
-        lazy-rules
-        :rules="[
-          val => val !== null && val !== '' || 'CNPJ Por favor',
-          val => val > 99999  || 'CNPJ Válido por favor'
-          ]"
-      />
-
-          <q-btn flat type="submit" rounded label="Enviar" class="q-pa-md" />
-            </form>
-        </q-card-section>
-    </q-dialog>
   </q-page>
 </template>
 
@@ -2169,6 +2033,10 @@ Assim, hoje, apenas 4 anos depois, orgulhamo-nos de estarmos entre as marcas gam
 </style>
 
 <script>
+import SvgIcon from '@jamescoyle/vue-icon'
+
+import { mdiWhatsapp } from '@mdi/js'
+
 export default {
   name: 'Elements',
    data () {
@@ -2203,7 +2071,8 @@ export default {
       email: null,
       cnpj: null,
       fabPos: [ 12 , 11 ],
-      draggingFab: false
+      draggingFab: false,
+      path: mdiWhatsapp
     }
   },
   methods: {
@@ -2217,6 +2086,9 @@ export default {
         this.fabPos[1] - ev.delta.y
       ]
     }
+    },
+    components: {
+        SvgIcon
     }
     }
 </script>

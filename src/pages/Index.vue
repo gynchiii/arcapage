@@ -17,13 +17,14 @@
             right: 0
           }"
         >
-         <h3 class="text-center texxta text-blue-9 "> GRUPO ARCA </h3>
-         <h5 class="text-center texxta text-blue-9 "> veio para quebrar barreiras, mostrar ao vendedor <br> que ele pode sim vender o melhor <br> com o melhor preço </h5>
+         <h3 class="text-center texxta q-pa-sm text-blue-9 "> GRUPO ARCA </h3>
+         <h5 class="text-center texxta q-pa-md text-blue-9 "> Tenha Um posicionamento muito superior a concorrência. <br>
+Seja Referencia! <br> Compre direto da propria marca! </h5>
         
         </div>
       </template>
     </q-parallax>
-      <q-parallax style="width: 50%;" class="">
+      <q-parallax style="width: 50%;" class="q-gutter-xl">
       <template v-slot:media>
         <img src="">
       </template>
@@ -33,13 +34,12 @@
           class="absolute column items-center"
           :style="{
             opacity: 1 + (0.6 - scope.percentScrolled) * 5,
-            top: (scope.percentScrolled * 60) + '%',
+            top: (scope.percentScrolled * 0) + '%',
             left: 0,
             right: 0
           }"
         >
-          <subtitle class="text-center text-h6 text-bold q-pa-xs text-blue-9 texxt">grupo. </subtitle>
-          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/talvezlogo.png" style="width: 150px" >
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Untitled-1.png" class="q-pa-xs" style="width: 600px;" >
           <h1 class="text-center text-blue-9 texxta">A R C A </h1>
         </div>
       </template>
@@ -61,15 +61,18 @@
         >
         <div class="">
 
-           <div class="q-pa-md">
-      <q-btn  push class="bg-blue-4 text-grey-2 text-h5 texxta text-bold" to="/elements"  label="Cadeiras Gamer" />
+           <div class="q-pa-xs">
+      <q-btn  push class="bg-grey-3 text-blue-9 text-h5 texxta text" to="/elements"  label="Cadeiras Gamer" />
       </div>
-      <div class="q-pa-lg">
-      <q-btn push class="bg-blue-4 texxta text-h5 text-grey-2 text-bold" to="/3green" label="Computadores" />
+      <div class="q-pa-xs">
+      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/3green" label="Computadores" />
       </div>
-      <div class="q-pa-md">
-      <q-btn push class="bg-blue-4 texxta text-h5 text-grey-2 text-bold" to="/Hq" label="Monitores & Tvs" />
-      </div>          
+      <div class="q-pa-xs">
+      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/Hq" label="Monitores" />
+      </div>
+      <div class="q-pa-xs">
+      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/Hq" label="Televisores" />
+        </div>          
         </div>
         </div>
       </template>
@@ -91,14 +94,12 @@
             right: 0
           }"
         >
-          <subtitle class="text-center text-h6 text-bold q-pa-xs text-blue-9 texxt">grupo. </subtitle>
-          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/talvezlogo.png" style="width: 150px" >
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Untitled-1.png" style="width: 350px" >
           <h1 class="text-center text-blue-9 texxt">A R C A </h1>
         </div>
       </template>
     </q-parallax>
-    <h5 class="texxta text-center text-blue-6"> Temos algo a falar pra voce, clique </h5>
-    <div class="flex q-pa-sm flex-center">
+    <div class="flex q-pa-xl flex-center">
           <q-btn
       padding="xl"
       color="blue-9 text-black"
@@ -110,6 +111,7 @@
       icon="record_voice_over"
     />
     </div>
+    <h5 class="texxta text-center text-blue-6"> Clique acima para saber mais </h5>
     <div class="small-screen-only q-gutter-md q-pa-sm q-ma-md flex flex-center">
 
       <q-btn
@@ -166,34 +168,35 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
       </q-card>
     </q-dialog>
 
-    <q-parallax :height="220" :speed="0.7">
+    <q-parallax :height="320" :speed="0.7">
       <template v-slot:media>
         <img src="https://wallpaperaccess.com/full/446984.jpg">
       </template>
 
-      <h1 class="text-grey-2 constrain large-screen-only texxta">AO SEU ALCANCE</h1>
+      <h3 class="text-grey-2 constrain text-center large-screen-only texxta">Tenha Um posicionamento muito superior a concorrência.
+Seja Referencia! Compre direto da propria marca! </h3>
 
       <h4 class="text-blue-9 constrainsmall small-screen-only texxta">AO SEU ALCANCE</h4>
     </q-parallax>
-    <q-parallax
-      src=""
-    >
-        <q-spinner-hourglass
-        class="flex q-pa-xl"
-        color="blue-9"
-        size="20em"
-      />
+    <h3 class="texxta q-pa-xl constrain text-center text-blue-6">
+      Para sua empresa que deseja:
+ 
+<br> <br> <hr>
+• Reduzir custo comprando da própria industria ✓
+<br>
+• Comprar com qualidade certificada ISO 9001 ✓
+<br>
+• Possuir tecnologia de ponta com melhor custo do país ✓
+<br>
+• Contar com uma só industria para todas as soluções em computadores ✓
 
-    <h2 class="texxta text-center constrain large-screen-only text-bold text-blue-3">JÁ É H     <q-spinner-clock
-        color="blue-3"
-        size="1em"
-      />
- RA DE VOCÊ VENDER <br>
- NO QUE ACREDITA
-  </h2>
-  <h4 class="texxta text-center small-screen-only constrainsmall text-bold text-dark">SABER QUE ESTÁ VENDENDO ALGO EM QUE VOCÊ ACREDITA, <br> É BOM, NÃO É ?
-  </h4>
-    </q-parallax>
+ <br> <br> <hr>
+
+Aqui, você encontrará o melhor custo benefício para computadores para empresa, computadores visando licitações, computadores PDV's, All in One's, além dos monitores HQ e das TV's HQ.
+<br> <br> 
+Tire todas suas dúvidas de forma fácil, rápida e gratuita!
+    </h3>
+    <hr>
     <h1 class="texxt text-black large-screen-only text-bold text-center">O QUE</h1>
     <h2 class="texxt small-screen-only text-black text-center">O QUE</h2>
     <h1 class="texxt text-grey-6 text-bold large-screen-only text-center">DESEJA ?</h1>
@@ -208,9 +211,9 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
     <h2 class="text-center text-bold text-purple-2 texxt "> ELEMENTS </h2>
          
           <q-btn to="/elements" color="purpe" class="bg-purple-2" style="opacity: 0.8;" push >
-      <div class="row items-center text-black text-bold texxt text-h5 no-wrap">
+      <div class="row items-center text-purple text-bold texxt text-h5 no-wrap">
         <q-icon left name="done" />
-        <div class="text-center">
+        <div class="text-center text-black">
           Conhecer<br>Agora
         </div>
       </div>
@@ -227,9 +230,9 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
     <h2 class="text-center text-bold text-purple-2 texxt "> ELEMENTS </h2>
          
           <q-btn to="/elements" color="purpe" class="bg-purple-2" style="opacity: 0.8;" push >
-      <div class="row items-center text-black text-bold texxt text-h5 no-wrap">
+      <div class="row items-center text-purple text-bold texxt text-h5 no-wrap">
         <q-icon left name="done" />
-        <div class="text-center">
+        <div class="text-center text-black">
           Conhecer<br>Agora
         </div>
       </div>
@@ -245,17 +248,17 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
     style="width: 33%;  height: 800px;"
       src="https://jmd.im/wp-content/uploads/2017/06/blackvii_thumbnail.jpg"
     >
-      <h2 class="texxt text-green">3 green</h2>
-      <q-btn to="/3green" color="green" style="opacity: 0.8;"  push>
-      <div class="row items-center text-white text-bold texxt text-h5 no-wrap">
+      <h2 class="texxt text-orange">WorldPC's</h2>
+      <q-btn to="/3green" color="white" style="opacity: 0.8;"  push>
+      <div class="row items-center text-orange text-bold texxt text-h5 no-wrap">
         <q-icon left name="done" />
-        <div class="text-center">
+        <div class="text-center text-black">
           Conhecer<br>Agora
         </div>
       </div>
     </q-btn>
     <br>
-    <h3 class="text-white text-center texxt">computadores</h3>
+    <h5 class="text-green text-center texxt">3green computadores</h5>
       <br>
     </q-parallax>
      <q-parallax
@@ -273,7 +276,7 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
       </div>
     </q-btn>
     <br>
-    <h2 class="text-white text-center texxt">Green</h2>
+    <h2 class="text-white text-center texxt">WorldPC's</h2>
       <br>
     </q-parallax>
        <q-parallax
@@ -284,9 +287,9 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
       <h2 class="texxt text-black">HQ</h2>
       <br>
       <q-btn to="/Hq" color="grey-8" style="opacity: 0.8;"  push>
-      <div class="row items-center text-black text-bold texxt text-h5 no-wrap">
+      <div class="row items-center text-white text-bold texxt text-h5 no-wrap">
         <q-icon left name="done" />
-        <div class="text-center">
+        <div class="text-center text-white">
           Conhecer<br>Agora
         </div>
       </div>
@@ -316,7 +319,8 @@ Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. 
     <div> 
       <hr> 
            <h2 class="text-center text-bold texxtb ">fone</h2>
-           <h2 class="text-center texxtb ">48 99126-8286</h2>
+           <h2 class="text-center texxtb ">(48) 3374-6010
+</h2>
            <hr>
             <h2 class="text-center text-bold texxtb ">garantia / frete / transportadora</h2>
            <h2 class="text-center texxtb ">48 99126-8286</h2>
