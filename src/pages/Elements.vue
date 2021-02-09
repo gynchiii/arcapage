@@ -1,8 +1,8 @@
 <template>
   <q-page class=" bgel" style="overflow-x: hidden ; overflow-y: hidden ">
-       <div class="q-pa-none q-gutter-md">
-    <div class="row justify-between constrainbig">
-    <q-parallax class="large-screen-only"  :height="950">
+       <div class="q-pa-none q-gutter-sm">
+    <div class="row justify-between">
+    <q-parallax class="large-screen-only" :height="1080">
       <template v-slot:media>
         <video width="1080"   autoplay muted >
           <source type="video/mp4" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/CADEIRA-4.mp4?_=0">
@@ -11,13 +11,13 @@
     </q-parallax>
 
     <q-parallax
-    style="width: 105vw; height: 105vh; "
-     src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/IMG_2243-scaled.jpg"
+     :height="500"
+     class=""
     >
-    <h1 class="texxt large-screen-only text-center text-bold text-black "> E L E M E N T S  </h1>
-    <h3 class="texxt small-screen-only text-center text-bold text-white "> E L E M E N T S  </h3>
-    <subtitle class="text-h6 small-screen-only text-grey-5 text-white text-center texxt2"> porque vender uma cadeira ? <br> quando se pode vender um trono ! </subtitle>
-    <subtitle class="text-h5 large-screen-only text-white text-white text-center texxt2"> porque vender uma cadeira ? <br> quando se pode vender um trono ! </subtitle>
+    <template v-slot:media>
+        <video autoplay loop muted src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo.mp4" />
+      </template>
+
     </q-parallax>
     </div>
   </div>
@@ -1424,7 +1424,7 @@ Bordado no assento
       thumbnails
       infinite
     >
-      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 19vw; height: 30vh;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/ACQUA-FRENTE-ALMOFADA-PNG.png" >
+      <q-carousel-slide :name="1" class="absolute-center q-ma-md" style="width: 24%;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/ACQUA-FRENTE-ALMOFADA-PNG.png" >
            <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"
@@ -1482,7 +1482,7 @@ Bordado no assento
        </q-btn>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide :name="4" class="absolute-center" style="width: 20%; height: 20vw;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/azul-frente.png" >
+      <q-carousel-slide :name="4" class="absolute-center" style="width: 25%; height: 20vw;" img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/azul-frente.png" >
            <div class="q-pa-none q-gutter-md">
            <q-btn
       size="25px"

@@ -140,6 +140,114 @@
     </q-carousel>
   </div>
   </div>
+
+  <h1 class="texxt text-white q-pa-xl large-screen-only text-center">Monitores</h1>
+  <h4 class="texxt text-white q-pa-md small-screen-only text-center">Monitores</h4>
+
+  <div class="produts bg-white center">
+    <div class="q-pa-xl" >
+    <q-carousel
+      v-model="slide"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      swipeable
+      animated
+      control-color="black"
+      navigation
+      padding
+      arrows
+      height="650px"
+      class="bg-transparent "
+    >
+      <q-carousel-slide :name="1" class="column no-wrap">
+        <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black text-h7 texxt"
+      glossy
+       @click="monitorgamer = true"
+      color="white"
+      icon="info"
+    >
+    configuracao
+         </q-btn>
+      <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black texxt"
+      glossy
+      type="submit"
+      color="white"
+      icon="phone"
+    >
+    consultor
+      </q-btn>
+        <div class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders large-screen-only col-5 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0014_27.png" />
+          <q-img class="rounded-borders small-screen-only col-7 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0014_27.png" />
+         <q-btn
+      size="25px"
+      push
+      fab
+      class="large-screen-only text-white"
+      glossy
+       @click="monitorgamer = true"
+      color="black"
+      icon="info"
+    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
+          <q-img class="rounded-borders large-screen-only col-5 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0007_24.png" />
+          <q-img class="rounded-borders small-screen-only col-7 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0007_24.png" />
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" class="column no-wrap">
+       <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black text-h7 texxt"
+      glossy
+       @click="monitorgamer = true"
+      color="white"
+      icon="info"
+    >
+    configuracao
+         </q-btn>
+      <q-btn
+      size="15px"
+      push
+      class="small-screen-only text-black texxt"
+      glossy
+      type="submit"
+      color="white"
+      icon="phone"
+    >
+    consultor
+      </q-btn>
+        <div class="row fit justify-center items-center q-gutter-xs q-col-gutter no-wrap">
+          <q-img class="rounded-borders large-screen-only col-5 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0009_21.5G-gamer-preto.png" />
+          <q-img class="rounded-borders small-screen-only col-7 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0009_21.5G-gamer-preto.png" />
+     <q-btn
+      size="25px"
+      push
+      fab
+      class="large-screen-only text-white"
+      glossy
+       @click="monitorgamer = true"
+      color="black"
+      icon="info"
+    />
+       <q-btn type="submit" fab class="text-black" color="green-6"  >
+            <svg-icon type="mdi" :path="path"></svg-icon>
+            </q-btn>
+          <q-img class="rounded-borders large-screen-only col-5 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0003_19-preto.png" />
+          <q-img class="rounded-borders small-screen-only col-8 " src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0003_19-preto.png" />
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
+  </div>
+  </div>
         
   <h1 class="texxt text-white q-pa-xl large-screen-only text-center">TELEVISORES</h1>
   <h4 class="texxt text-white q-pa-md small-screen-only text-center">TELEVISORES</h4>

@@ -1,32 +1,10 @@
 <template>
-  <q-page class="bg-white" style="overflow-x: hidden ; overflow-y: hidden " >
+  <q-page class="bg-grey-10" style="overflow-x: hidden ; overflow-y: hidden " >
      <div class="large-screen-only">
-         <div class="q-pa-none row">
-      <q-parallax style="width: 25%;" class="">
+         <div class="q-pa-none">
+           <q-parallax :height="900"  class=" q-gutter-none">
       <template v-slot:media>
-        <img src="">
-      </template>
-
-      <template v-slot:content="scope">
-        <div
-          class="absolute column items-center"
-          :style="{
-            opacity: 1 + (0.6 - scope.percentScrolled) * 2,
-            top: (scope.percentScrolled * 60) + '%',
-            left: 0,
-            right: 0
-          }"
-        >
-         <h3 class="text-center texxta q-pa-sm text-blue-9 "> GRUPO ARCA </h3>
-         <h5 class="text-center texxta q-pa-md text-blue-9 "> Tenha Um posicionamento muito superior a concorrência. <br>
-Seja Referencia! <br> Compre direto da propria marca! </h5>
-        
-        </div>
-      </template>
-    </q-parallax>
-      <q-parallax style="width: 50%;" class="q-gutter-xl">
-      <template v-slot:media>
-        <img src="">
+        <video autoplay loop muted :height="1080" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/bghq.mp4" />
       </template>
 
       <template v-slot:content="scope">
@@ -34,49 +12,56 @@ Seja Referencia! <br> Compre direto da propria marca! </h5>
           class="absolute column items-center"
           :style="{
             opacity: 1 + (0.6 - scope.percentScrolled) * 5,
-            top: (scope.percentScrolled * 0) + '%',
+            top: (scope.percentScrolled * -40) + '%',
             left: 0,
             right: 0
           }"
         >
-          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Untitled-1.png" class="q-pa-xs" style="width: 600px;" >
-          <h1 class="text-center text-blue-9 texxta">A R C A </h1>
-        </div>
-      </template>
-    </q-parallax>
-     <q-parallax style="width: 25%;" class="">
-      <template v-slot:media>
-        <img src="">
-      </template>
-
-      <template v-slot:content="scope">
-        <div
-          class="absolute column items-center"
-          :style="{
-            opacity: 1 + (0.6 - scope.percentScrolled) * 2,
-            top: (scope.percentScrolled * 60) + '%',
-            left: 0,
-            right: 0
-          }"
-        >
-        <div class="">
-
-           <div class="q-pa-xs">
-      <q-btn  push class="bg-grey-3 text-blue-9 text-h5 texxta text" to="/elements"  label="Cadeiras Gamer" />
-      </div>
-      <div class="q-pa-xs">
-      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/3green" label="Computadores" />
-      </div>
-      <div class="q-pa-xs">
-      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/Hq" label="Monitores" />
-      </div>
-      <div class="q-pa-xs">
-      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/Hq" label="Televisores" />
-        </div>          
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Untitled-1.png" class="q-pa-md" style="width: 750px;" >
+        <div class="q-gutter-xl justify-between flex items-center">
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png" class="q-pa-none" style="width: 300px;" >
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/HQ-LOGO-PNG.png" class="q-pa-none" style="width: 300px;" >
+          <img src="https://www.elementsgaming.com.br/system/seos/imgs/000/000/001/grande/logo-elements-preta.png?1583409803" class="q-pa-none" style="width: 300px;" >
         </div>
         </div>
       </template>
     </q-parallax>
+         
+    <q-card class="my-card" flat bordered>
+        <q-card-section>
+          <h4 class="texxt2 text-center constrain large-screen-only text-grey-10">O Grupo Arca nasceu com um único objetivo:
+        <br>
+        <br>
+Quebrar as barreiras do impossível, do inalcançável e construir pontes que ligam os nossos parceiros aos seus objetivos e desejos.
+<br>
+
+Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. <br> <br> Somos compostos por pessoas que trabalham de maneira colaborativa e apaixonada, focada dia após dia em realizar sonhos, desenvolver negócios e a tornar o mundo melhor.</h4>
+      <h5 class="texxta text-center constrainsmall small-screen-only text-grey-6">O Grupo Arca nasceu com um único objetivo:
+        <br>
+        <br>
+Quebrar as barreiras do impossível, do inalcançável e construir pontes que ligam os nossos parceiros aos seus objetivos e desejos.
+<br>
+
+Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. <br> <br> Somos compostos por pessoas que trabalham de maneira colaborativa e apaixonada, focada dia após dia em realizar sonhos, desenvolver negócios e a tornar o mundo melhor.</h5>
+        </q-card-section>
+           <q-card-section>
+          <h4 class="texxt2 text-center constrain large-screen-only text-grey-10">O Grupo Arca nasceu com um único objetivo:
+        <br>
+        <br>
+Quebrar as barreiras do impossível, do inalcançável e construir pontes que ligam os nossos parceiros aos seus objetivos e desejos.
+<br>
+
+Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. <br> <br> Somos compostos por pessoas que trabalham de maneira colaborativa e apaixonada, focada dia após dia em realizar sonhos, desenvolver negócios e a tornar o mundo melhor.</h4>
+      <h5 class="texxta text-center constrainsmall small-screen-only text-grey-6">O Grupo Arca nasceu com um único objetivo:
+        <br>
+        <br>
+Quebrar as barreiras do impossível, do inalcançável e construir pontes que ligam os nossos parceiros aos seus objetivos e desejos.
+<br>
+
+Somos um grupo empresarial localizado em Santa Catarina, na cidade de Palhoça. <br> <br> Somos compostos por pessoas que trabalham de maneira colaborativa e apaixonada, focada dia após dia em realizar sonhos, desenvolver negócios e a tornar o mundo melhor.</h5>
+        </q-card-section>
+      
+    </q-card>
        </div>
      </div>
         <q-parallax class="small-screen-only" style="width: 100%;">
@@ -329,10 +314,17 @@ Aqui, você encontrará o melhor custo benefício para computadores para empresa
   </q-page>
 </template>
 
+
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 .texxta {
   font-family: 'Bebas Neue', cursive;
+}
+.my-card{
+  width: 100%;
+  max-width: 100%;
+  background-image: url("https://www.hdwallpapers.in/download/blue_mountains_4k_2-HD.jpg");
+
 }
 .my-card2{
   width: 100%;
@@ -350,7 +342,7 @@ import { mdiInformationOutline } from '@mdi/js';
 
 import { ParticlesBg } from "particles-bg-vue";
 export default {
-  name: 'Elements',
+  name: 'About',
  data () {
     return {
       inception: false,

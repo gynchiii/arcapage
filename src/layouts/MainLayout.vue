@@ -2,7 +2,10 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="bg-grey-3 large-screen-only ">
     <q-toolbar style="opacity: 0.7;" class=" constrainbig texxt2 text-black texxt q-my-none bg-grey-3 ">
-        <q-btn to="/" push dense  class="text-center text-black bg-grey-3 text-bold text-h6">Arca</q-btn> 
+        <div class="q-gutter-lg">
+        <q-btn to="/" push dense  class="text-center text-black bg-blue-2 text-bold text-h6">Arca</q-btn> 
+        <q-btn to="/about" push dense  class="text-center text-black bg-grey-3 text-bold text-h6">Sobre nós</q-btn> 
+        </div>
       <q-space />
       <div class="q-pa-sm">
       <q-btn  push class="bg-grey-3 text-dark texxt2 text-bold" to="/elements"  label="Elements" />
