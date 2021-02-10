@@ -4,7 +4,7 @@
          <div class="q-pa-none">
            <q-parallax :height="900"  class=" q-gutter-none">
       <template v-slot:media>
-        <video autoplay loop muted :height="1080" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/bghq.mp4" />
+        <video autoplay loop muted :height="1080" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/bgele.mp4" />
       </template>
 
       <template v-slot:content="scope">
