@@ -4,7 +4,7 @@
          <div class="q-pa-none">
            <q-parallax :height="900"  class=" q-gutter-none">
       <template v-slot:media>
-        <video autoplay loop muted :height="1080" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/bghq.mp4" />
+        <video autoplay loop muted :height="1080" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/bgele.mp4" />
       </template>
 
       <template v-slot:content="scope">
@@ -12,16 +12,15 @@
           class="absolute column items-center"
           :style="{
             opacity: 1 + (0.6 - scope.percentScrolled) * 5,
-            top: (scope.percentScrolled * -40) + '%',
+            top: (scope.percentScrolled * 40) + '%',
             left: 0,
             right: 0
           }"
         >
-          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Untitled-1.png" class="q-pa-md" style="width: 750px;" >
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/ecogreen-6-e1606591251963.png" class="q-pa-md" style="width: 600px;" >
+          <h2 class="texxt text-center constrain text-green" > air duct & dryer vent cleaning  </h2>
         <div class="q-gutter-xl justify-between flex items-center">
-          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png" class="q-pa-none" style="width: 300px;" >
-          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/HQ-LOGO-PNG.png" class="q-pa-none" style="width: 300px;" >
-          <img src="https://www.elementsgaming.com.br/system/seos/imgs/000/000/001/grande/logo-elements-preta.png?1583409803" class="q-pa-none" style="width: 300px;" >
+        
         </div>
         </div>
       </template>
