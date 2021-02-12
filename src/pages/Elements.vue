@@ -13,13 +13,13 @@
     </q-parallax>
     <q-parallax class="large-screen-only q-pa-none" :height="900">
       <template v-slot:media>
-        <video width="1080"   autoplay muted >
+        <video width="1080"  loop autoplay muted >
           <source type="video/mp4" src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/01/CADEIRA-4.mp4?_=0">
         </video>
       </template>
     </q-parallax>
     <div class="q-pa-xl flex-center flex " style="width: 100%;">
-    <h2 class="q-pa-xl text-center text-white texxt2 text-italic" > formulário </h2>
+    <h2 class="q-pa-xl text-center text-purple-2 text-white texxt2 text-italic" > formulário </h2>
     <form  class="q-gutter-md">
    <q-input class="bg-purple-2" standout v-model="email" type="name" prefix="Nome:" >
         <template v-slot:prepend>
@@ -40,23 +40,14 @@
       </q-input>
 
 
-      <q-toggle v-model="accept" class="text-white texxt text-italic text-bold" label="Aceito receber emails promocionais e informativos do Grupo Arca" />
+      <q-toggle v-model="accept" class="text-purple-2 texxt text-italic text-bold" label="Aceito receber emails promocionais e informativos do Grupo Arca" />
       <div>
 
 
-        <q-btn label="Enviar" class="texxt2" type="submit" color="blue-9" />
+        <q-btn label="Enviar" class="texxt2 text-black" type="submit" color="purple-2" />
       </div>
     </form>
   </div>
-    <q-parallax
-     :height="500"
-     class=""
-    >
-    <template v-slot:media>
-        <video autoplay loop muted src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo.mp4" />
-      </template>
-
-    </q-parallax>
     </div>
   </div>
         <h2 class="small-screen-only text-black bg-blue-8 text-center texxt"> ela chegou .</h2>
@@ -84,7 +75,7 @@
 
             <q-parallax
    :height="400" style="width: 100%; "
-     src="https://wallpaperaccess.com/full/806443.jpg"
+     src="https://i.pinimg.com/originals/6d/7d/7d/6d7d7df7dc95c72f49ff389c261c96ec.jpg"
     >
     
   <div class="text">
@@ -2121,7 +2112,7 @@ export default {
       path: mdiWhatsapp,
        name: null,
       email: '',
-      accept: false,
+      accept: true,
       number: null
     }
   },
