@@ -32,9 +32,9 @@
     </q-parallax>
     </div>
   </div>
-        <h6 class="texxt text-white q-pa-xl text-bold text-center"> o cliente vai confiar <br> quando ele ver que consegue <br> enxergar o produto com CLAREZA </h6>
-  <h1 class="texxt large-screen-only text-white text-center">MONITORES GAMER</h1>
-  <h3 class="texxt small-screen-only text-white text-center">MONITORES GAMER</h3>
+        <h6 class="texxt text-black q-pa-xl text-bold text-center"> o cliente vai confiar <br> quando ele ver que consegue <br> enxergar o produto com CLAREZA </h6>
+  <h1 class="texxt large-screen-only text-black text-center">MONITORES GAMER</h1>
+  <h3 class="texxt small-screen-only text-black text-center">MONITORES GAMER</h3>
     <form action="https://wa.me/554833746010" target="_blank">
   <div class="produts bg-white center">
     <div class="q-pa-xl" >
@@ -141,8 +141,8 @@
   </div>
   </div>
 
-  <h1 class="texxt text-white q-pa-xl large-screen-only text-center">Monitores</h1>
-  <h4 class="texxt text-white q-pa-md small-screen-only text-center">Monitores</h4>
+  <h1 class="texxt text-black q-pa-xl large-screen-only text-center">Monitores</h1>
+  <h4 class="texxt text-black q-pa-md small-screen-only text-center">Monitores</h4>
 
   <div class="produts bg-white center">
     <div class="q-pa-xl" >
@@ -635,7 +635,7 @@ Bivolt (110/220V) | Consumo: 45w"
   max-width: 350px;
 }
 .bgwp{  
-  background-image: url("https://cdn.wallpapersafari.com/7/74/JFeEHc.jpg");
+  background-image: url("https://wallpaperaccess.com/full/675049.jpg");
   background-size: 200%;
 }
 </style>

@@ -13,15 +13,13 @@
           class="absolute column items-center"
           :style="{
             opacity: 1 + (0.5 - scope.percentScrolled) * 2,
-            top: (scope.percentScrolled * 45) + '%',
+            top: (scope.percentScrolled * 50) + '%',
             left: 0,
             right: 0
           }"
         >
           <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png" style="width: 600px; height: 150px">
           <div class="text-h6 texxt2 text-green text-center">
-            <h4 class="text-white">&</h4>
-            <h1>3green</h1>
           </div>
         </div>
       </template>

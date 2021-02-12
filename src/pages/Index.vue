@@ -1,30 +1,8 @@
 <template>
   <q-page class="bg-white" style="overflow-x: hidden ; overflow-y: hidden " >
      <div class="large-screen-only">
-         <div class="q-pa-none row">
-      <q-parallax style="width: 25%;" class="">
-      <template v-slot:media>
-        <img src="">
-      </template>
-
-      <template v-slot:content="scope">
-        <div
-          class="absolute column items-center"
-          :style="{
-            opacity: 1 + (0.6 - scope.percentScrolled) * 2,
-            top: (scope.percentScrolled * 60) + '%',
-            left: 0,
-            right: 0
-          }"
-        >
-         <h3 class="text-center texxta q-pa-sm text-blue-9 "> GRUPO ARCA </h3>
-         <h5 class="text-center texxta q-pa-md text-blue-9 "> Tenha Um posicionamento muito superior a concorrência. <br>
-Seja Referencia! <br> Compre direto da propria marca! </h5>
-        
-        </div>
-      </template>
-    </q-parallax>
-      <q-parallax style="width: 50%;" class="q-gutter-xl">
+         <div class="q-pa-none items-center row">
+      <q-parallax :height="550" style="width: 50%;" class="q-gutter-xl">
       <template v-slot:media>
         <img src="">
       </template>
@@ -44,39 +22,37 @@ Seja Referencia! <br> Compre direto da propria marca! </h5>
         </div>
       </template>
     </q-parallax>
-     <q-parallax style="width: 25%;" class="">
-      <template v-slot:media>
-        <img src="">
-      </template>
 
-      <template v-slot:content="scope">
-        <div
-          class="absolute column items-center"
-          :style="{
-            opacity: 1 + (0.6 - scope.percentScrolled) * 2,
-            top: (scope.percentScrolled * 60) + '%',
-            left: 0,
-            right: 0
-          }"
-        >
-        <div class="">
+     <div class="q-pa-md " style="width: 40%;">
+    <form  class="q-gutter-md">
+   <q-input class="bg-blue-2" standout v-model="email" type="name" prefix="Nome:" >
+        <template v-slot:prepend>
+          <q-icon name="account_circle" />
+        </template>
+      </q-input>
 
-           <div class="q-pa-xs">
-      <q-btn  push class="bg-grey-3 text-blue-9 text-h5 texxta text" to="/elements"  label="Cadeiras Gamer" />
+      <q-input  class="bg-blue-2" standout v-model="email" type="email" prefix="Email:" >
+        <template v-slot:prepend>
+          <q-icon name="mail" />
+        </template>
+      </q-input>
+
+      <q-input  class="bg-blue-2" standout v-model="number" type="number" prefix="CNPJ:" >
+        <template v-slot:prepend>
+          <q-icon name="work" />
+        </template>
+      </q-input>
+
+
+      <q-toggle v-model="accept" label="Aceito receber emails promocionais e informativos do Grupo Arca" />
+      <div>
+
+
+        <q-btn label="Enviar" class="texxt2" type="submit" color="blue-9" />
       </div>
-      <div class="q-pa-xs">
-      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/3green" label="Computadores" />
-      </div>
-      <div class="q-pa-xs">
-      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/Hq" label="Monitores" />
-      </div>
-      <div class="q-pa-xs">
-      <q-btn push class="bg-grey-3 texxta text-h5 text-blue-9 text" to="/Hq" label="Televisores" />
-        </div>          
-        </div>
-        </div>
-      </template>
-    </q-parallax>
+    </form>
+  </div>
+  
        </div>
      </div>
         <q-parallax class="small-screen-only" style="width: 100%;">
@@ -102,17 +78,14 @@ Seja Referencia! <br> Compre direto da propria marca! </h5>
     <div class="flex q-pa-xl flex-center">
           <q-btn
       padding="xl"
-      color="grey-4 text-blue-9"
       push
-      style="opacity: 0.7;"
-      dense
+      class="bgs texxt text-h6 text-white"
       to="/About"
-      round
-    >
-    <svg-icon type="mdi" :path="path"></svg-icon>
+      rounded
+    > 
+          QUER SABER MAIS SOBRE NÓS? CLIQUE AQUI
           </q-btn>
     </div>
-    <h5 class="texxta text-center text-blue-6"> Clique acima para saber mais </h5>
     <div class="small-screen-only q-gutter-md q-pa-sm q-ma-md flex flex-center">
 
       <q-btn
@@ -179,23 +152,7 @@ Seja Referencia! Compre direto da propria marca! </h3>
 
       <h4 class="text-blue-9 constrainsmall small-screen-only texxta">AO SEU ALCANCE</h4>
     </q-parallax>
-    <h3 class="texxt2 text q-gutter-xl q-pa-xl constrain text-center text-blue-6">
-      Para sua empresa que deseja:
- 
-<br> <br> <hr>
-• Reduzir custo comprando da própria industria ✓
-<br>
-• Comprar com qualidade certificada ISO 9001 ✓
-<br>
-• Possuir tecnologia de ponta com melhor custo do país ✓
-<br>
-• Contar com uma só industria para todas as soluções em computadores ✓
-
- <br> <br> <hr>
-
-Aqui, você encontrará o melhor custo benefício para computadores para empresa, computadores visando licitações, computadores PDV's, All in One's, além dos monitores HQ e das TV's HQ.
-<br> <br> 
-    </h3>
+   
     <hr>
     <h1 class="texxt text-black large-screen-only text-bold text-center">O QUE</h1>
     <h2 class="texxt small-screen-only text-black text-center">O QUE</h2>
@@ -318,14 +275,30 @@ Aqui, você encontrará o melhor custo benefício para computadores para empresa
     </div>
     <div> 
       <hr> 
-           <h2 class="text-center text-bold texxtb ">fone</h2>
-           <h2 class="text-center texxtb ">(48) 3374-6010
-</h2>
+         <hr> 
+           <h3 class="text-center text-italic text-bold texxt ">fone</h3>
+           <h3 class="text-center text-italic texxt ">(48) 3374-6010</h3>
            <hr>
-            <h2 class="text-center text-bold texxtb ">garantia / frete / transportadora</h2>
-           <h2 class="text-center texxtb ">48 99126-8286</h2>
-<hr>
-         </div>
+            <h4 class="text-center text-bold texxt text-italic ">garantia / frete / transportadora</h4>
+           <h4 class="text-center text-italic texxt ">48 99126-8286</h4>
+<hr> 
+<div>
+
+</div>
+  <h4 class="texxt text-center text-bold text-italic text-black ">
+         Garantia <br> <br> <hr>
+- Termos/Política de garantia <br>
+- E-mail: garantia@elements.ind.br <br> <br> 
+Cancelamentos  <br>
+- Política de cancelamento (VINCULAR) <br> <br> 
+Dúvidas específicas/Suporte <br>
+- E-mail: meajuda@elements.ind.br <br> <br> 
+- Multi360 <br> 
+- Fone: (48) 3374-6010 <br> <br> 
+Elogios/sugestões<br>
+- Instagram: Elements Gaming <br> <br> 
+  </h4>
+     </div>
   </q-page>
 </template>
 
@@ -342,6 +315,10 @@ Aqui, você encontrará o melhor custo benefício para computadores para empresa
   background-image: url("https://www.hdwallpapers.in/download/blue_mountains_4k_2-HD.jpg");
   background-size: 175%;
 }
+.bgs{
+  background-image: url("https://cdn.wallpaperhub.app/cloudcache/f/8/3/a/8/9/f83a896fb10b9775a193c9b9304fc1ef66a34cbb.jpg");
+  background-size: 100%;
+}
 </style>
 
 <script>
@@ -354,12 +331,17 @@ export default {
  data () {
     return {
       inception: false,
-      path: mdiInformationOutline
+      path: mdiInformationOutline,
+      name: null,
+      email: '',
+      accept: false,
+      number: null
     }
   },
      components: {
        ParticlesBg,
        SvgIcon
      }
+      
 }
 </script>
