@@ -2112,7 +2112,7 @@ export default {
       path: mdiWhatsapp,
        name: null,
       email: '',
-      accept: true,
+      accept: tru,
       number: null
     }
   },
