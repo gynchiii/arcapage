@@ -18,12 +18,40 @@
             right: 0
           }"
         >
-          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png" style="width: 600px; height: 150px">
-          <div class="text-h6 texxt2 text-green text-center">
-          </div>
+          <img src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png" style="width: 50%; height: 50%;">
         </div>
       </template>
     </q-parallax>
+     <div class="q-pa-xl flex-center flex " style="width: 100%;">
+    <h2 class="q-pa-xl text-center text-red-10 texxt2 text-italic" > formulário </h2>
+    <form  class="q-gutter-md">
+   <q-input class="bg-grey-5" standout v-model="email" type="name" prefix="Nome:" >
+        <template v-slot:prepend>
+          <q-icon name="account_circle" />
+        </template>
+      </q-input>
+
+      <q-input  class="bg-grey-5" standout v-model="email" type="email" prefix="Email:" >
+        <template v-slot:prepend>
+          <q-icon name="mail" />
+        </template>
+      </q-input>
+
+      <q-input  class="bg-grey-5" standout v-model="number" type="number" prefix="CNPJ:" >
+        <template v-slot:prepend>
+          <q-icon name="work" />
+        </template>
+      </q-input>
+
+
+      <q-toggle color="red-2" v-model="accept" class="text-red-5 texxt text-italic text-bold" label="Aceito receber emails promocionais e informativos do Grupo Arca" />
+      <div>
+
+
+        <q-btn label="Enviar" class="texxt2 text-black" type="submit" color="red-10" />
+      </div>
+    </form>
+  </div>
     </div>
   </div>
      <div class="constrain" style="width: 100%; center max-width: 400px">
@@ -809,7 +837,11 @@ export default {
       aiob: false,
       gamerpc: false,
       pdvs: false,
-      path: mdiWhatsapp
+      path: mdiWhatsapp,
+      name: null,
+      email: '',
+      accept: true,
+      number: null
     }
   },
   components: {

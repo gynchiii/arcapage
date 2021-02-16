@@ -1,5 +1,5 @@
 <template>
-  <q-page class="bgwp " style="overflow-x: hidden; overflow-y: hidden ;">
+  <q-page class="bghq " style="overflow-x: hidden; overflow-y: hidden ;">
        <div class="q-pa-none q-gutter-md">
     <div class=" justify-between">
 
@@ -32,7 +32,38 @@
     </q-parallax>
     </div>
   </div>
+        <div class="q-pa-xl flex-center flex " style="width: 100%;">
+    <h2 class="q-pa-xl text-center text-dark texxt2 text-italic" > formulário </h2>
+    <form  class="q-gutter-md">
+   <q-input class="bg-grey-5" standout v-model="email" type="name" prefix="Nome:" >
+        <template v-slot:prepend>
+          <q-icon name="account_circle" />
+        </template>
+      </q-input>
+
+      <q-input  class="bg-grey-5" standout v-model="email" type="email" prefix="Email:" >
+        <template v-slot:prepend>
+          <q-icon name="mail" />
+        </template>
+      </q-input>
+
+      <q-input  class="bg-grey-5" standout v-model="number" type="number" prefix="CNPJ:" >
+        <template v-slot:prepend>
+          <q-icon name="work" />
+        </template>
+      </q-input>
+
+
+      <q-toggle v-model="accept" class="text-black texxt text-italic text-bold" label="Aceito receber emails promocionais e informativos do Grupo Arca" />
+      <div>
+
+
+        <q-btn label="Enviar" class="texxt2 text-black" type="submit" color="grey-4" />
+      </div>
+    </form>
+  </div>
         <h6 class="texxt text-black q-pa-xl text-bold text-center"> o cliente vai confiar <br> quando ele ver que consegue <br> enxergar o produto com CLAREZA </h6>
+ 
   <h1 class="texxt large-screen-only text-black text-center">MONITORES GAMER</h1>
   <h3 class="texxt small-screen-only text-black text-center">MONITORES GAMER</h3>
     <form action="https://wa.me/554833746010" target="_blank">
@@ -81,7 +112,7 @@
       size="25px"
       push
       fab
-      class="large-screen-only text-white"
+      class="large-screen-only text-black"
       glossy
        @click="monitorgamer = true"
       color="black"
@@ -124,7 +155,7 @@
       size="25px"
       push
       fab
-      class="large-screen-only text-white"
+      class="large-screen-only text-black"
       glossy
        @click="monitorgamer = true"
       color="black"
@@ -189,7 +220,7 @@
       size="25px"
       push
       fab
-      class="large-screen-only text-white"
+      class="large-screen-only text-black"
       glossy
        @click="monitorgamer = true"
       color="black"
@@ -232,7 +263,7 @@
       size="25px"
       push
       fab
-      class="large-screen-only text-white"
+      class="large-screen-only text-black"
       glossy
        @click="monitorgamer = true"
       color="black"
@@ -249,8 +280,8 @@
   </div>
   </div>
         
-  <h1 class="texxt text-white q-pa-xl large-screen-only text-center">TELEVISORES</h1>
-  <h4 class="texxt text-white q-pa-md small-screen-only text-center">TELEVISORES</h4>
+  <h1 class="texxt text-black q-pa-xl large-screen-only text-center">TELEVISORES</h1>
+  <h4 class="texxt text-black q-pa-md small-screen-only text-center">TELEVISORES</h4>
  
    <div class="produts bg-white center">
     <div class="q-pa-xl" >
@@ -297,7 +328,7 @@
       size="25px"
       push
       fab
-      class="large-screen-only text-white"
+      class="large-screen-only text-black"
       glossy
        @click="tvs = true"
       color="black"
@@ -340,7 +371,7 @@
       size="25px"
       push
       fab
-      class="large-screen-only text-white"
+      class="large-screen-only text-black"
       glossy
        @click="tvs = true"
       color="black"
@@ -365,15 +396,15 @@
           </q-page-scroller>
   </div>
   <div>  
-           <h2 class="text-center large-screen-only text-white texxta ">fone</h2>
-           <h4 class="text-center small-screen-only text-white texxta ">fone</h4>
-           <h3 class="text-center large-screen-only text-white texxta ">(48) 3374-6010</h3>
-           <h4 class="text-center small-screen-only text-white texxta ">(48) 3374-6010</h4>
+           <h2 class="text-center large-screen-only text-black texxta ">fone</h2>
+           <h4 class="text-center small-screen-only text-black texxta ">fone</h4>
+           <h3 class="text-center large-screen-only text-black texxta ">(48) 3374-6010</h3>
+           <h4 class="text-center small-screen-only text-black texxta ">(48) 3374-6010</h4>
            <hr>
-           <h3 class="text-center large-screen-only text-white texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
+           <h3 class="text-center large-screen-only text-black texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
 
 Palhoça - SC 6</h3>
-<h5 class="text-center small-screen-only text-white texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
+<h5 class="text-center small-screen-only text-black texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
 
 Palhoça - SC 6</h5>
 
@@ -634,7 +665,7 @@ Bivolt (110/220V) | Consumo: 45w"
   width: 100%;
   max-width: 350px;
 }
-.bgwp{  
+.bghq{  
   background-image: url("https://wallpaperaccess.com/full/675049.jpg");
   background-size: 200%;
 }
@@ -656,7 +687,11 @@ export default {
       slide3:1,
       monitorgamer: false,
       tvs: false,
-      path: mdiWhatsapp
+      path: mdiWhatsapp,
+      name: null,
+      email: '',
+      accept: true,
+      number: null
     }
   }
 }

@@ -213,10 +213,6 @@ Elogios/sugestões<br>
   width: 100%;
   max-width: 350px;
 }
-.bgs{
-  background-image: url("https://images.hdqwalls.com/wallpapers/white-cube-pattern-4k-bu.jpg");
-  background-size: 200%;
-}
 </style>
 
 <script>
