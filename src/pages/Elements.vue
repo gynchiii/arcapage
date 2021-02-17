@@ -915,7 +915,7 @@
           src="https://desafio.elementsgaming.com.br/wp-content/uploads/2020/11/VID.mkv"
         />
       </template>
-      <h1 class="texxt text-center text-white constrain q-pa-xl text-bold"> SAIBA MAIS SOBRE NOSSO STORYTELLING </h1>
+      <h2 class="texxt text-center text-white constrain q-pa-xl text-bold"> SAIBA MAIS SOBRE NOSSO STORYTELLING </h2>
     </q-parallax>
     <q-linear-progress
       reverse
@@ -1030,12 +1030,7 @@
     </div>
     <div class="bg-white text-black">
 
-      <hr>
-      <h4 class="q-pa-lg texxt2 large-screen-only text-bold  text-center constrain">Junto da melhor marca de cadeiras da américa latina, <br> você se sente preparado para promover essa incrível experiência ao consumidor. <br> E ainda, se posicionar no mercado como referencia? <br> <br>
-        <hr> TA ESPERANDO O QUE?
-      </h4>
       <h6 class="q-pa-lg texxt2 small-screen-only text-bold  text-center constrain">Junto da melhor marca de cadeiras da américa latina, <br> você se sente preparado para promover essa incrível experiência ao consumidor. <br> E ainda, se posicionar no mercado como referencia? <br> <br>
-        <hr> TA ESPERANDO O QUE?
       </h6>
       <hr>
       <q-dialog v-model="inception">
@@ -1069,7 +1064,7 @@
       </q-dialog>
 
       <div class="flex q-pa-md flex-center">
-        <subtitle class="q-pa-md text-h4">
+        <subtitle class="q-pa-md text-bold texxt text-h4">
           Onde estamos
         </subtitle>
         <form
@@ -1094,10 +1089,13 @@
           />
         </form>
       </div>
-      <h2 class="large-screen-only constrain text-center texxt2 text-bold">
+      <h4 class="large-screen-only q-pa-lg q-gutter-sm constrain text-center texxt text-bold">
         <hr> Contato: <br>
         (48) 3374-6010
-      </h2>
+        <hr> <br>
+        Garantia <br> <br>
+        E-mail: garantia@elements.ind.br
+      </h4>
       <h4 class="small-screen-only constrain text-center texxt2 text-bold">
         <hr> Contato: <br>
         (48) 3374-6010
