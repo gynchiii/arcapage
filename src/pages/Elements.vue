@@ -146,7 +146,7 @@
     </q-parallax>
     <div class="constrain">
       <h1 class="texxt2 bg-white text-center large-screen-only text-black">Linha Magna</h1>
-      <h2 class="texxt2 bg-white text-center small-screen-only text-black">Linha Magna</h2>
+      <h4 class="texxt text-bold bg-white text-center small-screen-only text-black">Linha Magna</h4>
     </div>
 
     <form
@@ -171,11 +171,11 @@
           <q-carousel-slide
             :name="1"
             class="absolute-center q-pa-md"
-            style="width: 31vw; top: 55%;"
+            style="width: 23vw;"
           >
             <q-img
               class="rounded-borders"
-              src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74382832/4c43719c99.jpg"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A4466-1.png"
             />
           </q-carousel-slide>
           <q-carousel-slide
@@ -219,9 +219,99 @@
             />
           </q-carousel-slide>
         </q-carousel>
+        <div class="justify-between q-pa-sm small-screen-only ">
+          <q-btn
+            size="25px"
+            style="opacity: 0.8;"
+            push
+            class="text-white"
+            glossy
+            @click="magnaaqua = true"
+            color="black"
+          >
+            <h7 class="texxt2 text-bold text-italic"> especs </h7>
+          </q-btn>
+          <q-btn
+            size="25px"
+            style="opacity: 0.8;"
+            push
+            class="text-white"
+            glossy
+            type="submit"
+            color="green"
+          >
+            <h7 class="texxt2 text-bold text-italic"> Whatsapp </h7>
+          </q-btn>
+        </div>
+        <q-carousel
+          style="width: 100vw; height: 55vh;"
+          swipeable
+          class="small-screen-only "
+          animated
+          navigation-active-icon="check_circle"
+          control-type="regular"
+          arrows
+          control-text-color="blue"
+          navigation
+          control-color="black"
+          navigation-icon="x"
+          v-model="slidecell1"
+          infinite
+        >
+          <q-carousel-slide
+            :name="1"
+            class="absolute-center q-pa-md"
+            style="width: 77vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A4466-1.png"
+            />
+          </q-carousel-slide>
+          <q-carousel-slide
+            :name="2"
+            class="absolute-center q-pa-md"
+            style="width: 72vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/elements-362.png"
+            />
+          </q-carousel-slide>
+          <q-carousel-slide
+            :name="3"
+            class="absolute-center q-pa-md"
+            style="width: 79vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/1-2-1.png"
+            />
+          </q-carousel-slide>
+          <q-carousel-slide
+            :name="4"
+            class="absolute-center"
+            style="width: 107vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/MAGNA.png"
+            />
+          </q-carousel-slide>
+          <q-carousel-slide
+            :name="5"
+            class="absolute-center q-pa-md"
+            style="width: 63vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/ACQUA-FRENTE-ALMOFADA-PNG.png"
+            />
+          </q-carousel-slide>
+        </q-carousel>
         <div class=" row items-start">
           <q-card
-            class="bg-white "
+            class="bg-white large-screen-only"
             style="width: 100%; height: 72vh;"
             flat
             bordered
@@ -317,7 +407,7 @@
     </form>
     <div class="constrain">
       <h1 class="texxt2 bg-white text-center large-screen-only text-black">Linha Veda</h1>
-      <h2 class="texxt2 bg-white text-center small-screen-only text-black">Linha Veda</h2>
+      <h4 class="texxt2 bg-white text-center small-screen-only text-black">Linha Veda</h4>
     </div>
 
     <form
@@ -392,7 +482,7 @@
         </q-carousel>
         <div class=" row items-start">
           <q-card
-            class="bg-white "
+            class="bg-white large-screen-only"
             style="width: 100%; height: 72vh;"
             flat
             bordered
@@ -484,41 +574,100 @@
           </q-card>
         </div>
       </div>
+      <div class="justify-between q-pa-sm small-screen-only ">
+        <q-btn
+          size="25px"
+          style="opacity: 0.8;"
+          push
+          class="text-white"
+          glossy
+          @click="magnaaqua = true"
+          color="black"
+        >
+          <h7 class="texxt2 text-bold text-italic"> especs </h7>
+        </q-btn>
+        <q-btn
+          size="25px"
+          style="opacity: 0.8;"
+          push
+          class="text-white"
+          glossy
+          type="submit"
+          color="green"
+        >
+          <h7 class="texxt2 text-bold text-italic"> Whatsapp </h7>
+        </q-btn>
+      </div>
       <q-carousel
-        style="width: 100vw; height: 80vh;"
+        style="width: 100vw; height: 55vh;"
         swipeable
+        class="small-screen-only "
         animated
-        class="small-screen-only"
-        v-model="slide4"
-        thumbnails
+        navigation-active-icon="check_circle"
+        control-type="regular"
+        arrows
+        control-text-color="blue"
+        navigation
+        control-color="black"
+        navigation-icon="x"
+        v-model="slidecell1"
         infinite
       >
         <q-carousel-slide
           :name="1"
-          class="absolute-center"
-          style="width: 80vw; height: 50vh;"
-          img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/74381603/afe1082514.jpg"
+          class="absolute-center q-pa-md"
+          style="width: 67vw;"
         >
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Veda-nemesis-2-1.png"
+          />
         </q-carousel-slide>
         <q-carousel-slide
           :name="2"
-          class="absolute-center"
-          style="width: 80vw; height: 50vh;"
-          img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A0107-scaled.jpg"
+          class="absolute-center q-pa-md"
+          style="width: 61vw;"
         >
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/PNG-TERRA-2.png"
+          />
+        </q-carousel-slide>
+        <q-carousel-slide
+          :name="3"
+          class="absolute-center q-pa-md"
+          style="width: 60vw;"
+        >
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/PNG-IGNIS-2-1.png"
+          />
         </q-carousel-slide>
         <q-carousel-slide
           :name="4"
           class="absolute-center"
-          style="width: 80vw; height: 50vh;"
-          img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51466240/7481379319.jpg"
+          style="width: 60vw;"
         >
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/PNG-AER-2.png"
+          />
+        </q-carousel-slide>
+        <q-carousel-slide
+          :name="5"
+          class="absolute-center q-pa-md"
+          style="width: 60vw;"
+        >
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/PNG-ACQUA-2.png"
+          />
         </q-carousel-slide>
       </q-carousel>
     </form>
     <div class="constrain">
       <h1 class="texxt2 bg-white text-center large-screen-only text-black">Linha Elemental</h1>
-      <h2 class="texxt2 bg-white text-center small-screen-only text-black">Linha Elemental</h2>
+      <h4 class="texxt2 bg-white text-center small-screen-only text-black">Linha Elemental</h4>
     </div>
 
     <form
@@ -593,7 +742,7 @@
         </q-carousel>
         <div class=" row items-start">
           <q-card
-            class="bg-white "
+            class="bg-white large-screen-only"
             style="width: 100%; height: 72vh;"
             flat
             bordered
@@ -686,75 +835,125 @@
         </div>
       </div>
 
+      <div class="justify-between q-pa-sm small-screen-only ">
+        <q-btn
+          size="25px"
+          style="opacity: 0.8;"
+          push
+          class="text-white"
+          glossy
+          @click="elementalaer = true"
+          color="black"
+        >
+          <h7 class="texxt2 text-bold text-italic"> especs </h7>
+        </q-btn>
+        <q-btn
+          size="25px"
+          style="opacity: 0.8;"
+          push
+          class="text-white"
+          glossy
+          type="submit"
+          color="green"
+        >
+          <h7 class="texxt2 text-bold text-italic"> Whatsapp </h7>
+        </q-btn>
+      </div>
       <q-carousel
-        style="width: 100vw; height: 80vh;"
+        style="width: 100vw; height: 55vh;"
         swipeable
         class="small-screen-only "
         animated
-        v-model="slide3"
-        thumbnails
+        navigation-active-icon="check_circle"
+        control-type="regular"
+        arrows
+        control-text-color="blue"
+        navigation
+        control-color="black"
+        navigation-icon="x"
+        v-model="slidecell1"
         infinite
       >
         <q-carousel-slide
           :name="1"
-          class="absolute-center q-ma-md"
-          style="width: 80vw; height: 30vw;"
-          img-src="https://img.terabyteshop.com.br/produto/g/cadeira-gamer-elements-magna-acqua-reclinavel-black-blue_109348.jpg"
+          class="absolute-center q-pa-md"
+          style="width: 72vw;"
         >
-          <q-btn
-            size="25px"
-            style="opacity: 0.8; top: 05%; left: -10%;"
-            rounded
-            push
-            class="text-white"
-            glossy
-            @click="magnaaqua = true"
-            color="black"
-            icon="info"
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Elementa-Nemesis-nova.png"
           />
         </q-carousel-slide>
         <q-carousel-slide
           :name="2"
-          class=" absolute-center"
-          style="width: 80vw; height: 30vw;"
-          img-src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/14A9859-1.jpg"
+          class="absolute-center q-pa-md"
+          style="width: 70vw;"
         >
-          <q-btn
-            size="25px"
-            style="opacity: 0.8; top: 05%; left: -10%;"
-            rounded
-            push
-            class="text-white"
-            glossy
-            @click="vedaaqua = true"
-            color="black"
-            icon="info"
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/verde-frente.png"
+          />
+        </q-carousel-slide>
+        <q-carousel-slide
+          :name="3"
+          class="absolute-center q-pa-md"
+          style="width: 70vw;"
+        >
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/vermelho-frente-1.png"
           />
         </q-carousel-slide>
         <q-carousel-slide
           :name="4"
           class="absolute-center"
-          style="width: 80vw; height: 30vw;"
-          img-src="https://cdn.awsli.com.br/1000x1000/1329/1329500/produto/51465829/f8716dc464.jpg"
+          style="width: 70vw;"
         >
-          <q-btn
-            size="25px"
-            style="opacity: 0.8; top: 05%; left: -10%;"
-            rounded
-            push
-            class="text-white"
-            glossy
-            @click="elementalaqua = true"
-            color="black"
-            icon="info"
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/branca-frente-1.png"
+          />
+        </q-carousel-slide>
+        <q-carousel-slide
+          :name="5"
+          class="absolute-center q-pa-md"
+          style="width: 70vw;"
+        >
+          <q-img
+            class="rounded-borders"
+            src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/azul-frente.png"
           />
         </q-carousel-slide>
       </q-carousel>
     </form>
     <h1 class="texxt large-screen-only text-white text-center">Linha. Arcanum</h1>
-    <h2 class="texxt small-screen-only text-center text-red">Linha. Arcanum</h2>
-
+    <h4 class="texxt bg-white small-screen-only text-center text-black">Linha. Arcanum</h4>
+    <div class="justify-between q-pa-sm small-screen-only ">
+      <q-btn
+        size="25px"
+        style="opacity: 0.8;"
+        push
+        class="text-white"
+        glossy
+        @click="arcanumnemesis = true"
+        color="black"
+      >
+        <h7 class="texxt2 text-bold text-italic"> especs </h7>
+      </q-btn>
+      <q-btn
+        size="25px"
+        style="opacity: 0.8;"
+        push
+        class="text-white"
+        glossy
+        type="submit"
+        color="green"
+      >
+        <h7 class="texxt2 text-bold text-italic"> Whatsapp </h7>
+      </q-btn>
+    </div>
     <div class=" flex flex-center row ">
+
       <q-carousel
         style="width: 50%; height: 72vh;"
         swipeable
@@ -802,7 +1001,7 @@
       </q-carousel>
       <div class=" row items-start">
         <q-card
-          class="bg-white "
+          class="bg-white large-screen-only"
           style="width: 100%; height: 72vh;"
           flat
           bordered
@@ -812,7 +1011,7 @@
               <div class="text-overline">sobre</div>
               <div class="text-h4 texxt  q-mt-sm q-mb-xs">ARCANUM NEMESIS</div>
               <div
-                class=" text-h7 text-black"
+                class=" text-h7  text-black"
                 style="height: 45vh;   overflow-y: scroll;"
               >
                 <hr> <br>
@@ -894,6 +1093,52 @@
         </q-card>
       </div>
     </div>
+    <q-carousel
+      style="width: 100vw; height: 55vh;"
+      swipeable
+      class="small-screen-only "
+      animated
+      navigation-active-icon="check_circle"
+      control-type="regular"
+      arrows
+      control-text-color="blue"
+      navigation
+      control-color="black"
+      navigation-icon="x"
+      v-model="slidecell1"
+      infinite
+    >
+      <q-carousel-slide
+        :name="1"
+        class="absolute-center q-pa-md"
+        style="width: 78vw;"
+      >
+        <q-img
+          class="rounded-borders"
+          src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/cadeira-trevas-top-frente.png"
+        />
+      </q-carousel-slide>
+      <q-carousel-slide
+        :name="2"
+        class="absolute-center q-pa-md"
+        style="width: 65vw;"
+      >
+        <q-img
+          class="rounded-borders"
+          src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/cadeira-trevas-top-lateral.png"
+        />
+      </q-carousel-slide>
+      <q-carousel-slide
+        :name="3"
+        class="absolute-center q-pa-md"
+        style="width: 67vw;"
+      >
+        <q-img
+          class="rounded-borders"
+          src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/arcanum1.png"
+        />
+      </q-carousel-slide>
+    </q-carousel>
 
     <br>
     <br>
@@ -911,11 +1156,21 @@
           :height="1080"
           autoplay
           loop
+          class="large-screen-only"
+          muted
+          src="https://desafio.elementsgaming.com.br/wp-content/uploads/2020/11/VID.mkv"
+        />
+        <video
+          :height="720"
+          autoplay
+          loop
+          class="small-screen-only"
           muted
           src="https://desafio.elementsgaming.com.br/wp-content/uploads/2020/11/VID.mkv"
         />
       </template>
-      <h2 class="texxt text-center text-white constrain q-pa-xl text-bold"> SAIBA MAIS SOBRE NOSSO STORYTELLING </h2>
+      <h4 class="texxt small-screen-only text-center text-white constrain q-pa-xl text-bold"> SAIBA MAIS SOBRE NOSSO STORYTELLING </h4>
+      <h2 class="texxt text-center large-screen-only text-white constrain q-pa-xl text-bold"> SAIBA MAIS SOBRE NOSSO STORYTELLING </h2>
     </q-parallax>
     <q-linear-progress
       reverse
@@ -924,13 +1179,131 @@
       color="purple"
       class="q-mt-sm"
     />
-    <div class="q-pa-md flex flex-center bg-black text-white">
+    <div class="q-pa-md flex flex-center bgc text-white">
       <q-list
         dark
         padding
         bordered
-        class="rounded-borders flex flex-center"
-        style="max-width: 55%;"
+        class="rounded-borders bg-transparent large-screen-only flex flex-center"
+        style="max-width: 65%;"
+      >
+        <q-separator />
+        <q-expansion-item
+          icon="bookmark"
+          popup
+          label="Storetelling"
+          header-class="text-black text-bold text-h4 texxt2"
+        >
+          <q-card class="bg-black text-bold text-h6 texxt">
+            <q-card-section>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
+              commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
+              eveniet doloribus ullam aliquid.
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+        <q-separator />
+        <q-expansion-item
+          icon="explore"
+          popup
+          label="Universo"
+          header-class="text-black text-bold text-h4 texxt2"
+        >
+          <q-card class="bg-black text-h6 texxt text-bold">
+            <q-card-section>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
+              commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
+              eveniet doloribus ullam aliquid.
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+        <q-separator />
+
+        <q-expansion-item
+          icon="perm_identity"
+          label="Personagens"
+          popup
+          header-class="text-black text-bold text-h4 texxt2"
+        >
+          <q-card class="bg-transparent">
+            <q-card-section>
+              <q-carousel
+                v-model="slidecell1"
+                animated
+                swipeable
+                control-color="black"
+                navigation-icon="radio_button_unchecked"
+                navigation
+                padding
+                arrows
+                height="100%"
+                class="bg-transparent text-black text-white shadow-1 rounded-borders"
+              >
+                <q-carousel-slide
+                  :name="1"
+                  class="column no-wrap flex-center"
+                >
+                  <h5 class="texxt text-italic bg-white text-bold">Kenneth</h5>
+                  <q-img
+                    class=""
+                    style="max-width: 250px;"
+                    src="https://elements.com.br/images/personagens/Kenneth-pe.png"
+                  />
+                  <br>
+                  <subtitle class="texxt bg-white text-h6 text-italic text-bold"> Kenneth com seu entusiasmo move seus amigos em direção à objetivos comuns do grupo, rumo a desvendar fantasias e mistérios dentro deste incrível Universo, seu propósito é melhor de vida e não está disposto a desistir até alcança-lo. </subtitle>
+                </q-carousel-slide>
+                <q-carousel-slide
+                  :name="2"
+                  class="column no-wrap flex-center"
+                >
+                  <h5 class="texxt bg-white text-italic text-bold">Alev</h5>
+                  <q-img
+                    class=""
+                    style="max-width: 270px;"
+                    src="https://elements.com.br/images/personagens/alev1.png"
+                  />
+                  <br>
+                  <subtitle class="texxt bg-white text-h6 text-italic text-bold"> Alev não medirá esforços para acompanhar seus amigos e a defender todo o grupo, porém que fique claro, tudo isso ao preço de seus lampejos de mau humor e rabugice, mas que no fundo ali existe um grande coração. </subtitle>
+                </q-carousel-slide>
+                <q-carousel-slide
+                  :name="3"
+                  class="column no-wrap flex-center"
+                >
+                  <h5 class="texxt bg-white text-italic text-bold">Nayana</h5>
+                  <q-img
+                    class=""
+                    style="max-width: 225px;"
+                    src="https://elements.com.br/images/personagens/nayna-3.png"
+                  />
+                  <br>
+                  <subtitle class="texxt bg-white text-h6 text-italic text-bold"> Nayna é um misto de inteligência, carisma e zelo. Equilibrada e muito carismática nos faz refletir seriamente o valor de uma amizade verdadeira e o quanto das coisas que são importantes na vida fazem mais sentido tendo amigos ao nosso redor. </subtitle>
+                </q-carousel-slide>
+                <q-carousel-slide
+                  :name="4"
+                  class="column no-wrap flex-center"
+                >
+                  <h5 class="texxt text-italic bg-white text-bold">Zip</h5>
+                  <q-img
+                    class=""
+                    style="max-width: 250px;"
+                    src="https://elements.com.br/images/personagens/zip.png"
+                  />
+                  <br>
+                  <subtitle class="texxt text-h6 bg-white text-italic text-bold"> Zip acabou se tornando o ponto de conexão entre nosso protagonista e sua jornada. Depositário de uma mensagem holográfica, este pequeno robô reserva várias habilidades e capacidades para auxiliar o caminho de seus companheiros e amigos. </subtitle>
+                </q-carousel-slide>
+              </q-carousel>
+            </q-card-section>
+          </q-card>
+        </q-expansion-item>
+
+      </q-list>
+
+      <q-list
+        dark
+        padding
+        bordered
+        class="rounded-borders small-screen-only flex flex-center"
+        style="max-width: 100%;"
       >
         <q-separator />
         <q-expansion-item
@@ -980,46 +1353,61 @@
                 navigation-icon="radio_button_unchecked"
                 navigation
                 padding
+                height="100%"
                 arrows
-                height="500px"
-                class="bg-transparent text-white shadow-1 rounded-borders"
+                class="bg- text-black shadow-1 rounded-borders"
               >
                 <q-carousel-slide
-                  name="1"
+                  :name="1"
                   class="column no-wrap flex-center"
                 >
-                  <h5 class="texxt text-white text-italic text-bold">Kenneth</h5>
+                  <h5 class="texxt text-italic bg-white text-bold">Kenneth</h5>
                   <q-img
                     class=""
+                    style="max-width: 150px;"
                     src="https://elements.com.br/images/personagens/Kenneth-pe.png"
                   />
-                  <subtitle class="texxt text-h6 text-white"> o astuto </subtitle>
+                  <br>
+                  <subtitle class="texxt bg-white text-h6 text-italic text-bold"> Kenneth com seu entusiasmo move seus amigos em direção à objetivos comuns do grupo, rumo a desvendar fantasias e mistérios dentro deste incrível Universo, seu propósito é melhor de vida e não está disposto a desistir até alcança-lo. </subtitle>
                 </q-carousel-slide>
                 <q-carousel-slide
-                  name="2"
+                  :name="2"
                   class="column no-wrap flex-center"
                 >
-                  <h5 class="texxt text-white text-italic text-bold">Alev</h5>
-                  <q-img src="https://elements.com.br/images/personagens/alev1.png" />
-                  <subtitle class="texxt text-h6 text-white"> o perspicaz </subtitle>
-
+                  <h5 class="texxt bg-white text-italic text-bold">Alev</h5>
+                  <q-img
+                    class=""
+                    style="max-width: 170px;"
+                    src="https://elements.com.br/images/personagens/alev1.png"
+                  />
+                  <br>
+                  <subtitle class="texxt bg-white text-h6 text-italic text-bold"> Alev não medirá esforços para acompanhar seus amigos e a defender todo o grupo, porém que fique claro, tudo isso ao preço de seus lampejos de mau humor e rabugice, mas que no fundo ali existe um grande coração. </subtitle>
                 </q-carousel-slide>
                 <q-carousel-slide
-                  name="3"
+                  :name="3"
                   class="column no-wrap flex-center"
                 >
-                  <h5 class="texxt text-white text-italic text-bold">FULANO</h5>
-                  <q-img src="https://elements.com.br/images/personagens/Kenneth-pe.png" />
-                  <subtitle class="texxt text-h6 text-white"> o boquinha de veludo </subtitle>
-
+                  <h5 class="texxt bg-white text-italic text-bold">Nayana</h5>
+                  <q-img
+                    class=""
+                    style="max-width: 125px;"
+                    src="https://elements.com.br/images/personagens/nayna-3.png"
+                  />
+                  <br>
+                  <subtitle class="texxt bg-white text-h6 text-italic text-bold"> Nayna é um misto de inteligência, carisma e zelo. Equilibrada e muito carismática nos faz refletir seriamente o valor de uma amizade verdadeira e o quanto das coisas que são importantes na vida fazem mais sentido tendo amigos ao nosso redor. </subtitle>
                 </q-carousel-slide>
                 <q-carousel-slide
-                  name="4"
+                  :name="4"
                   class="column no-wrap flex-center"
                 >
-                  <h5 class="texxt text-white text-italic text-bold">FULANO</h5>
-                  <q-img src="https://elements.com.br/images/personagens/Kenneth-pe.png" />
-                  <subtitle class="texxt text-h6 text-white"> o boquinha de veludo </subtitle>
+                  <h5 class="texxt text-italic bg-white text-bold">Zip</h5>
+                  <q-img
+                    class=""
+                    style="max-width: 150px;"
+                    src="https://elements.com.br/images/personagens/zip.png"
+                  />
+                  <br>
+                  <subtitle class="texxt text-h6 bg-white text-italic text-bold"> Zip acabou se tornando o ponto de conexão entre nosso protagonista e sua jornada. Depositário de uma mensagem holográfica, este pequeno robô reserva várias habilidades e capacidades para auxiliar o caminho de seus companheiros e amigos. </subtitle>
                 </q-carousel-slide>
               </q-carousel>
             </q-card-section>
@@ -1027,6 +1415,7 @@
         </q-expansion-item>
 
       </q-list>
+
     </div>
     <div class="bg-white text-black">
 
@@ -2334,6 +2723,10 @@
   width: 100%;
   max-width: 350px;
 }
+.bgc {
+  background-image: url("https://desafio.elementsgaming.com.br/wp-content/uploads/2020/07/egdesafio1-scaled.jpg");
+  background-size: 100%;
+}
 </style>
 
 <script>
@@ -2343,13 +2736,18 @@ export default {
   name: 'Elements',
   data () {
     return {
-      lorem: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
       slide1: 1,
       slide2: 1,
       slide3: 1,
       slide4: 1,
       slide5: 1,
       slide6: 1,
+      slidecell1: 1,
+      slidecell2: 1,
+      slidecell3: 1,
+      slidecell4: 1,
+      slidecell5: 1,
+      slidecell6: 1,
       inception: false,
       vedanemesis: false,
       arcanumnemesis: false,

@@ -170,6 +170,61 @@
               />
             </q-carousel-slide>
           </q-carousel>
+          <q-carousel
+            style="width: 100%; height: 55vh;"
+            swipeable
+            class="small-screen-only  bg-white"
+            animated
+            navigation-active-icon="phone"
+            control-type="regular"
+            arrows
+            control-text-color="red-4"
+            navigation
+            control-color="black"
+            navigation-icon="check_circle"
+            v-model="slide6"
+          >
+            <q-carousel-slide
+              :name="1"
+              class="absolute-center "
+              style="width: 100vw;"
+            >
+              <q-img
+                class="rounded-borders"
+                src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.16.57.jpeg"
+              />
+            </q-carousel-slide>
+            <q-carousel-slide
+              :name="2"
+              class="absolute-center"
+              style="width: 100vw;"
+            >
+              <q-img
+                class="rounded-borders"
+                src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-10.44.29-1.jpeg"
+              />
+            </q-carousel-slide>
+            <q-carousel-slide
+              :name="3"
+              class="absolute-center"
+              style="width: 100vw;"
+            >
+              <q-img
+                class="rounded-borders"
+                src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.12.28.jpeg"
+              />
+            </q-carousel-slide>
+            <q-carousel-slide
+              :name="4"
+              class="absolute-center"
+              style="width: 100vw;"
+            >
+              <q-img
+                class="rounded-borders"
+                src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.12.09.jpeg"
+              />
+            </q-carousel-slide>
+          </q-carousel>
           <div class=" row items-start">
             <q-card
               class="bg-white "
@@ -262,7 +317,9 @@
             </q-card>
           </div>
         </div>
-        <h1 class="texxt text-black text-bold text-center"> Monitores </h1>
+        <br>
+        <h1 class="texxt text-black text-bold large-screen-only text-center"> Monitores </h1>
+        <h2 class="texxt text-black small-screen-only q-pa-md text-bold text-center"> Monitores </h2>
         <q-linear-progress
           indeterminate
           :value="progress"
@@ -299,6 +356,41 @@
               :name="2"
               class="absolute-center"
               style="width: 35vw;"
+            >
+              <q-img
+                class="rounded-borders"
+                src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0007_24.png"
+              />
+            </q-carousel-slide>
+          </q-carousel>
+          <q-carousel
+            style="width: 100%; height: 45vh;"
+            swipeable
+            class="small-screen-only  bg-white"
+            animated
+            navigation-active-icon="phone"
+            control-type="regular"
+            arrows
+            control-text-color="grey-4"
+            navigation
+            control-color="black"
+            navigation-icon="check_circle"
+            v-model="slide4"
+          >
+            <q-carousel-slide
+              :name="1"
+              class="absolute-center "
+              style="width: 100vw;"
+            >
+              <q-img
+                class="rounded-borders"
+                src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0014_27.png"
+              />
+            </q-carousel-slide>
+            <q-carousel-slide
+              :name="2"
+              class="absolute-center"
+              style="width: 100vw;"
             >
               <q-img
                 class="rounded-borders"
@@ -490,6 +582,61 @@
             />
           </q-carousel-slide>
         </q-carousel>
+        <q-carousel
+          style="width: 100%; height: 45vh;"
+          swipeable
+          class="small-screen-only  bg-white"
+          animated
+          navigation-active-icon="phone"
+          control-type="regular"
+          arrows
+          control-text-color="grey-4"
+          navigation
+          control-color="black"
+          navigation-icon="check_circle"
+          v-model="slide4"
+        >
+          <q-carousel-slide
+            :name="1"
+            class="absolute-center "
+            style="width: 100vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.13.34.jpeg"
+            />
+          </q-carousel-slide>
+          <q-carousel-slide
+            :name="2"
+            class="absolute-center"
+            style="width: 100vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.13.08.jpeg"
+            />
+          </q-carousel-slide>
+          <q-carousel-slide
+            :name="3"
+            class="absolute-center"
+            style="width: 100vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.13.42.jpeg"
+            />
+          </q-carousel-slide>
+          <q-carousel-slide
+            :name="4"
+            class="absolute-center"
+            style="width: 100vw;"
+          >
+            <q-img
+              class="rounded-borders"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/WhatsApp-Image-2021-01-28-at-18.12.43.jpeg"
+            />
+          </q-carousel-slide>
+        </q-carousel>
         <div class=" row items-start">
           <q-card
             class="bg-white "
@@ -503,7 +650,7 @@
             >
               <q-card-section class="q-pt-sm">
                 <div class="text-overline text-white">sobre</div>
-                <div class="text-h4 texxt text-white q-mt-sm q-mb-xs">HQ MONITORES</div>
+                <div class="text-h5 texxt text-white q-mt-sm q-mb-xs">HQ TELEVISORES</div>
                 <div
                   class=" text-h7 text-white"
                   style="height: 25vh;   overflow-y: scroll;"
@@ -575,132 +722,6 @@
           </q-card>
         </div>
       </div>
-
-      <div class="produts bg-white center">
-        <div class=" flex bg-white flex-center row ">
-
-          <q-carousel
-            style="width: 55%; height: 65vh;"
-            swipeable
-            class="large-screen-only  bg-white"
-            animated
-            navigation-active-icon="phone"
-            control-type="regular"
-            arrows
-            control-text-color="grey-4"
-            navigation
-            control-color="black"
-            navigation-icon="check_circle"
-            v-model="slide4"
-          >
-            <q-carousel-slide
-              :name="1"
-              class="absolute-center "
-              style="width: 35vw;"
-            >
-              <q-img
-                class="rounded-borders"
-                src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0014_27.png"
-              />
-            </q-carousel-slide>
-            <q-carousel-slide
-              :name="2"
-              class="absolute-center"
-              style="width: 35vw;"
-            >
-              <q-img
-                class="rounded-borders"
-                src="http://hqscreen.com.br/wp-content/uploads/2019/06/GaleriasMonitores_0000s_0007_24.png"
-              />
-            </q-carousel-slide>
-          </q-carousel>
-          <div class=" row items-start">
-            <q-card
-              class="bg-white "
-              style="width: 100%; height: 42vh;"
-              flat
-              bordered
-            >
-              <q-card-section
-                class="bg-grey-8"
-                horizontal
-              >
-                <q-card-section class="q-pt-sm">
-                  <div class="text-overline text-white">sobre</div>
-                  <div class="text-h4 texxt text-white q-mt-sm q-mb-xs">HQ MONITORES</div>
-                  <div
-                    class=" text-h7 text-white"
-                    style="height: 25vh;   overflow-y: scroll;"
-                  >
-                    <hr>
-                    MONITOR HQ 19" | MONITOR HQ 21,5" |
-                    MONITOR HQ CURVO 24" | HQ MONITOR FLAT 27" | HQ MONITOR CURVO 27"
-                    <hr>
-                    <br>
-                    MONITOR HQ 19"
-                    <br>
-                    Características:
-                    <br>
-                    Marca HQ | Modelo: 20HQ-LED | Tamanho da tela: 19" Widescreen: sim Características Gerais: HQ | Tipo de Tela LED | Conexão HDMI: sim Pixel pitch: 0,255 H x 0,55 V | Resolução máxima: 1366X768 | Tempo de resposta: 5ms | Brilho: 500cd/m² | Contraste dinâmico: 8000:1 | Ângulo de visão: (H x V) 176º x176º | Cor predominante: Preto | Tensão/Voltagem: bivolt automático
-                    <br>
-                    <hr>
-                    <br>
-                    MONITOR HQ 21,5"
-                    <br>
-                    Características:
-                    <br>
-                    Marca: HQ | Modelo: 20HQ-LED | Tamanho da Tela: 21.5'' | Resolução Máxima: 1920x1080 | Contraste: 10000:1 | Conexões: HDMI e VGA | Tempo de Resposta Monitor: 2ms | Ângulo de Visão: 176º x 176º | Brilho: 500cd/m² | Voltagem: bivolt | Pixel Pitch: 0.255 V x 0.55 V | Tipo de Monitor: LED Widescreen | Fabricante: HQ Screen
-                    <br>
-                    <br>
-                    <hr>
-                    MONITOR HQ 24" CURVO
-                    <br>
-                    Características:
-                    <br>
-                    Marca: HQ | Modelo: 24GHQ-LED | Tamanho do Display: | 23.6″ curvo | Brilho: 300cd/m2 | Resolução: | 1920*1080 144HZ | Formato Tela: 16:9 | Relação de contraste dinâmico: 500000:1 | Tempo de resposta: 1ms | Taxa de atualização: max 144HZ | Cor de Exibição: | 16.7M | Sinal de Entrada: HDMI+DP+EARPHONE+USB | Display port: 1.2A with Adaptive Sync | Entrada de Fone | Entrada de Audio: HDMI WITH DP | Alto-falante: embutido | Faixa de tensão de entrada: AC100-240 50/60HZ | Fonte de Energia: Outer Power adapter OUTPUT12V/4A | Consumo: MAX 35W (Desligado: -
-                    0.5W) | Peso: 3KG | Altura (mm): 426 | Largura (mm): 540 | Profundidade (mm): 9 | Temperatura para uso: 0-50°C | Umidade para uso: 20%-60%
-                    <br>
-                    <br>
-                    <hr>
-                    MONITOR HQ 27" FLAT
-                    <br>
-                    Características:
-                    <br>
-                    Marca: HQ | Modelo: Monitor HQ 27 Flat | Tamanho da exibição: 27 inch+adjustable base |
-                    Brilho: 300cd/m2 | Proporção da tela: 16:9 | Relação de contraste dinâmico: 500000:1 | Velocidade de resposta: 1ms | Taxa de atualização: max 165HZ | Cor de exibição: 16.7M | Sinal de entrada: HDMI+DP+EARPHONE+USB | VGA (D-Sub 15 pinos) no: | HDMI1.4, HDMI2.0
-                    Display port 1.2A: com Adaptive Sync | Entrada de áudio: WITH HDMI WITH DP | Saída de fone de ouvido: Sim | Alto-falante embutido: Sim | Faixa de tensão de entrada: AC100-240 50/60HZ | Fonte de energia: Outer Power adapter OUTPUT12V/5A | Consumo: Max 45W
-                    <br>
-                    <br>
-                    <hr>
-                    MONITOR HQ 27" CURVO
-                    <br>
-                    Características:
-                    <br>
-                    Marca: HQ | Modelo: Monitor HQ 27 Curvo | Proporção da tela: 16:9 | Relação de contraste dinâmico: 500000:1 | Velocidade de resposta: 1ms | Taxa de atualização: max 165HZ | Cor de exibição: 16.7M | Sinal de entrada: HDMI+DP+EARPHONE+USB VGA (D-Sub 15 pinos) no: HDMI1.4, HDMI2.0 | Display port 1.2A: com Adaptive Sync | Entrada de áudio: WITH HDMI WITH DP | Saída de fone de ouvido: Sim | Alto-falante embutido: Sim | Faixa de tensão de entrada:
-                    AC100-240 50/60HZ | Fonte de energia: Outer Power adapter OUTPUT12V/5A
-
-                  </div>
-                </q-card-section>
-
-              </q-card-section>
-
-              <q-separator />
-
-              <q-card-actions class="bg-black justify-end">
-
-                <q-btn
-                  class="texxt2 text-black q-pa-xs q-ma-xs text-italic text-bold "
-                  type="submit"
-                  color="red-1"
-                >
-                  WHATSAPP CONSULTOR
-                </q-btn>
-              </q-card-actions>
-            </q-card>
-          </div>
-        </div>
-      </div>
-      </div>
       <q-page-scroller
         reverse
         :scroll-offset="5"
@@ -723,7 +744,6 @@
           Volte ao início
         </div>
       </q-page-scroller>
-      </div>
       <div>
         <h2 class="text-center large-screen-only text-black texxta ">fone</h2>
         <h4 class="text-center small-screen-only text-black texxta ">fone</h4>
@@ -1047,6 +1067,8 @@ export default {
       slide2: 1,
       slide3: 1,
       slide4: 1,
+      slide5: 1,
+      slide6: 1,
       monitorgamer: false,
       tvs: false,
       path: mdiWhatsapp,

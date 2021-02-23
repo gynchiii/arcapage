@@ -1,6 +1,6 @@
 <template>
   <q-page
-    class="bg-white"
+    class="bg-blue-1"
     style="overflow-x: hidden ; overflow-y: hidden "
   >
     <div class="large-screen-only">
@@ -132,9 +132,9 @@
           </q-btn>
           <br>
           <q-btn
-            to="/elements"
             color="black"
             class="bg-green-2"
+            type="submit"
             style="opacity: 0.8;"
             push
           >
@@ -155,7 +155,7 @@
         </q-parallax>
       </div>
       <div style="left: 0;">
-        <h4 class="texxt bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-dark"> Vendemos nossa história, a cadeira, vai junto ! <br>
+        <h4 class="texxta text-bold bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-dark"> Vendemos nossa história, a cadeira, vai junto ! <br>
           <hr> <br> O nosso propósito, na ELEMENTS, é entregar valor para as pessoas que de alguma forma tem acesso ao nosso universo! Tudo isso através de algo que está impregnado em nosso fit, que é o Storytelling,
           <hr> Lá, é contado através de quadrinhos e livros, que dentro delas estão incluídos valores. Valores esses que com certeza ajudam as pessoas que tem acesso a eles a melhorarem e progredirem em suas próprias vidas, por isso estamos crescendo muito e levando esse universo inteiro pra tanta gente diferente, claro que com muita qualidade em nossos produtos juntamente com a experiência que as acompanha.
           <hr>
@@ -199,15 +199,32 @@
           </div>
         </q-btn>
         <br>
+        <q-btn
+          color="black"
+          class="bg-green-2"
+          type="submit"
+          style="opacity: 0.8;"
+          push
+        >
+          <div class="row items-center text-purple text-bold texxt text-h5 no-wrap">
+            <q-icon
+              left
+              color="black"
+              name="phone"
+            />
+            <div class="text-center text-black">
+              Whatsapp
+            </div>
+          </div>
+        </q-btn>
+        <br>
         <h4 class="texxt2 text-dark bg-red-5  text-center "> PC's direto da indústria </h4>
         <h5 class="texxt2 text-dark bg-red-5  text-center "> Pc's, PDv's, PC's Gamers, All in One... </h5>
       </q-parallax>
       <div style="left: 0;">
-        <h4 class="texxt2 bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-red-4"> TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE <br>
-          <hr> <br> TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE .
-          <hr>
-          TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE
-          TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE
+        <h4 class="texxta text-bold bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-dark">
+          O Grupo Arca, também conhecido como Arca Trading, está na indústria da informática há mais de 10 anos, <br> fazendo a parte de atacado da Belmicro. <br> <br> Possuímos soluções em computadores em atacado para empresas, all in one’s, notebooks, PDVs e monitores. Aqui atuamos como uma “Arca informática”.
+          Dentre as marcas, estão a 3Green Technology e a EasyPC, que são utilizadas por diversas pessoas, empresas e órgãos do Estado.
         </h4>
         <div class="small-screen-only q-gutter-md q-pa-sm q-ma-md flex flex-center">
         </div>
@@ -245,20 +262,39 @@
           </div>
         </q-btn>
         <br>
+        <q-btn
+          color="black"
+          class="bg-green-2"
+          type="submit"
+          style="opacity: 0.8;"
+          push
+        >
+          <div class="row items-center text-purple text-bold texxt text-h5 no-wrap">
+            <q-icon
+              left
+              color="black"
+              name="phone"
+            />
+            <div class="text-center text-black">
+              Whatsapp
+            </div>
+          </div>
+        </q-btn>
+        <br>
         <h4 class="texxt2 text-dark   text-center "> Monitores e TV's </h4>
         <h5 class="texxt2 text-dark  text-center "> Vendemos NÍTIDAMENTE o melhor do mercado </h5>
       </q-parallax>
       <div style="left: 0;">
-        <h4 class="texxt text-bold bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-dark"> TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE <br>
-          <hr> <br> TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE .
-          <hr>
-          TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE
-          TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE TEXTO SOBRE
+        <h4 class="texxta text-bold bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-dark"> Do basicão ao turbinado. Monitores para trabalhar, estudar ou jogar seus games preferidos. Com designs incríveis, ótimos valores e qualidade de imagem surpreendente. <br> <br> <br>
+          TVs com diversos tamanhos, de 24″a 55″ e excelente qualidade de áudio e vídeo para trazer mais ação, suspense, romance e conhecimento para sua casa. Assistir suas séries e filmes favoritos agora será uma experiência completa em sua HQScreen, e o melhor, com ótimo custo-benefício.
         </h4>
+        <br> <br> <br> <br>
+        <hr>
+        <hr>
       </div>
     </div>
 
-    <h4 class="texxt text-  text-bold text q-gutter-xl q-pa-lg q-ma-lg text-center text-blue-10">
+    <h4 class="texxta text-italic  text-bold text q-gutter-xl q-pa-lg q-ma-lg text-center text-dark">
       Para sua empresa que deseja:
 
       <br> <br>
@@ -313,12 +349,12 @@
     </h4>
     <div>
       <br>
-      <h3 class="text-center text-italic text-bold texxt ">fone</h3>
-      <h3 class="text-center text-italic texxt ">(48) 3374-6010</h3>
+      <h3 class="text-center text-italic text-bold texxta ">fone</h3>
+      <h3 class="text-center text-italic texxta ">(48) 3374-6010</h3>
       <div>
 
       </div>
-      <h4 class="texxt text-center text-italic text-black ">
+      <h4 class="texxta text-center text-italic text-black ">
         <hr>
         - Termos/Política de garantia <br>
         - E-mail: garantia@elements.ind.br <br> <br>

@@ -114,7 +114,6 @@
             src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/Untitled-1.png"
             style="width: 350px"
           >
-          <h1 class="text-center text-blue-9 texxt">A R C A </h1>
         </div>
       </template>
     </q-parallax>
@@ -122,39 +121,50 @@
       <q-btn
         padding="xl"
         push
-        class="bgs texxt text-h6 text-white"
+        class="bgs large-screen-only texxt text-h6 text-white"
+        to="/About"
+        rounded
+      >
+        QUER SABER MAIS SOBRE NÓS? CLIQUE AQUI
+      </q-btn>
+      <div class="small-screen-only">
+        <h4 class="text-center texxt text-bold text-italic text-blue-10">Pra sua empresa que deseja</h4>
+        <h5 class="texxt text-bold text text-center text-blue-10">
+
+          <br>
+          Reduzir custo comprando da própria industria ✓
+          <br>
+          <q-linear-progress
+            indeterminate
+            rounded
+            color="blue-4"
+            class="q-mt-sm"
+          />
+          Comprar com qualidade certificada ISO 9001 ✓
+          <br>
+          <q-linear-progress
+            indeterminate
+            rounded
+            color="blue-4"
+            class="q-mt-sm"
+          />
+          Contar com uma só industria para todas as soluções em computadores ✓
+
+          <br>
+
+        </h5>
+      </div>
+      <q-btn
+        padding="xl"
+        push
+        class="bgs small-screen-only texxt text-h7 text-bold text-white"
         to="/About"
         rounded
       >
         QUER SABER MAIS SOBRE NÓS? CLIQUE AQUI
       </q-btn>
     </div>
-    <div class="small-screen-only q-gutter-md q-pa-sm q-ma-md flex flex-center">
 
-      <q-btn
-        size="22px"
-        class="text-black texxta q-px-md q-py-xs bg-transparent"
-        color="blue-9"
-        style="opacity: 0.8;"
-        to="Elements"
-        label="Cadeira Gamer"
-      />
-      <q-btn
-        size="22px"
-        class="text-black texxta q-px-md q-py-xs"
-        color="blue-9"
-        style="opacity: 0.8;"
-        label="Monitores & Tvs"
-      />
-      <q-btn
-        size="22px"
-        to="3Green"
-        class="text-black texxta q-px-md q-py-xs"
-        color="blue-9"
-        style="opacity: 0.8;"
-        label="Computadores"
-      />
-    </div>
     <br>
     <br>
     <q-dialog v-model="inception">
@@ -197,7 +207,23 @@
     </q-dialog>
 
     <q-parallax
+      :height="150"
+      class="small-screen-only"
+      :speed="0.9"
+    >
+      <template v-slot:media>
+        <img src="https://wallpaperaccess.com/full/446984.jpg">
+      </template>
+
+      <h3 class=" constrain text-center large-screen-only text-italic text-blue texxta">Tenha Um posicionamento muito superior a concorrência.
+        Seja Referencia! Compre direto da propria marca! </h3>
+
+      <h4 class="text-blue-9 constrainsmall small-screen-only texxta">AO SEU ALCANCE</h4>
+    </q-parallax>
+
+    <q-parallax
       :height="320"
+      class="large-screen-only"
       :speed="0.7"
     >
       <template v-slot:media>
@@ -377,14 +403,24 @@
         <br>
       </q-parallax>
     </div>
-    <div>
+    <div class="">
       <h4 class="text-center text-italic text-bold texxt ">fone</h4>
       <h5 class="text-center text-italic texxt ">(48) 3374-6010</h5>
       <h4 class="texxt text-center text-bold text-italic text-black ">
         <hr>
-        Elogios/sugestões<br> <br>
-        <hr>
-        Instagram: Elements Gaming <br> <br>
+        <q-btn
+          color="deep-orange-6"
+          fab
+          class=""
+          size="9em"
+        >
+          <svg-icon
+            type="mdi"
+            :path="path"
+          ></svg-icon>
+
+          <h7 class="texxt q-ml-sm text-bold"> Instagram </h7>
+        </q-btn>
       </h4>
     </div>
   </q-page>
@@ -411,7 +447,7 @@
 
 <script>
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiInformationOutline } from '@mdi/js';
+import { mdiInstagram } from '@mdi/js';
 
 import { ParticlesBg } from "particles-bg-vue";
 export default {
@@ -419,10 +455,10 @@ export default {
   data () {
     return {
       inception: false,
-      path: mdiInformationOutline,
+      path: mdiInstagram,
       name: null,
       email: '',
-      accept: false,
+      accept: true,
       number: null
     }
   },
