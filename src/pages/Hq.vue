@@ -7,106 +7,36 @@
       <div class=" justify-between">
 
         <q-parallax
+          :height="1000"
           style="width: 100%;"
-          src="https://wallpaperaccess.com/full/358836.jpg"
+          src="https://i.pinimg.com/originals/e1/91/a8/e191a896209c083e069cc0c99b8c003d.gif"
         >
           <template v-slot:content="scope">
             <div
               class="absolute column items-center"
               :style="{
             opacity: 1 + (0.5 - scope.percentScrolled) * 2.5,
-            top: (scope.percentScrolled * 25) + '%',
+            top: (scope.percentScrolled * 65) + '%',
             left: 0,
             right: 0
           }"
             >
               <img
-                src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/HQ-LOGO-PNG.png"
+                src="http://hqscreen.com.br/wp-content/uploads/2019/06/LOGO-HQ-SCREEN-VETOR-BRANCA.png"
                 style="width: 250px; height: 200px"
               >
-              <div class="text-h3 texxt q-pa-xl text-black text-center">Monitores & TV's</div>
+              <div class="text-h3 texxt q-pa-xl text-white text-center">Monitores & TV's</div>
               <div class="text-h6 text-grey-3 text-center">
-                <q-spinner-puff
-                  class="absolute-center"
-                  color="grey-10"
-                  style="opacity: 0.4;"
-                  size="35em"
-                />
+
               </div>
             </div>
           </template>
         </q-parallax>
       </div>
     </div>
-    <div
-      class="q-pa-xl flex-center flex "
-      style="width: 100%;"
-    >
-      <h2 class="q-pa-xl text-center text-dark texxt2 text-italic"> formulário </h2>
-      <form class="q-gutter-md">
-        <q-input
-          class="bg-grey-5"
-          standout
-          v-model="email"
-          type="name"
-          prefix="Nome:"
-        >
-          <template v-slot:prepend>
-            <q-icon name="account_circle" />
-          </template>
-        </q-input>
 
-        <q-input
-          class="bg-grey-5"
-          standout
-          v-model="email"
-          type="email"
-          prefix="Email:"
-        >
-          <template v-slot:prepend>
-            <q-icon name="mail" />
-          </template>
-        </q-input>
-
-        <q-input
-          class="bg-grey-5"
-          standout
-          v-model="number"
-          type="number"
-          prefix="CNPJ:"
-        >
-          <template v-slot:prepend>
-            <q-icon name="work" />
-          </template>
-        </q-input>
-
-        <q-toggle
-          v-model="accept"
-          class="text-black texxt text-italic text-bold"
-          label="Aceito receber emails promocionais e informativos do Grupo Arca"
-        />
-        <div>
-
-          <q-btn
-            label="Enviar"
-            class="texxt2 text-black"
-            type="submit"
-            color="grey-4"
-          />
-        </div>
-      </form>
-    </div>
     <h1 class="texxt large-screen-only text-red-10 text-center">MONITORES GAMER</h1>
     <h3 class="texxt small-screen-only text-red-10 text-center">MONITORES GAMER</h3>
-    <q-linear-progress
-      dark
-      size="55px"
-      indeterminate
-      reverse
-      instant-feedback
-      :value="progress1"
-      color="red"
-    />
 
     <form
       action="https://wa.me/554833746010"
@@ -120,13 +50,13 @@
             swipeable
             class="large-screen-only  bg-white"
             animated
-            navigation-active-icon="phone"
+            navigation-active-icon="check_circle"
             control-type="regular"
             arrows
             control-text-color="red-4"
             navigation
             control-color="black"
-            navigation-icon="check_circle"
+            navigation-icon="x"
             v-model="slide4"
           >
             <q-carousel-slide
@@ -318,8 +248,8 @@
           </div>
         </div>
         <br>
-        <h1 class="texxt text-black text-bold large-screen-only text-center"> Monitores </h1>
-        <h2 class="texxt text-black small-screen-only q-pa-md text-bold text-center"> Monitores </h2>
+        <h1 class="texxt text-white text-bold large-screen-only text-center"> Monitores </h1>
+        <h2 class="texxt text-white small-screen-only q-pa-md text-bold text-center"> Monitores </h2>
         <q-linear-progress
           indeterminate
           :value="progress"
@@ -333,13 +263,13 @@
             swipeable
             class="large-screen-only  bg-white"
             animated
-            navigation-active-icon="phone"
+            navigation-active-icon="check_circle"
             control-type="regular"
             arrows
-            control-text-color="grey-4"
+            control-text-color="red-4"
             navigation
             control-color="black"
-            navigation-icon="check_circle"
+            navigation-icon="x"
             v-model="slide4"
           >
             <q-carousel-slide
@@ -485,45 +415,10 @@
         </div>
       </div>
       <br>
-      <q-linear-progress
-        dark
-        query
-        color="red"
-        class="q-mt-sm"
-      />
-      <q-linear-progress
-        dark
-        query
-        color="green"
-        class="q-mt-sm"
-      />
-      <q-linear-progress
-        dark
-        query
-        color="blue"
-        class="q-mt-sm"
-      />
 
-      <h1 class="texxt text-black text-bold large-screen-only text-center">TELEVISORES</h1>
-      <h4 class="texxt text-black q-pa-md small-screen-only text-center">TELEVISORES</h4>
-      <q-linear-progress
-        dark
-        query
-        color="pink"
-        class="q-mt-sm"
-      />
-      <q-linear-progress
-        dark
-        query
-        color="yellow"
-        class="q-mt-sm"
-      />
-      <q-linear-progress
-        dark
-        query
-        color="white"
-        class="q-mt-sm"
-      />
+      <h1 class="texxt text-white text-bold large-screen-only text-center">TELEVISORES</h1>
+      <h4 class="texxt text-white q-pa-md small-screen-only text-center">TELEVISORES</h4>
+
       <br>
       <div class=" flex bg-white flex-center row ">
 
@@ -532,13 +427,13 @@
           swipeable
           class="large-screen-only  bg-white"
           animated
-          navigation-active-icon="phone"
+          navigation-active-icon="check_circle"
           control-type="regular"
           arrows
-          control-text-color="grey-4"
+          control-text-color="red-4"
           navigation
           control-color="black"
-          navigation-icon="check_circle"
+          navigation-icon="x"
           v-model="slide4"
         >
           <q-carousel-slide
@@ -744,19 +639,147 @@
           Volte ao início
         </div>
       </q-page-scroller>
-      <div>
-        <h2 class="text-center large-screen-only text-black texxta ">fone</h2>
-        <h4 class="text-center small-screen-only text-black texxta ">fone</h4>
-        <h3 class="text-center large-screen-only text-black texxta ">(48) 3374-6010</h3>
-        <h4 class="text-center small-screen-only text-black texxta ">(48) 3374-6010</h4>
-        <hr>
-        <h3 class="text-center large-screen-only text-black texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
+      <div
+        class="q-pa-xl q-mb-md flex-center flex "
+        style="width: 100%;"
+      >
+        <h2 class="q-pa-xl text-center text-white texxt2 text-italic"> formulário </h2>
+        <form class="q-gutter-md">
+          <q-input
+            class="bg-blue-1"
+            v-model="name"
+            type="name"
+            prefix="Nome:"
+          >
+            <template v-slot:prepend>
+              <q-icon
+                class="q-ml-sm"
+                color="blue-7"
+                name="account_circle"
+              />
+            </template>
+          </q-input>
 
-          Palhoça - SC 6</h3>
-        <h5 class="text-center small-screen-only text-black texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
+          <q-input
+            class="bg-blue-1"
+            v-model="email"
+            type="email"
+            prefix="Email:"
+          >
+            <template v-slot:prepend>
+              <q-icon
+                class="q-ml-sm"
+                color="blue-7"
+                name="mail"
+              />
+            </template>
+          </q-input>
 
-          Palhoça - SC 6</h5>
+          <q-input
+            class="bg-blue-1"
+            v-model="number"
+            type="number"
+            prefix="CNPJ:"
+          >
+            <template v-slot:prepend>
+              <q-icon
+                class="q-ml-sm"
+                color="blue-7"
+                name="work"
+              />
+            </template>
+          </q-input>
 
+          <q-toggle
+            v-model="accept"
+            color="blue-4"
+            class="text-white texxt text-italic text-bold"
+            label="Aceito receber emails promocionais e informativos da HQ"
+          />
+          <div>
+
+            <q-btn
+              label="Enviar"
+              class="texxt2 text-white"
+              type="submit"
+              color="black"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="bg-dark text-white flex q-gutter-xl row flex flex-center ">
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">email</h4>
+          <h5 class="text-center text-italic texxt ">arca@arca.com</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              target="_blank"
+              action="https://www.facebook.com/Arca-Trading-1199174680238962"
+            >
+              <q-btn
+                color="blue-7"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path2"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">fone</h4>
+          <h5 class="text-center text-italic texxt ">(48) 3374-6010</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              action="https://wa.me/554833746010"
+              target="_black"
+            >
+              <q-btn
+                color="green-7"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path1"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">social</h4>
+          <h5 class="text-center text-italic texxt ">estamos no insta</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              action="https://www.instagram.com/arcacomercial/"
+              target="_black"
+            >
+              <q-btn
+                color="deep-orange-10"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
       </div>
     </form>
     <q-dialog v-model="monitorgamer">
@@ -1034,6 +1057,27 @@
         </q-card-actions>
       </q-card>
     </q-dialog>
+    <q-page-sticky
+      position="bottom-right"
+      :offset="[79, 18]"
+    >
+      <form
+        action="https://wa.me/554833746010"
+        target="_black"
+      >
+        <q-btn
+          type="submit"
+          fab
+          class="text-black"
+          color="green-6"
+        >
+          <svg-icon
+            type="mdi"
+            :path="path1"
+          ></svg-icon>
+        </q-btn>
+      </form>
+    </q-page-sticky>
   </q-page>
 </template>
 
@@ -1047,14 +1091,17 @@
   max-width: 350px;
 }
 .bghq {
-  background-image: url("https://wallpaperaccess.com/full/675049.jpg");
-  background-size: 200%;
+  background-image: url("https://wallpapercave.com/wp/wp2864012.gif");
+  background-size: 100%;
 }
 </style>
 
 <script>
 import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiWhatsapp } from '@mdi/js'
+import { mdiInstagram } from '@mdi/js'
+import { mdiFacebook } from '@mdi/js'
+
 export default {
   name: 'Hq',
   components: {
@@ -1071,7 +1118,9 @@ export default {
       slide6: 1,
       monitorgamer: false,
       tvs: false,
-      path: mdiWhatsapp,
+      path2: mdiFacebook,
+      path1: mdiWhatsapp,
+      path: mdiInstagram,
       name: null,
       email: '',
       accept: true,

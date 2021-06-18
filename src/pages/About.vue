@@ -1,6 +1,6 @@
 <template>
   <q-page
-    class="bg-blue-1"
+    class="bg-white"
     style="overflow-x: hidden ; overflow-y: hidden "
   >
     <div class="large-screen-only">
@@ -45,30 +45,17 @@
           border
         >
           <q-card-section>
-            <h3 class="text-center texxt2 constrain q-pa-md text-blue-10 ">
-              <hr> O GRUPO ARCA, HOJE,<br> FAZ A GERÊNCIA COMERCIAL <br> DE 3 EMPRESAS.
-              <hr>
+            <h3 class="text-center text-bold texxta2 constrain q-pa-md text-black ">
+              O GRUPO ARCA, FAZ A GERÊNCIA COMERCIAL <br> DE 3 EMPRESAS.
             </h3>
           </q-card-section>
 
         </q-card>
-        <h1
-          id="section1"
-          class=" text-blue-10 texxt text-center"
-        > São elas... </h1>
         <q-parallax
-          :height="400"
+          :height="550"
           class=" q-gutter-none"
+          src="https://images3.alphacoders.com/975/thumb-1920-975999.png"
         >
-          <template v-slot:media>
-            <video
-              autoplay
-              loop
-              muted
-              :height="1080"
-              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/bghq.mp4"
-            />
-          </template>
 
           <template v-slot:content="scope">
             <div
@@ -82,17 +69,17 @@
             >
               <div class="q-gutter-xl q-pa-xl justify-between flex items-center">
                 <img
-                  src="https://www.elementsgaming.com.br/system/seos/imgs/000/000/001/grande/logo-elements-preta.png?1583409803"
+                  src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/elements-logo-branca.png"
                   class="q-pa-none"
                   style="width: 300px;"
                 >
                 <img
-                  src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png"
+                  src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/world-pc-logo-branca-1.png"
                   class="q-pa-none"
-                  style="width: 300px;"
+                  style="width: 500px;"
                 >
                 <img
-                  src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/HQ-LOGO-PNG.png"
+                  src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/hq-logo-branca.png"
                   class="q-pa-none"
                   style="width: 300px;"
                 >
@@ -101,7 +88,6 @@
           </template>
         </q-parallax>
 
-        <h1 class="text-center texxt q-pa-xl text-bold text-black"> E L E M E N T S </h1>
         <q-parallax
           class="large-screen-only"
           style="width: 100%;  height: 500px;"
@@ -155,7 +141,7 @@
         </q-parallax>
       </div>
       <div style="left: 0;">
-        <h4 class="texxta text-bold bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-dark"> Vendemos nossa história, a cadeira, vai junto ! <br>
+        <h4 class="texxta bg-grey-2 text-center text-center q-gutter-sm  q-pa-xl constrain text-dark"> Vendemos nossa história, a cadeira, vai junto ! <br>
           <hr> <br> O nosso propósito, na ELEMENTS, é entregar valor para as pessoas que de alguma forma tem acesso ao nosso universo! Tudo isso através de algo que está impregnado em nosso fit, que é o Storytelling,
           <hr> Lá, é contado através de quadrinhos e livros, que dentro delas estão incluídos valores. Valores esses que com certeza ajudam as pessoas que tem acesso a eles a melhorarem e progredirem em suas próprias vidas, por isso estamos crescendo muito e levando esse universo inteiro pra tanta gente diferente, claro que com muita qualidade em nossos produtos juntamente com a experiência que as acompanha.
           <hr>
@@ -169,7 +155,6 @@
       </div>
       <br>
       <br>
-      <h1 class="text-center texxt2 text-red-8"> W O R L D P C </h1>
       <q-parallax
         class="large-screen-only"
         style="width: 100%;  height: 450px;"
@@ -178,48 +163,11 @@
         <img
           src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/02/logo-world-pc.png"
           class="q-pa-xl"
-          style="width: 800px; height: 380px;"
+          style="width: 900px; height: 380px;"
         >
 
-        <q-btn
-          to="/3green"
-          color="white"
-          style="opacity: 0.8;"
-          push
-        >
-          <div class="row items-center text-purple text-bold texxt2 text-h5 no-wrap">
-            <q-icon
-              class="text-red-5"
-              left
-              name="done"
-            />
-            <div class="text-center text-black">
-              Clique<br>e Conheça
-            </div>
-          </div>
-        </q-btn>
-        <br>
-        <q-btn
-          color="black"
-          class="bg-green-2"
-          type="submit"
-          style="opacity: 0.8;"
-          push
-        >
-          <div class="row items-center text-purple text-bold texxt text-h5 no-wrap">
-            <q-icon
-              left
-              color="black"
-              name="phone"
-            />
-            <div class="text-center text-black">
-              Whatsapp
-            </div>
-          </div>
-        </q-btn>
-        <br>
-        <h4 class="texxt2 text-dark bg-red-5  text-center "> PC's direto da indústria </h4>
-        <h5 class="texxt2 text-dark bg-red-5  text-center "> Pc's, PDv's, PC's Gamers, All in One... </h5>
+        <h4 class="texxt2 text-white  text-center "> PC's direto da indústria <br>
+          Pc's, PDv's, PC's Gamers, All in One... </h4>
       </q-parallax>
       <div style="left: 0;">
         <h4 class="texxta text-bold bg-grey-2 text-center text-justify text-italic q-gutter-xl  q-pa-xl constrain text-dark">
@@ -231,7 +179,6 @@
       </div>
       <br>
       <br>
-      <h1 class="text-center texxt text-italic text-bold text-white bg-black"> H Q MONITORES </h1>
       <q-parallax
         class="large-screen-only"
         style="width: 100%;  height: 450px;"
@@ -294,79 +241,82 @@
       </div>
     </div>
 
-    <h4 class="texxta text-italic  text-bold text q-gutter-xl q-pa-lg q-ma-lg text-center text-dark">
-      Para sua empresa que deseja:
-
-      <br> <br>
-      <q-linear-progress
-        indeterminate
-        rounded
-        color="blue-4"
-        class="q-mt-xs"
-      />
-      Reduzir custo comprando da própria industria ✓
-      <br>
-      <q-linear-progress
-        indeterminate
-        rounded
-        color="blue-4"
-        class="q-mt-sm"
-      />
-      Comprar com qualidade certificada ISO 9001 ✓
-      <br>
-      <q-linear-progress
-        indeterminate
-        rounded
-        color="blue-4"
-        class="q-mt-sm"
-      />
-      Possuir tecnologia de ponta com melhor custo do país ✓
-      <br>
-      <q-linear-progress
-        indeterminate
-        rounded
-        color="blue-4"
-        class="q-mt-sm"
-      />
-      Contar com uma só industria para todas as soluções em computadores ✓
-
-      <br>
-      <q-linear-progress
-        indeterminate
-        rounded
-        color="blue-4"
-        class="q-mt-sm"
-      />
-
-      Aqui, você encontrará o melhor custo benefício para computadores para empresa, computadores visando licitações, computadores PDV's, All in One's, além dos monitores HQ e das TV's HQ.
-      <br>
-      <q-linear-progress
-        indeterminate
-        rounded
-        color="blue-4"
-        class="q-mt-sm"
-      />
-    </h4>
     <div>
       <br>
-      <h3 class="text-center text-italic text-bold texxta ">fone</h3>
-      <h3 class="text-center text-italic texxta ">(48) 3374-6010</h3>
-      <div>
+      <div class="bg-dark text-white flex q-gutter-xl row flex flex-center ">
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">email</h4>
+          <h5 class="text-center text-italic texxt ">arca@arca.com</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              target="_blank"
+              action="https://www.facebook.com/Arca-Trading-1199174680238962"
+            >
+              <q-btn
+                color="blue-7"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path2"
+                ></svg-icon>
 
+              </q-btn>
+            </form>
+          </h4>
+        </div>
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">fone</h4>
+          <h5 class="text-center text-italic texxt ">(48) 3374-6010</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              action="https://wa.me/554833746010"
+              target="_black"
+            >
+              <q-btn
+                color="green-7"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path1"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">social</h4>
+          <h5 class="text-center text-italic texxt ">estamos no insta</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              action="https://wa.me/554833746010"
+              target="_black"
+            >
+              <q-btn
+                color="deep-orange-10"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
       </div>
-      <h4 class="texxta text-center text-italic text-black ">
-        <hr>
-        - Termos/Política de garantia <br>
-        - E-mail: garantia@elements.ind.br <br> <br>
-        Cancelamentos <br>
-        - Política de cancelamento <br> <br>
-        Dúvidas específicas/Suporte <br>
-        - E-mail: meajuda@elements.ind.br <br> <br>
-        - Multi360 <br>
-        - Fone: (48) 3374-6010 <br> <br>
-        Elogios/sugestões<br>
-        - Instagram: Elements Gaming <br> <br>
-      </h4>
     </div>
     <q-page-scroller
       expand
@@ -415,8 +365,13 @@
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
 .texxta {
   font-family: "Bebas Neue", cursive;
+}
+.texxta2 {
+  font-family: "Poppins", sans-serif;
 }
 .my-card {
   width: 100%;
@@ -431,7 +386,8 @@
 
 <script>
 import SvgIcon from '@jamescoyle/vue-icon'
-import { mdiInformationOutline } from '@mdi/js';
+import { mdiInstagram } from '@mdi/js';
+import { mdiFacebook } from '@mdi/js';
 import { mdiWhatsapp } from '@mdi/js';
 import { ParticlesBg } from "particles-bg-vue";
 export default {
@@ -439,8 +395,9 @@ export default {
   data () {
     return {
       inception: false,
-      path: mdiInformationOutline,
-      path1: mdiWhatsapp
+      path1: mdiWhatsapp,
+      path: mdiInstagram,
+      path2: mdiFacebook
     }
   },
   components: {

@@ -1,13 +1,13 @@
 <template>
   <q-page
-    class="bg-white"
+    class="bgb"
     style="overflow-x: hidden ; overflow-y: hidden "
   >
     <div class="large-screen-only">
       <div class="q-pa-none items-center row">
         <q-parallax
-          :height="550"
-          style="width: 50%;"
+          :height="950"
+          style="width: 55%;"
           class="q-gutter-xl"
         >
           <template v-slot:media>
@@ -32,45 +32,58 @@
             </div>
           </template>
         </q-parallax>
-
         <div
-          class="q-pa-md "
-          style="width: 40%;"
+          style="width: 45%;"
+          class="texxta text-grey-10 text-center  text-italic"
+        >
+          <h3>O que você precisa hoje? </h3>
+          <h4> o grupo arca nasceu para aproximar você de seus objetivos, e iremos provar. texto texto </h4>
+          <h4> o grupo arca nasceu para aproximar você de seus objetivos, e iremos provar. texto texto </h4>
+        </div>
+        <div
+          class="q-pa-md flex-left"
+          style="width: 45%;"
         >
           <form class="q-gutter-md">
             <q-input
-              class="bg-blue-2"
-              standout
-              v-model="email"
+              class="bg-blue-3"
+              v-model="name"
               type="name"
               prefix="Nome:"
             >
               <template v-slot:prepend>
-                <q-icon name="account_circle" />
+                <q-icon
+                  class="q-pa-sm"
+                  name="account_circle"
+                />
               </template>
             </q-input>
 
             <q-input
-              class="bg-blue-2"
-              standout
+              class="bg-blue-3"
               v-model="email"
               type="email"
               prefix="Email:"
             >
               <template v-slot:prepend>
-                <q-icon name="mail" />
+                <q-icon
+                  class="q-pa-sm"
+                  name="mail"
+                />
               </template>
             </q-input>
 
             <q-input
-              class="bg-blue-2"
-              standout
+              class="bg-blue-3"
               v-model="number"
               type="number"
               prefix="CNPJ:"
             >
               <template v-slot:prepend>
-                <q-icon name="work" />
+                <q-icon
+                  class="q-pa-sm"
+                  name="work"
+                />
               </template>
             </q-input>
 
@@ -119,9 +132,9 @@
     </q-parallax>
     <div class="flex q-pa-xl flex-center">
       <q-btn
-        padding="xl"
+        padding="lg"
         push
-        class="bgs large-screen-only texxt text-h6 text-white"
+        class="bgs large-screen-only texxta text-italic text-h4 text-bold text-blue-1"
         to="/About"
         rounded
       >
@@ -206,49 +219,16 @@
       </q-card>
     </q-dialog>
 
-    <q-parallax
-      :height="150"
-      class="small-screen-only"
-      :speed="0.9"
-    >
-      <template v-slot:media>
-        <img src="https://wallpaperaccess.com/full/446984.jpg">
-      </template>
-
-      <h3 class=" constrain text-center large-screen-only text-italic text-blue texxta">Tenha Um posicionamento muito superior a concorrência.
-        Seja Referencia! Compre direto da propria marca! </h3>
-
-      <h4 class="text-blue-9 constrainsmall small-screen-only texxta">AO SEU ALCANCE</h4>
-    </q-parallax>
-
-    <q-parallax
-      :height="320"
-      class="large-screen-only"
-      :speed="0.7"
-    >
-      <template v-slot:media>
-        <img src="https://wallpaperaccess.com/full/446984.jpg">
-      </template>
-
-      <h3 class=" constrain text-center large-screen-only text-italic text-blue texxta">Tenha Um posicionamento muito superior a concorrência.
-        Seja Referencia! Compre direto da propria marca! </h3>
-
-      <h4 class="text-blue-9 constrainsmall small-screen-only texxta">AO SEU ALCANCE</h4>
-    </q-parallax>
-
-    <h1 class="texxt text-black large-screen-only text-bold text-center">O QUE</h1>
-    <h2 class="texxt small-screen-only text-black text-center">O QUE</h2>
-    <h1 class="texxt text-grey-6 text-bold large-screen-only text-center">DESEJA ?</h1>
-    <h2 class="texxt text-grey-6 text-bold small-screen-only text-center">DESEJA ?</h2>
     <div class="flex justify-beyween">
 
       <q-parallax
         class="large-screen-only"
         style="width: 33%;  height: 77vh;"
-        src="https://wallpapercave.com/wp/wp7196356.jpg"
+        src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/BANNER-INICIAL-ELEMENTS.jpg"
       >
         <h2 class="text-center text-bold text-black texxt "> ELEMENTS </h2>
 
+        <h5 class="texxt text-grey-1 text-italic  text-center "> Cadeiras gamers </h5>
         <q-btn
           to="/elements"
           color="purpe"
@@ -267,7 +247,6 @@
           </div>
         </q-btn>
         <br>
-        <h5 class="texxt text-grey-1 text-italic  text-center "> Cadeiras gamers </h5>
       </q-parallax>
 
       <q-parallax
@@ -301,9 +280,10 @@
       <q-parallax
         class="large-screen-only"
         style="width: 34%;  height: 77vh;"
-        src="https://i.pinimg.com/originals/77/a7/86/77a78633604cce24717dc9735b013725.jpg"
+        src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/BANNER-INICIAL-WORLD-PC.jpg"
       >
         <h2 class="texxt2 text-italic text-orange">WorldPC's</h2>
+        <h5 class="text-white text-italic text-center texxt">Computadores</h5>
         <q-btn
           to="/3green"
           color="white"
@@ -321,7 +301,6 @@
           </div>
         </q-btn>
         <br>
-        <h5 class="text-white text-italic text-center texxt">Computadores</h5>
         <br>
       </q-parallax>
       <q-parallax
@@ -353,10 +332,11 @@
       <q-parallax
         class="large-screen-only"
         style="width: 33%; height: 77vh;"
-        src="https://wallpaperaccess.com/full/358836.jpg"
+        src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/BANNER-HQ-INICIAL.jpg"
       >
         <h2 class="texxt text-italic text-black">HQ</h2>
         <br>
+        <h5 class="text-white text-center text-italic texxt">Monitores & Tvs</h5>
         <q-btn
           to="/Hq"
           color="grey-8"
@@ -373,13 +353,12 @@
             </div>
           </div>
         </q-btn>
-        <h5 class="text-black text-center text-italic texxt">Monitores & Tvs</h5>
         <br>
       </q-parallax>
       <q-parallax
         class="small-screen-only"
         style="width: 100%;"
-        src="https://wallpaperaccess.com/full/446984.jpg"
+        src="https://www.teahub.io/photos/full/88-886889_gaming-pc-setup-2020.jpg"
       >
         <h2 class="texxt text-black">Monitores</h2>
         <br>
@@ -403,27 +382,124 @@
         <br>
       </q-parallax>
     </div>
-    <div class="">
-      <h4 class="text-center text-italic text-bold texxt ">fone</h4>
-      <h5 class="text-center text-italic texxt ">(48) 3374-6010</h5>
-      <h4 class="texxt text-center text-bold text-italic text-black ">
-        <hr>
-        <form action=""></form>
+    <div class="bg-dark text-white flex q-gutter-xl row flex flex-center ">
+      <div class="">
+        <h4 class="text-center text-italic text-bold texxt ">email</h4>
+        <h5 class="text-center text-italic texxt ">arca@arca.com</h5>
+        <h4 class="texxt text-center text-bold text-italic text-black ">
+          <hr>
+          <form
+            target="_blank"
+            action="https://www.facebook.com/Arca-Trading-1199174680238962"
+          >
+            <q-btn
+              color="blue-7"
+              fab
+              type="submit"
+              class=""
+            >
+              <svg-icon
+                type="mdi"
+                :path="path2"
+              ></svg-icon>
+
+            </q-btn>
+          </form>
+        </h4>
+      </div>
+      <div class="">
+        <h4 class="text-center text-italic text-bold texxt ">fone</h4>
+        <h5 class="text-center text-italic texxt ">(48) 3374-6010</h5>
+        <h4 class="texxt text-center text-bold text-italic text-black ">
+          <hr>
+          <form
+            action="https://wa.me/554833746010"
+            target="_black"
+          >
+            <q-btn
+              color="green-7"
+              fab
+              type="submit"
+              class=""
+            >
+              <svg-icon
+                type="mdi"
+                :path="path1"
+              ></svg-icon>
+
+            </q-btn>
+          </form>
+        </h4>
+      </div>
+      <div class="">
+        <h4 class="text-center text-italic text-bold texxt ">social</h4>
+        <h5 class="text-center text-italic texxt ">estamos no insta</h5>
+        <h4 class="texxt text-center text-bold text-italic text-black ">
+          <hr>
+          <form
+            action="https://www.instagram.com/arcacomercial/"
+            target="_black"
+          >
+            <q-btn
+              color="deep-orange-10"
+              fab
+              type="submit"
+              class=""
+            >
+              <svg-icon
+                type="mdi"
+                :path="path"
+              ></svg-icon>
+
+            </q-btn>
+          </form>
+        </h4>
+      </div>
+    </div>
+    <q-page-scroller
+      expand
+      position="top"
+      :scroll-offset="150"
+      :offset="[0, 0]"
+    >
+      <div class="col texxt cursor-pointer q-pa-sm bg-white text-black text-center">
+        Volte ao início
+      </div>
+    </q-page-scroller>
+    <q-page-sticky
+      position="bottom-right"
+      :offset="[18, 18]"
+    >
+      <form
+        action="https://wa.me/554833746010"
+        target="_black"
+      >
         <q-btn
-          color="deep-orange-6"
+          type="submit"
           fab
-          class=""
-          size="9em"
+          class="text-black"
+          color="green-6"
         >
           <svg-icon
             type="mdi"
-            :path="path"
+            :path="path1"
           ></svg-icon>
-
-          <h7 class="texxt q-ml-sm text-bold"> Instagram </h7>
         </q-btn>
-      </h4>
-    </div>
+      </form>
+    </q-page-sticky>
+    <q-page-scroller
+      reverse
+      position="bottom-right"
+      :scroll-offset="20"
+      :offset="[95, 18]"
+    >
+      <q-btn
+        fab
+        icon="keyboard_arrow_down"
+        class="text-black"
+        color="white"
+      />
+    </q-page-scroller>
   </q-page>
 </template>
 
@@ -437,11 +513,11 @@
   max-width: 350px;
 }
 .bgb {
-  background-image: url("https://www.hdwallpapers.in/download/blue_mountains_4k_2-HD.jpg");
-  background-size: 175%;
+  background-image: url("https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/BANNER-ARCA-INICIAL.jpg");
+  background-size: 200%;
 }
 .bgs {
-  background-image: url("https://cdn.wallpaperhub.app/cloudcache/f/8/3/a/8/9/f83a896fb10b9775a193c9b9304fc1ef66a34cbb.jpg");
+  background-image: url("https://ak.picdn.net/shutterstock/videos/23164888/thumb/1.jpg");
   background-size: 100%;
 }
 </style>
@@ -449,6 +525,8 @@
 <script>
 import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiInstagram } from '@mdi/js';
+import { mdiWhatsapp } from '@mdi/js';
+import { mdiFacebook } from '@mdi/js';
 
 import { ParticlesBg } from "particles-bg-vue";
 export default {
@@ -457,6 +535,8 @@ export default {
     return {
       inception: false,
       path: mdiInstagram,
+      path1: mdiWhatsapp,
+      path2: mdiFacebook,
       name: null,
       email: '',
       accept: true,

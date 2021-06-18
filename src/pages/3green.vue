@@ -31,99 +31,9 @@
               </div>
             </template>
           </q-parallax>
-          <div
-            class="q-pa-xl flex-center flex "
-            style="width: 100%;"
-          >
-            <h2 class="q-pa-xl text-center text-red-10 texxt2 text-italic"> formulário </h2>
-            <form class="q-gutter-md">
-              <q-input
-                class="bg-grey-5"
-                standout
-                v-model="email"
-                type="name"
-                prefix="Nome:"
-              >
-                <template v-slot:prepend>
-                  <q-icon name="account_circle" />
-                </template>
-              </q-input>
-
-              <q-input
-                class="bg-grey-5"
-                standout
-                v-model="email"
-                type="email"
-                prefix="Email:"
-              >
-                <template v-slot:prepend>
-                  <q-icon name="mail" />
-                </template>
-              </q-input>
-
-              <q-input
-                class="bg-grey-5"
-                standout
-                v-model="number"
-                type="number"
-                prefix="CNPJ:"
-              >
-                <template v-slot:prepend>
-                  <q-icon name="work" />
-                </template>
-              </q-input>
-
-              <q-toggle
-                color="red-2"
-                v-model="accept"
-                class="text-red-5 texxt text-italic text-bold"
-                label="Aceito receber emails promocionais e informativos do Grupo Arca"
-              />
-              <div>
-
-                <q-btn
-                  label="Enviar"
-                  class="texxt2 text-black"
-                  type="submit"
-                  color="red-10"
-                />
-              </div>
-            </form>
-          </div>
         </div>
       </div>
-      <div
-        class="constrain"
-        style="width: 100%; center max-width: 400px"
-      >
-        <q-chat-message
-          avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-          :text="['Quer comprar no lugar certo mas ta cansado de cair nos godô?']"
-          sent
-          stamp="7 minutes ago"
-          class="q-pa-md"
-        />
-        <q-chat-message
-          avatar="https://cdn.quasar.dev/img/avatar3.jpg"
-          :text="[`Nossa, sim, mas ah... Eu vendo muito pra setor corporativo e licitação. `]"
-          stamp="6 minutes ago"
-          class="q-pa-md"
-        />
-        <q-chat-message
-          avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-          :text="['Então você está no lugar certo, além de comprar direto da industria, com inúmeros incentivos fiscais, <br> você conta com a linha completa para este público, <br> desde AIO, pdv a Slim PC']"
-          sent
-          class="q-pa-md"
-          stamp="4 minutes ago"
-        />
-        <q-chat-message
-          avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-          :text="['Essa é nossa linha All In One ! diferenciamos ela nas versões White & Black como você vai ver abaixo']"
-          sent
-          class="q-pa-md"
-          stamp="4 minutes ago"
-        />
-      </div>
+
       <h1 class="texxt2 text-white bg-grey-5 text-center">ALL IN ONE</h1>
       <h1 class="texxt2 text-white bg-grey-5 text-center">LINHA WHITE</h1>
       <div class="produts bg-white center">
@@ -282,36 +192,11 @@
           </q-carousel>
         </div>
       </div>
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-        :text="['Curtiu a linha White?']"
-        sent
-        class="q-pa-xl"
-        stamp="4 minutes ago"
-      />
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar3.jpg"
-        :text="[`Nossa, sim, adorei `]"
-        stamp="6 minutes ago"
-        class="q-pa-xl"
-      />
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-        :text="['Dê uma olhada na nossa linha Black então']"
-        sent
-        class="q-pa-xl"
-        stamp="4 minutes ago"
-      />
+
       <h1 class="texxt2 text-white q-pa- large-screen-only text-center">ALL IN ONE </h1>
       <h1 class="texxt2 text-white q-pa- large-screen-only text-center">LINHA BLACK</h1>
       <h1 class="texxt2 text-white q-pa-md small-screen-only text-center">LINHA BLACK</h1>
-      <q-chat-message
-        name="Jane"
-        avatar="https://cdn.quasar.dev/img/avatar3.jpg"
-        :text="[`Bora ver`]"
-        stamp="6 minutes ago"
-        class="q-pa-xl"
-      />
+
       <div class="produts bg-white center">
         <div class="q-pa-xl">
           <q-carousel
@@ -484,26 +369,6 @@
           </div>
         </q-page-scroller>
       </div>
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-        :text="['Então kkk além de tudo isso, temos linha GAMER ! E posso falar... <br> Os compradores vão amar tanto RGB e tanta potência nas máquinas huhue GG']"
-        sent
-        class="constrain q-pa-xl"
-        stamp="4 minutes ago"
-      />
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar3.jpg"
-        :text="[`Tem luzinha e tudo ?? Adoro isso ! quero ver !! `]"
-        stamp="6 minutes ago"
-        class="constrain q-pa-xl"
-      />
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-        :text="['Luzinha e Potência ... Luzinha e potência !!!']"
-        sent
-        class="constrain q-pa-xl"
-        stamp="4 minutes ago"
-      />
 
       <h1 class="texxt2 text-red-6 q-pa-xl large-screen-only text-center">LINHA GAMER</h1>
       <h1 class="texxt2 text-red-6 q-pa-md small-screen-only text-center">LINHA GAMER</h1>
@@ -658,13 +523,6 @@
           </q-carousel>
         </div>
       </div>
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-        :text="['E é claro, pra algo mais corporativo ou lojista ! temos nossa incrível linha de PDVs e PCs <br> aqui vem as máquinas com bons processamentos ']"
-        sent
-        class="constrain q-pa-xl"
-        stamp="4 minutes ago"
-      />
 
       <h1 class="texxt2 text-white q-pa-md large-screen-only text-center">PC'S & PDVS </h1>
       <subtitle class="texxt2 text-h5 text-white large-screen-only text-center">3green & EasyPC </subtitle>
@@ -956,45 +814,137 @@
 
       </div>
 
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar3.jpg"
-        :text="[`Adorei, sério, tudo !!! Vou comprar algumas coisas aqui pode ter certeza ! <br> minhas vendas vão subir demais ta maluco hahahha !! <br> Percebi uma coisa, e os monitores ? Se eu quiser umas máquinas dessas p/ meu negócio <br> conecto elas em outros monitores ? ou vocês vendem monitor também ? `]"
-        stamp="6 minutes ago"
-        class="constrain q-pa-xl"
-      />
-
-      <q-chat-message
-        avatar="https://cdn.quasar.dev/img/avatar4.jpg"
-        :text="['HAHAHA olha eu, baita vendedor !! É CLAROO !! <br> Vendemos Monitores e TVs HQ que são booonssss demaisss !! <br> clica abaixo que te mostro eles   ']"
-        sent
-        class="constrain q-pa-xl"
-        stamp="4 minutes ago"
+      <div
+        class="q-pa-xl"
+        style="width: 50%;"
       >
-        <q-btn
-          to="/Hq"
-          class="text-white texxt2"
-          color="black"
-          icon="shopping_cart"
-        >
-          monitores & tv hq
-        </q-btn>
-      </q-chat-message>
+        <form class="q-gutter-md">
+          <q-input
+            class="bg-grey-5"
+            standout
+            v-model="email"
+            type="name"
+            prefix="Nome:"
+          >
+            <template v-slot:prepend>
+              <q-icon name="account_circle" />
+            </template>
+          </q-input>
 
-      <div>
-        <hr>
-        <h2 class="text-center large-screen-only text-white texxta ">fone</h2>
-        <h4 class="text-center small-screen-only text-white texxta ">fone</h4>
-        <h3 class="text-center large-screen-only text-white texxta ">(48) 3374-6010</h3>
-        <h4 class="text-center small-screen-only text-white texxta ">(48) 3374-6010</h4>
-        <hr>
-        <h3 class="text-center large-screen-only text-white texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
+          <q-input
+            class="bg-grey-5"
+            standout
+            v-model="email"
+            type="email"
+            prefix="Email:"
+          >
+            <template v-slot:prepend>
+              <q-icon name="mail" />
+            </template>
+          </q-input>
 
-          Palhoça - SC 6</h3>
-        <h5 class="text-center small-screen-only text-white texxta ">Rua Aniceto Zacchi, 50, Sala 8-9
+          <q-input
+            class="bg-grey-5"
+            standout
+            v-model="number"
+            type="number"
+            prefix="CNPJ:"
+          >
+            <template v-slot:prepend>
+              <q-icon name="work" />
+            </template>
+          </q-input>
 
-          Palhoça - SC 6</h5>
-        <hr>
+          <q-toggle
+            color="red-2"
+            v-model="accept"
+            class="text-red-5 texxt text-italic text-bold"
+            label="Aceito receber emails promocionais e informativos do Grupo Arca"
+          />
+          <div>
 
+            <q-btn
+              label="Enviar"
+              class="texxt2 text-black"
+              type="submit"
+              color="red-10"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="bg-dark text-white flex q-gutter-xl row flex flex-center ">
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">email</h4>
+          <h5 class="text-center text-italic texxt ">arca@arca.com</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              target="_blank"
+              action="https://www.facebook.com/Arca-Trading-1199174680238962"
+            >
+              <q-btn
+                color="blue-7"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path2"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
+        <div class="">
+          <h4 class="text-center text-italic text-bold texxt ">fone</h4>
+          <h5 class="text-center text-italic texxt ">(48) 3374-6010</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              action="https://wa.me/554833746010"
+              target="_black"
+            >
+              <q-btn
+                color="green-7"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
+        <div class="q-pa-md">
+          <h4 class="text-center text-italic text-bold texxt ">social</h4>
+          <h5 class="text-center text-italic texxt ">estamos no insta</h5>
+          <h4 class="texxt text-center text-bold text-italic text-black ">
+            <hr>
+            <form
+              action="https://wa.me/554833746010"
+              target="_black"
+            >
+              <q-btn
+                color="deep-orange-10"
+                fab
+                type="submit"
+                class=""
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="path1"
+                ></svg-icon>
+
+              </q-btn>
+            </form>
+          </h4>
+        </div>
       </div>
     </form>
     <q-dialog v-model="aio">
@@ -1158,6 +1108,7 @@
         </q-card-actions>
       </q-card>
     </q-dialog>
+
   </q-page>
 
 </template>
@@ -1176,6 +1127,8 @@
 <script>
 import SvgIcon from '@jamescoyle/vue-icon'
 import { mdiWhatsapp } from '@mdi/js'
+import { mdiInstagram } from '@mdi/js'
+import { mdiFacebook } from '@mdi/js'
 export default {
   name: '3green',
   data () {
@@ -1190,6 +1143,8 @@ export default {
       gamerpc: false,
       pdvs: false,
       path: mdiWhatsapp,
+      path1: mdiInstagram,
+      path2: mdiFacebook,
       name: null,
       email: '',
       accept: true,

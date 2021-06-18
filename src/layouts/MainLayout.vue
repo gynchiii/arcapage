@@ -2,53 +2,64 @@
   <q-layout view="lHh Lpr lFf">
     <q-header
       elevated
-      class="bg-grey-3 large-screen-only "
+      class="bg-blue-9 large-screen-only "
     >
       <q-toolbar
-        style="opacity: 0.7;"
-        class=" constrainbig texxt2 text-black texxt q-my-none bg-grey-3 "
+        style="opacity: 0.8;"
+        class=" texxta2 text-black texxt q-my-none bg-blue-9 "
       >
-        <div class="q-gutter-lg">
+        <div class="q-gutter-md q-pa-xs">
           <q-btn
             to="/"
-            push
-            dense
-            class="text-center text-black bg-blue-2 text-bold text-h6"
-          >Arca</q-btn>
-          <q-btn
-            to="/about"
-            push
-            dense
-            class="text-center text-black bg-grey-3 text-bold text-h6"
-          >Sobre nós</q-btn>
+            round
+            outline
+            class="text-center q-pa-sm bg-blue-9 text-white  text-bold text-h7"
+          >
+            <q-img
+              class="flex flex-center"
+              src="https://desafio.elementsgaming.com.br/wp-content/uploads/2021/03/arca-logo-branca-sem-nome.png"
+            ></q-img>
+          </q-btn>
         </div>
         <q-space />
-        <div class="q-pa-sm">
+        <q-btn
+          to="/about"
+          push
+          dense
+          label="Sobre nós"
+          class="text-center text-bold texxta2 btb text-black"
+        />
+        <div class="q-ml-sm">
           <q-btn
             push
-            class="bg-grey-3 text-dark texxt2 text-bold"
+            class="btc text-black texxta2 text-bold"
             to="/elements"
             label="Elements"
           />
         </div>
-        <div class="q-pa-sm">
+        <div class="q-ml-sm">
           <q-btn
             push
-            class="bg-grey-3 texxt2 text-black text-bold"
+            class="texxta2 btd text-black text-bold"
             to="/3green"
             label="3Green"
           />
         </div>
-        <div class="q-pa-md">
+        <div class="q-ml-md">
           <q-btn
             push
-            class="bg-grey-3 texxt2 text-black text-bold"
+            class=" texxta2 bte text-black text-bold"
             to="/Hq"
             label="MONITORES HQ"
           />
         </div>
-        <div class="q-pa-xs flex flex-end">
-          <subtitle class="texxt2 text-h7 text-blue-10 flex"> (48) 3374-6010</subtitle>
+        <div class="q-ml-md">
+          <q-btn
+            push
+            class=" texxta2 bte text-black text-bold"
+            to="/Hq"
+            label="Contato"
+          />
         </div>
       </q-toolbar>
     </q-header>
@@ -111,6 +122,21 @@
   font-family: "Alfa Slab One", cursive;
   font-family: "Allerta Stencil", sans-serif;
   font-family: "Audiowide", cursive;
+}
+.bta:focus-within {
+  background-color: royalblue;
+}
+.btb:focus-within {
+  background-color: royalblue;
+}
+.btc:focus-within {
+  background-color: royalblue;
+}
+.btd:focus-within {
+  background-color: royalblue;
+}
+.bte:focus-within {
+  background-color: royalblue;
 }
 </style>
 
